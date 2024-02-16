@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-11 08:57+0100\n"
-"PO-Revision-Date: 2024-02-01 14:08+0100\n"
+"PO-Revision-Date: 2024-02-16 15:06+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: sl\n"
@@ -73,7 +73,7 @@ msgstr "Zapolni špranjo"
 
 #: src/libslic3r/ExtrusionRole.cpp:51 src/libslic3r/ExtrusionRole.cpp:81
 msgid "Skirt/Brim"
-msgstr ""
+msgstr "Oris/Obroba"
 
 #: src/libslic3r/ExtrusionRole.cpp:52 src/libslic3r/ExtrusionRole.cpp:83
 #: src/libslic3r/PrintConfig.cpp:819 src/libslic3r/PrintConfig.cpp:2230
@@ -117,7 +117,7 @@ msgstr "Po meri"
 
 #: src/libslic3r/ExtrusionRole.cpp:81 src/slic3r/GUI/Tab.cpp:1529
 msgid "Skirt"
-msgstr ""
+msgstr "Oris"
 
 #: src/libslic3r/Flow.cpp:68
 #, boost-format
@@ -1067,7 +1067,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:523
 msgid "Minimum bottom shell thickness"
-msgstr ""
+msgstr "Najnižja debelina spodnje plasti"
 
 #: src/libslic3r/PrintConfig.cpp:529
 msgid "Bridge"
@@ -1257,7 +1257,7 @@ msgstr "Širina obrobe"
 #: src/libslic3r/PrintConfig.cpp:701 src/slic3r/GUI/GUI_Factories.cpp:141
 #: src/slic3r/GUI/Tab.cpp:1527
 msgid "Skirt and brim"
-msgstr ""
+msgstr "Oris in obroba"
 
 #: src/libslic3r/PrintConfig.cpp:678
 msgid ""
@@ -1278,19 +1278,19 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:691
 msgid "No brim"
-msgstr ""
+msgstr "Brez obrobe"
 
 #: src/libslic3r/PrintConfig.cpp:692
 msgid "Outer brim only"
-msgstr ""
+msgstr "Samo zunanja obroba"
 
 #: src/libslic3r/PrintConfig.cpp:693
 msgid "Inner brim only"
-msgstr ""
+msgstr "Samo notranja obroba"
 
 #: src/libslic3r/PrintConfig.cpp:694
 msgid "Outer and inner brim"
-msgstr ""
+msgstr "Zunanja in notranja obroba"
 
 #: src/libslic3r/PrintConfig.cpp:700
 msgid "Brim separation gap"
@@ -1469,7 +1469,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:856
 msgid "Top fill pattern"
-msgstr ""
+msgstr "Vzorec zgornjega polnila"
 
 #: src/libslic3r/PrintConfig.cpp:858
 msgid ""
@@ -1513,7 +1513,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:876
 msgid "Bottom fill pattern"
-msgstr ""
+msgstr "Vzorec spodnjega polnila"
 
 #: src/libslic3r/PrintConfig.cpp:878
 msgid ""
@@ -2193,11 +2193,11 @@ msgstr "Brez"
 
 #: src/libslic3r/PrintConfig.cpp:1418
 msgid "Outside walls"
-msgstr ""
+msgstr "Zunanje stene"
 
 #: src/libslic3r/PrintConfig.cpp:1419
 msgid "All walls"
-msgstr ""
+msgstr "Vse stene"
 
 #: src/libslic3r/PrintConfig.cpp:1425
 msgid "Fuzzy skin thickness"
@@ -3360,7 +3360,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2482
 msgid "Skirt height"
-msgstr ""
+msgstr "Višina orisa"
 
 #: src/libslic3r/PrintConfig.cpp:2483
 msgid "Height of skirt expressed in layers."
@@ -3394,7 +3394,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2504
 msgid "Skirt Loops"
-msgstr ""
+msgstr "Šr. krogov orisa"
 
 #: src/libslic3r/PrintConfig.cpp:2505
 msgid ""
@@ -4100,7 +4100,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:3194
 msgid "Minimum top shell thickness"
-msgstr ""
+msgstr "Najnižja debelina zgornje plasti"
 
 #: src/libslic3r/PrintConfig.cpp:3201
 msgid "Speed for travel moves (jumps between distant extrusion points)."
@@ -7083,7 +7083,7 @@ msgstr ""
 
 #: src/slic3r/GUI/ConfigWizard.cpp:1689
 msgid "Use inches"
-msgstr "Uporabi cole"
+msgstr "Uporabi palce"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:1709
 msgid "Other Vendors"
@@ -12832,7 +12832,7 @@ msgstr ""
 
 #: src/slic3r/GUI/KBShortcutsDialog.cpp:265
 msgid "Horizontal Slider"
-msgstr ""
+msgstr "Vodoraven drsnik"
 
 #: src/slic3r/GUI/KBShortcutsDialog.cpp:265
 msgid ""
@@ -15347,7 +15347,7 @@ msgstr ""
 
 #: src/slic3r/GUI/PresetComboBoxes.cpp:651
 msgid "Click to edit preset"
-msgstr ""
+msgstr "Pritisnite za urejanje prednastavitev"
 
 #: src/slic3r/GUI/PresetComboBoxes.cpp:767
 #: src/slic3r/GUI/PresetComboBoxes.cpp:818
@@ -15365,7 +15365,7 @@ msgstr "Uredi prednastavitev"
 
 #: src/slic3r/GUI/PresetComboBoxes.cpp:792
 msgid "Change extruder color"
-msgstr ""
+msgstr "Spremeni barvo"
 
 #: src/slic3r/GUI/PresetComboBoxes.cpp:795
 msgid "Show/Hide template presets"
@@ -15530,12 +15530,12 @@ msgstr ""
 #: src/slic3r/GUI/PresetHints.cpp:226
 #, c-format, boost-format
 msgid "Recommended object thin wall thickness for layer height %.2f and"
-msgstr ""
+msgstr "Priporočena debelina tankih sten za višino plasti %.2f in"
 
 #: src/slic3r/GUI/PresetHints.cpp:241
 #, c-format, boost-format
 msgid "%d lines: %.2f mm"
-msgstr ""
+msgstr "%d liniji: %.2f mm"
 
 #: src/slic3r/GUI/PresetHints.cpp:245
 msgid ""
@@ -15551,12 +15551,12 @@ msgstr ""
 #: src/slic3r/GUI/PresetHints.cpp:287
 #, boost-format
 msgid "Top shell is %1% mm thick for layer height %2% mm."
-msgstr ""
+msgstr "Zgornja lupina je debela %1% mm za debelino plasti %2% mm."
 
 #: src/slic3r/GUI/PresetHints.cpp:290
 #, boost-format
 msgid "Minimum top shell thickness is %1% mm."
-msgstr ""
+msgstr "Najnižja debelina zgornje plasti je %1% mm."
 
 #: src/slic3r/GUI/PresetHints.cpp:293
 msgid "Top is open."
@@ -15565,12 +15565,12 @@ msgstr ""
 #: src/slic3r/GUI/PresetHints.cpp:306
 #, boost-format
 msgid "Bottom shell is %1% mm thick for layer height %2% mm."
-msgstr ""
+msgstr "Spodnja lupina je debela %1% mm za višino plasti %2% mm."
 
 #: src/slic3r/GUI/PresetHints.cpp:309
 #, boost-format
 msgid "Minimum bottom shell thickness is %1% mm."
-msgstr ""
+msgstr "Najnižja debelina zgornje plasti je %1% mm."
 
 #: src/slic3r/GUI/PresetHints.cpp:312
 msgid "Bottom is open."
@@ -16085,7 +16085,7 @@ msgstr "Navpične lupine"
 
 #: src/slic3r/GUI/Tab.cpp:1457
 msgid "Horizontal shells"
-msgstr ""
+msgstr "Vodoravne lupine"
 
 #: src/slic3r/GUI/Tab.cpp:1463
 msgid "Minimum shell thickness"

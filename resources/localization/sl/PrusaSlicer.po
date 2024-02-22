@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-11 08:57+0100\n"
-"PO-Revision-Date: 2024-02-16 15:06+0100\n"
+"PO-Revision-Date: 2024-02-22 13:32+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: sl\n"
@@ -1005,7 +1005,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:480 src/libslic3r/PrintConfig.cpp:3115
 msgid "Other layers"
-msgstr ""
+msgstr "Ostale plasti"
 
 #: src/libslic3r/PrintConfig.cpp:481
 msgid ""
@@ -1484,11 +1484,11 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:862
 msgid "Monotonic"
-msgstr ""
+msgstr "Monotono"
 
 #: src/libslic3r/PrintConfig.cpp:863
 msgid "Monotonic Lines"
-msgstr ""
+msgstr "Monotone črte"
 
 #: src/libslic3r/PrintConfig.cpp:864 src/libslic3r/PrintConfig.cpp:1299
 msgid "Aligned Rectilinear"
@@ -1497,15 +1497,15 @@ msgstr ""
 #: src/libslic3r/PrintConfig.cpp:865 src/libslic3r/PrintConfig.cpp:1305
 #: src/libslic3r/PrintConfig.cpp:2944
 msgid "Concentric"
-msgstr ""
+msgstr "Koncentrično"
 
 #: src/libslic3r/PrintConfig.cpp:866 src/libslic3r/PrintConfig.cpp:1309
 msgid "Hilbert Curve"
-msgstr ""
+msgstr "Hilbertova krivulja"
 
 #: src/libslic3r/PrintConfig.cpp:867 src/libslic3r/PrintConfig.cpp:1310
 msgid "Archimedean Chords"
-msgstr ""
+msgstr "Arhimedovi akordi"
 
 #: src/libslic3r/PrintConfig.cpp:868 src/libslic3r/PrintConfig.cpp:1311
 msgid "Octagram Spiral"
@@ -1598,7 +1598,7 @@ msgstr ""
 #: src/slic3r/GUI/GUI_ObjectList.cpp:355 src/slic3r/GUI/Tab.cpp:2119
 #: src/slic3r/GUI/wxExtensions.cpp:520
 msgid "Extruder"
-msgstr ""
+msgstr "Ekstruder"
 
 #: src/libslic3r/PrintConfig.cpp:935 src/libslic3r/PrintConfig.cpp:1616
 #: src/libslic3r/PrintConfig.cpp:2132 src/libslic3r/PrintConfig.cpp:2545
@@ -1606,7 +1606,7 @@ msgstr ""
 #: src/libslic3r/PrintConfig.cpp:3360 src/slic3r/GUI/GUI_Factories.cpp:138
 #: src/slic3r/GUI/Tab.cpp:1636 src/slic3r/GUI/Tab.cpp:2628
 msgid "Extruders"
-msgstr ""
+msgstr "Ekstruderji"
 
 #: src/libslic3r/PrintConfig.cpp:936
 msgid ""
@@ -1653,7 +1653,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:965
 msgid "Extruder Color"
-msgstr ""
+msgstr "Barva ekstruderja"
 
 #: src/libslic3r/PrintConfig.cpp:966 src/libslic3r/PrintConfig.cpp:1029
 #: src/libslic3r/PrintConfig.cpp:3890
@@ -1662,7 +1662,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:972
 msgid "Extruder offset"
-msgstr ""
+msgstr "Odmik ekstruderja"
 
 #: src/libslic3r/PrintConfig.cpp:973
 msgid ""
@@ -2028,22 +2028,22 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:1300 src/libslic3r/PrintConfig.cpp:2974
 msgid "Grid"
-msgstr ""
+msgstr "Mreža"
 
 #: src/libslic3r/PrintConfig.cpp:1301
 #: src/slic3r/GUI/Gizmos/GLGizmoFdmSupports.cpp:67
 #: src/slic3r/GUI/Gizmos/GLGizmoMmuSegmentation.cpp:124
 #: src/slic3r/GUI/Gizmos/GLGizmoSimplify.cpp:96
 msgid "Triangles"
-msgstr ""
+msgstr "Trikotniki"
 
 #: src/libslic3r/PrintConfig.cpp:1302
 msgid "Stars"
-msgstr ""
+msgstr "Zvezde"
 
 #: src/libslic3r/PrintConfig.cpp:1303
 msgid "Cubic"
-msgstr ""
+msgstr "Kocka"
 
 #: src/libslic3r/PrintConfig.cpp:1304
 msgid "Line"
@@ -2059,11 +2059,11 @@ msgstr "3D satovje"
 
 #: src/libslic3r/PrintConfig.cpp:1308
 msgid "Gyroid"
-msgstr ""
+msgstr "Giroid"
 
 #: src/libslic3r/PrintConfig.cpp:1312
 msgid "Adaptive Cubic"
-msgstr ""
+msgstr "Prilagodljiva kocka"
 
 #: src/libslic3r/PrintConfig.cpp:1313
 msgid "Support Cubic"
@@ -2180,7 +2180,7 @@ msgstr "Puhasta koža"
 
 #: src/libslic3r/PrintConfig.cpp:1415
 msgid "Fuzzy skin type."
-msgstr "Slog puhaste kože"
+msgstr "Slog puhaste kože."
 
 #: src/libslic3r/PrintConfig.cpp:1417 src/slic3r/GUI/ConfigWizard.cpp:416
 #: src/slic3r/GUI/ConfigWizard.cpp:745 src/slic3r/GUI/DoubleSlider.cpp:2103
@@ -2332,7 +2332,7 @@ msgstr ""
 #: src/libslic3r/PrintConfig.cpp:1549 src/libslic3r/PrintConfig.cpp:3200
 #: src/slic3r/GUI/GCodeViewer.cpp:3821 src/slic3r/GUI/GCodeViewer.cpp:4268
 msgid "Travel"
-msgstr ""
+msgstr "Gib"
 
 #: src/libslic3r/PrintConfig.cpp:1550
 msgid ""
@@ -2752,7 +2752,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:1931 src/libslic3r/PrintConfig.cpp:1940
 msgid "Max"
-msgstr "Maks."
+msgstr "Maks"
 
 #: src/libslic3r/PrintConfig.cpp:1932
 msgid "This setting represents the maximum speed of your fan."
@@ -2815,7 +2815,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:1994 src/libslic3r/PrintConfig.cpp:2003
 msgid "Min"
-msgstr "Min."
+msgstr "Min"
 
 #: src/libslic3r/PrintConfig.cpp:1995
 msgid "This setting represents the minimum PWM your fan needs to work."
@@ -3014,7 +3014,7 @@ msgstr "Tip tiskalnika"
 
 #: src/libslic3r/PrintConfig.cpp:2191
 msgid "Type of the printer."
-msgstr ""
+msgstr "Tip tiskalnika."
 
 #: src/libslic3r/PrintConfig.cpp:2196
 msgid "Printer notes"
@@ -3143,11 +3143,11 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2320
 msgid "Retraction length"
-msgstr ""
+msgstr "Dolžina umika"
 
 #: src/libslic3r/PrintConfig.cpp:2321
 msgid "Retraction Length"
-msgstr ""
+msgstr "Dolžina umika"
 
 #: src/libslic3r/PrintConfig.cpp:2322
 msgid ""
@@ -3163,7 +3163,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2329
 msgid "Retraction Length (Toolchange)"
-msgstr ""
+msgstr "Dolžina umika (sprememba orodja)"
 
 #: src/libslic3r/PrintConfig.cpp:2330
 msgid ""
@@ -3272,7 +3272,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2416 src/libslic3r/PrintConfig.cpp:2417
 msgid "Retraction Speed"
-msgstr ""
+msgstr "Hitrost umika"
 
 #: src/libslic3r/PrintConfig.cpp:2418
 msgid "The speed for retractions (it only applies to the extruder motor)."
@@ -5139,7 +5139,7 @@ msgstr "Izvozi 3MF"
 
 #: src/libslic3r/PrintConfig.cpp:4860
 msgid "Export the model(s) as 3MF."
-msgstr "c3MF."
+msgstr "Izvozi model(e) kot 3MF."
 
 #: src/libslic3r/PrintConfig.cpp:4864
 msgid "Export AMF"
@@ -5515,7 +5515,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:5119 src/slic3r/GUI/Tab.cpp:3293
 msgid "Retraction"
-msgstr ""
+msgstr "Umik"
 
 #: src/libslic3r/PrintConfig.cpp:5120
 msgid ""
@@ -5544,7 +5544,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:5137
 msgid "Current extruder"
-msgstr ""
+msgstr "Trenutni ekstruder"
 
 #: src/libslic3r/PrintConfig.cpp:5138
 msgid "Zero-based index of currently used extruder."
@@ -5552,7 +5552,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:5141
 msgid "Current object index"
-msgstr ""
+msgstr "Indeks trenutnega objekta"
 
 #: src/libslic3r/PrintConfig.cpp:5142
 msgid ""
@@ -5927,7 +5927,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:5384
 msgid "Current extruder index"
-msgstr ""
+msgstr "Indeks trenutnega ekstruderja"
 
 #: src/libslic3r/PrintConfig.cpp:5385
 msgid ""
@@ -6772,7 +6772,7 @@ msgstr "Aktiviraj"
 
 #: src/slic3r/GUI/ConfigSnapshotDialog.cpp:127
 msgid "Configuration Snapshots"
-msgstr ""
+msgstr "Posnetek konfiguracij"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:346
 msgid "nozzle"
@@ -6942,7 +6942,7 @@ msgstr ""
 
 #: src/slic3r/GUI/ConfigWizard.cpp:1349
 msgid "Check for application updates"
-msgstr ""
+msgstr "Posodobitev programa"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:1353
 #, c-format, boost-format
@@ -6990,7 +6990,7 @@ msgstr "Brskaj"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:1431
 msgid "Choose folder"
-msgstr ""
+msgstr "Izberite mapo"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:1469
 msgid "Downloads from URL"
@@ -7342,7 +7342,7 @@ msgstr ""
 #: src/slic3r/GUI/ConfigWizard.cpp:3395 src/slic3r/GUI/ConfigWizard.cpp:3398
 #: src/slic3r/GUI/GUI_ObjectList.cpp:4284
 msgid "Type:"
-msgstr ""
+msgstr "Tip:"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:3398
 msgid "SLA Material Profiles Selection"
@@ -7350,19 +7350,19 @@ msgstr ""
 
 #: src/slic3r/GUI/ConfigWizard.cpp:3521
 msgid "Configuration Assistant"
-msgstr ""
+msgstr "Pomočnik za konfiguracije"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:3522
 msgid "Configuration &Assistant"
-msgstr ""
+msgstr "Pomočnik za &konfiguracije"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:3524
 msgid "Configuration Wizard"
-msgstr ""
+msgstr "Čarovnik za konfiguracijo"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:3525
 msgid "Configuration &Wizard"
-msgstr ""
+msgstr "&Čarovnik za konfiguracijo"
 
 #: src/slic3r/GUI/DesktopIntegrationDialog.cpp:237
 msgid ""
@@ -7537,7 +7537,7 @@ msgstr ""
 #: src/slic3r/GUI/DoubleSlider.cpp:1546
 #, boost-format
 msgid "Extruder (tool) is changed to Extruder \"%1%\""
-msgstr ""
+msgstr "Ekstruder (orodje) je spremenjen v ekstruder \"%1%\""
 
 #: src/slic3r/GUI/DoubleSlider.cpp:1553
 msgid "Note"
@@ -7584,7 +7584,7 @@ msgstr ""
 #: src/slic3r/GUI/GUI_Factories.cpp:906
 #, c-format, boost-format
 msgid "Extruder %d"
-msgstr ""
+msgstr "Ekstruder %d"
 
 #: src/slic3r/GUI/DoubleSlider.cpp:1676 src/slic3r/GUI/GUI_Factories.cpp:907
 msgid "active"
@@ -7596,11 +7596,11 @@ msgstr ""
 
 #: src/slic3r/GUI/DoubleSlider.cpp:1685 src/slic3r/GUI/GUI_Factories.cpp:868
 msgid "Change extruder"
-msgstr ""
+msgstr "Spremeni ekstruder"
 
 #: src/slic3r/GUI/DoubleSlider.cpp:1686
 msgid "Change extruder (N/A)"
-msgstr ""
+msgstr "Spremeni ekstruder (N/A)"
 
 #: src/slic3r/GUI/DoubleSlider.cpp:1688 src/slic3r/GUI/GUI_Factories.cpp:915
 msgid "Use another extruder"
@@ -7937,11 +7937,11 @@ msgstr ""
 
 #: src/slic3r/GUI/Field.cpp:210
 msgid "default value"
-msgstr ""
+msgstr "privzeta vrednost"
 
 #: src/slic3r/GUI/Field.cpp:213
 msgid "parameter name"
-msgstr ""
+msgstr "ime parametra"
 
 #: src/slic3r/GUI/Field.cpp:228 src/slic3r/GUI/OptionsGroup.cpp:873
 #: src/slic3r/GUI/UnsavedChangesDialog.cpp:1077
@@ -8170,7 +8170,7 @@ msgstr ""
 
 #: src/slic3r/GUI/GalleryDialog.cpp:433
 msgid "Choose one or more files (STL, OBJ):"
-msgstr ""
+msgstr "Izberite eno ali več datotek (STL, OBJ):"
 
 #: src/slic3r/GUI/GalleryDialog.cpp:473
 #, boost-format
@@ -8181,7 +8181,7 @@ msgstr ""
 
 #: src/slic3r/GUI/GalleryDialog.cpp:484
 msgid "Choose one PNG file:"
-msgstr ""
+msgstr "Izberite eno PNG datoteko:"
 
 #: src/slic3r/GUI/GalleryDialog.cpp:497
 msgid "Replacing of the PNG"
@@ -8385,7 +8385,7 @@ msgstr "Obriši"
 
 #: src/slic3r/GUI/GCodeViewer.cpp:4276
 msgid "Retractions"
-msgstr ""
+msgstr "Umiki"
 
 #: src/slic3r/GUI/GCodeViewer.cpp:4280
 msgid "Deretractions"
@@ -8462,7 +8462,7 @@ msgstr ""
 
 #: src/slic3r/GUI/Gizmos/GLGizmoCut.cpp:215
 msgid "Triangle"
-msgstr ""
+msgstr "Trikotnik"
 
 #: src/slic3r/GUI/Gizmos/GLGizmoCut.cpp:215
 msgid "Square"
@@ -8499,7 +8499,7 @@ msgstr "Konektorji"
 
 #: src/slic3r/GUI/Gizmos/GLGizmoCut.cpp:229
 msgid "Type"
-msgstr ""
+msgstr "Tip"
 
 #. TRN - Input label. Be short as possible
 #. Size in emboss direction
@@ -10408,7 +10408,7 @@ msgstr ""
 
 #: src/slic3r/GUI/GLCanvas3D.cpp:223
 msgid "Adaptive"
-msgstr ""
+msgstr "Prilagodljivo"
 
 #: src/slic3r/GUI/GLCanvas3D.cpp:229
 msgid "Quality / Speed"
@@ -10906,19 +10906,19 @@ msgstr ""
 
 #: src/slic3r/GUI/GUI_App.cpp:2050
 msgid "Choose one file (3MF/AMF):"
-msgstr ""
+msgstr "Izberite eno datoteko (3MF/AMF):"
 
 #: src/slic3r/GUI/GUI_App.cpp:2062
 msgid "Choose one or more files (STL/3MF/STEP/OBJ/AMF/SVG):"
-msgstr ""
+msgstr "Izberite eno ali več datotek (STL/3MF/STEP/OBJ/AMF/SVG):"
 
 #: src/slic3r/GUI/GUI_App.cpp:2073
 msgid "Choose ZIP file"
-msgstr ""
+msgstr "Izberite ZIP datoteko"
 
 #: src/slic3r/GUI/GUI_App.cpp:2085
 msgid "Choose one file (GCODE/GCO/G/BGCODE/BGC/NGC):"
-msgstr ""
+msgstr "Izberite eno datoteko (GCODE/GCO/G/BGCODE/BGC/NGC):"
 
 #: src/slic3r/GUI/GUI_App.cpp:2096
 msgid "Changing of an application language"
@@ -10957,7 +10957,7 @@ msgstr ""
 
 #: src/slic3r/GUI/GUI_App.cpp:2474
 msgid "&Configuration Snapshots"
-msgstr ""
+msgstr "&Posnetek konfiguracij"
 
 #: src/slic3r/GUI/GUI_App.cpp:2474
 msgid "Inspect / activate configuration snapshots"
@@ -10973,19 +10973,19 @@ msgstr ""
 
 #: src/slic3r/GUI/GUI_App.cpp:2476
 msgid "Check for Configuration Updates"
-msgstr ""
+msgstr "Posodobitev konfiguracij"
 
 #: src/slic3r/GUI/GUI_App.cpp:2476
 msgid "Check for configuration updates"
-msgstr ""
+msgstr "Posodobitev konfiguracij"
 
 #: src/slic3r/GUI/GUI_App.cpp:2477
 msgid "Check for Application Updates"
-msgstr ""
+msgstr "Posodobitev programa"
 
 #: src/slic3r/GUI/GUI_App.cpp:2477
 msgid "Check for new version of application"
-msgstr ""
+msgstr "Preveri za novo verzijo programa"
 
 #: src/slic3r/GUI/GUI_App.cpp:2484
 msgid "&Preferences"
@@ -11619,7 +11619,7 @@ msgstr ""
 
 #: src/slic3r/GUI/GUI_ObjectList.cpp:666
 msgid "Change Extruder"
-msgstr ""
+msgstr "Spremeni ekstruder"
 
 #: src/slic3r/GUI/GUI_ObjectList.cpp:686
 msgid "Rename Object"
@@ -11991,7 +11991,7 @@ msgstr ""
 
 #: src/slic3r/GUI/GUI_ObjectList.cpp:4804
 msgid "Change Extruders"
-msgstr ""
+msgstr "Spremeni ekstruderje"
 
 #: src/slic3r/GUI/GUI_ObjectList.cpp:4930
 msgid "Set Printable group"
@@ -12070,11 +12070,11 @@ msgstr "Rotacija (relativna)"
 #: src/slic3r/GUI/GUI_ObjectManipulation.cpp:673
 #: src/slic3r/GUI/GUI_ObjectManipulation.cpp:709
 msgid "Translate (relative) [World]"
-msgstr ""
+msgstr "Premakni (relativno) [Svet]"
 
 #: src/slic3r/GUI/GUI_ObjectManipulation.cpp:728
 msgid "Translate"
-msgstr ""
+msgstr "Premakni"
 
 #: src/slic3r/GUI/GUI_ObjectManipulation.cpp:847
 msgid "Left handed"
@@ -12148,7 +12148,7 @@ msgstr ""
 
 #: src/slic3r/GUI/HintNotification.cpp:919
 msgid "Open Preferences."
-msgstr "Odpri nastavitve"
+msgstr "Odpri nastavitve."
 
 #: src/slic3r/GUI/HintNotification.cpp:1011
 msgid "Open Documentation in web browser."
@@ -12277,7 +12277,7 @@ msgstr ""
 
 #: src/slic3r/GUI/Jobs/SLAImportDialog.hpp:96
 msgid "Choose SLA archive"
-msgstr ""
+msgstr "Izberite SLA arhiv"
 
 #: src/slic3r/GUI/Jobs/SLAImportDialog.hpp:100
 msgid "Import file"
@@ -13578,7 +13578,7 @@ msgstr "Hitrost:"
 #: src/slic3r/GUI/Mouse3DController.cpp:477
 #: src/slic3r/GUI/Mouse3DController.cpp:498
 msgid "Translation"
-msgstr ""
+msgstr "Premik"
 
 #: src/slic3r/GUI/Mouse3DController.cpp:489
 #: src/slic3r/GUI/Mouse3DController.cpp:498
@@ -13633,7 +13633,7 @@ msgstr "3D miška izklopljena."
 
 #: src/slic3r/GUI/NotificationManager.hpp:907
 msgid "Configuration update is available."
-msgstr ""
+msgstr "Na voljo so posodobitve konfiguracij."
 
 #: src/slic3r/GUI/NotificationManager.hpp:907
 #: src/slic3r/GUI/NotificationManager.hpp:914
@@ -15413,6 +15413,9 @@ msgid ""
 "speed will be reduced so that no less than %3%s are spent on that layer "
 "(however, speed will never be reduced below %4%mm/s)."
 msgstr ""
+"Če je ocenjeni čas plasti pod ~%1%s, bo ventilator deloval na %2%%% in "
+"hitrost tiskanja se bo zmanjšala tako, da za to plast ne bo porabljenih manj "
+"kot %3%s (vendar se hitrost nikoli ne bo zmanjšala pod %4%mm/s)."
 
 #: src/slic3r/GUI/PresetHints.cpp:45
 #, boost-format
@@ -15420,6 +15423,8 @@ msgid ""
 "If estimated layer time is greater, but still below ~%1%s, fan will run at a "
 "proportionally decreasing speed between %2%%% and %3%%%."
 msgstr ""
+"Če je ocenjeni čas plasti daljši, vendar še vedno pod ~%1%s, bo ventilator "
+"deloval s sorazmerno manjšo hitrostjo med %2%%% in %3%%%."
 
 #: src/slic3r/GUI/PresetHints.cpp:49
 #, boost-format
@@ -15427,6 +15432,8 @@ msgid ""
 "If estimated layer time is greater, but still below ~%1%s, fan will run at "
 "%2%%%"
 msgstr ""
+"Če je ocenjeni čas plasti daljši, vendar še vedno pod ~%1%s, bo ventilator "
+"deloval na %2%%%"
 
 #: src/slic3r/GUI/PresetHints.cpp:60
 #, boost-format
@@ -15466,7 +15473,7 @@ msgstr "zunanji obodi"
 
 #: src/slic3r/GUI/PresetHints.cpp:176
 msgid "perimeters"
-msgstr "Obodov"
+msgstr "obodov"
 
 #: src/slic3r/GUI/PresetHints.cpp:179
 msgid "infill"
@@ -15881,7 +15888,7 @@ msgstr "Podatki za pošiljanje"
 #: src/slic3r/GUI/SendSystemInfoDialog.cpp:561
 #: src/slic3r/GUI/SendSystemInfoDialog.cpp:628
 msgid "Send system info"
-msgstr ""
+msgstr "Pošlji informacije o sistemu"
 
 #: src/slic3r/GUI/SendSystemInfoDialog.cpp:591
 #, boost-format
@@ -15891,6 +15898,9 @@ msgid ""
 "will not ask you to do this again (only after you upgrade to the next "
 "version)."
 msgstr ""
+"To je prvi zagon %1%. Prosili bi vas za pošiljanje nekaterih sistemskih "
+"informacij. To je enkratno obvestilo in se ne bo več pokazalo do naslednje "
+"posodobitve programa."
 
 #: src/slic3r/GUI/SendSystemInfoDialog.cpp:595
 msgid ""
@@ -15898,6 +15908,10 @@ msgid ""
 "development and prioritization, because we will be able to focus our effort "
 "more efficiently and spend time on features that are needed the most."
 msgstr ""
+"Če poznamo vašo strojno opremo, operacijski sistem itd., nam bo to v veliko "
+"pomoč pri razvoju in določanju prednostnih nalog, saj bomo lahko "
+"učinkoviteje usmerili svoja prizadevanja in porabili čas za funkcije, ki so "
+"najpotrebnejše."
 
 #: src/slic3r/GUI/SendSystemInfoDialog.cpp:598
 msgid "Is it safe?"
@@ -15913,10 +15927,17 @@ msgid ""
 "and OpenGL installation are sent. PrusaSlicer is open source, if you want to "
 "inspect the code actually performing the communication, see %1%."
 msgstr ""
+"Ne pošiljamo nobenih osebnih informacij ali informacij, na podlagi katerih "
+"bi vas kasneje lahko prepoznali. Za odkrivanje podvojenih vnosov se pošlje "
+"edinstvena številka, ki izhaja iz vašega sistema, vendar izvornih informacij "
+"ni mogoče rekonstruirati. Poleg tega se pošljejo le splošni podatki o vašem "
+"operacijskem sistemu, strojni opremi in namestitvi OpenGL. PrusaSlicer je "
+"odprto kodni program. Če želite pregledati kodo, ki dejansko izvaja "
+"komunikacijo, glejte %1%."
 
 #: src/slic3r/GUI/SendSystemInfoDialog.cpp:624
 msgid "Show verbatim data that will be sent"
-msgstr ""
+msgstr "Pokaži dobesedne podatke, ki bojo poslani"
 
 #: src/slic3r/GUI/SendSystemInfoDialog.cpp:626
 msgid "Ask me next time"
@@ -15924,11 +15945,11 @@ msgstr "Vprašaj me naslednjič"
 
 #: src/slic3r/GUI/SendSystemInfoDialog.cpp:627
 msgid "Do not send anything"
-msgstr ""
+msgstr "Ničesar ne pošiljaj"
 
 #: src/slic3r/GUI/SendSystemInfoDialog.cpp:713
 msgid "System info sent successfully. Thank you."
-msgstr ""
+msgstr "Sistemske informacije so bile uspešno poslane. Hvala."
 
 #: src/slic3r/GUI/SendSystemInfoDialog.cpp:716
 msgid "Sending system info failed!"
@@ -15940,7 +15961,7 @@ msgstr ""
 
 #: src/slic3r/GUI/SendSystemInfoDialog.cpp:730
 msgid "Sending system info..."
-msgstr ""
+msgstr "Pošiljam sistemske informacije..."
 
 #: src/slic3r/GUI/SurfaceDrag.cpp:98
 msgid "Move over surface"
@@ -16196,7 +16217,7 @@ msgstr "Zapiski"
 #: src/slic3r/GUI/Tab.cpp:2907 src/slic3r/GUI/Tab.cpp:2985
 #: src/slic3r/GUI/Tab.cpp:5355 src/slic3r/GUI/Tab.cpp:5520
 msgid "Dependencies"
-msgstr ""
+msgstr "Odvisnosti"
 
 #: src/slic3r/GUI/Tab.cpp:1749 src/slic3r/GUI/Tab.cpp:2334
 #: src/slic3r/GUI/Tab.cpp:2908 src/slic3r/GUI/Tab.cpp:2986
@@ -16229,7 +16250,7 @@ msgstr ""
 
 #: src/slic3r/GUI/Tab.cpp:1991
 msgid "Filament Overrides"
-msgstr ""
+msgstr "Preglasitev filamenta"
 
 #: src/slic3r/GUI/Tab.cpp:2187
 msgid "Temperature"
@@ -16303,6 +16324,15 @@ msgid ""
 "The Physical Printer profiles are being stored into PrusaSlicer/"
 "physical_printer directory."
 msgstr ""
+"Opomba: Vsi parametri iz te skupine so preneseni v nastavitve fizičnega "
+"tiskalnika (glej seznam sprememb).\n"
+"\n"
+"Nov profil fizičnega tiskalnika ustvarite s klikom na ikono \"zobnika\" "
+"desno od izbirnega polja Profili tiskalnikov, tako da v izbirnem polju "
+"Tiskalnik izberete element \"Dodaj fizičnen tiskalnik\". Urejevalnik profila "
+"fizičnega tiskalnika se odpre tudi ob kliku na ikono \"zobnik\" v zavihku "
+"Nastavitve tiskalnika. Profili fizičnega tiskalnika se shranijo v mapo "
+"PrusaSlicer/physical_printer."
 
 #: src/slic3r/GUI/Tab.cpp:2594
 msgid ""
@@ -16340,7 +16370,7 @@ msgstr ""
 
 #: src/slic3r/GUI/Tab.cpp:2723 src/slic3r/GUI/Tab.cpp:2782
 msgid "G-code flavor is switched"
-msgstr "Pridih g-kode je zamenjaj"
+msgstr "Pridih g-kode je zamenjan"
 
 #: src/slic3r/GUI/Tab.cpp:2774
 msgid ""
@@ -16425,7 +16455,7 @@ msgstr ""
 
 #: src/slic3r/GUI/Tab.cpp:3281
 msgid "Travel lift"
-msgstr ""
+msgstr "Višina giba"
 
 #: src/slic3r/GUI/Tab.cpp:3288
 msgid "Only lift"
@@ -16897,7 +16927,7 @@ msgstr ""
 #: src/slic3r/GUI/UnsavedChangesDialog.cpp:1298
 #: src/slic3r/GUI/UnsavedChangesDialog.cpp:1848
 msgid "Extruders count"
-msgstr ""
+msgstr "Št. ekstruderjev"
 
 #: src/slic3r/GUI/UnsavedChangesDialog.cpp:1327
 msgid "The preset modifications are successfully saved"
@@ -17078,7 +17108,7 @@ msgstr ""
 
 #: src/slic3r/GUI/UpdateDialogs.cpp:275 src/slic3r/GUI/UpdateDialogs.cpp:456
 msgid "Configuration update"
-msgstr ""
+msgstr "Posodobitev konfiguracij"
 
 #: src/slic3r/GUI/UpdateDialogs.cpp:276
 msgid ""
@@ -17089,7 +17119,7 @@ msgstr ""
 
 #: src/slic3r/GUI/UpdateDialogs.cpp:278
 msgid "Configuration update is available"
-msgstr ""
+msgstr "Na voljo so posodobitve konfiguracij"
 
 #: src/slic3r/GUI/UpdateDialogs.cpp:281
 msgid ""
@@ -17200,7 +17230,7 @@ msgstr ""
 
 #: src/slic3r/GUI/UpdateDialogs.cpp:492
 msgid "Configuration updates"
-msgstr ""
+msgstr "Posodobitve konfiguracij"
 
 #: src/slic3r/GUI/UpdateDialogs.cpp:492 src/slic3r/GUI/UpdateDialogs.cpp:512
 msgid "No updates available"
@@ -17343,7 +17373,7 @@ msgstr ""
 
 #: src/slic3r/GUI/WipeTowerDialog.cpp:317
 msgid "Extruder changed to"
-msgstr ""
+msgstr "Ekstruder spremenjen v"
 
 #: src/slic3r/GUI/WipeTowerDialog.cpp:325
 msgid "unloaded"

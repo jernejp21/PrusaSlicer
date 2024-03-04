@@ -46,7 +46,7 @@ msgstr ""
 #: src/libslic3r/PrintConfig.cpp:1531 src/libslic3r/PrintConfig.cpp:2564
 #: src/libslic3r/PrintConfig.cpp:2576
 msgid "Solid infill"
-msgstr "Polno polnilo"
+msgstr "Polnega polnila"
 
 #: src/libslic3r/ExtrusionRole.cpp:47 src/libslic3r/ExtrusionRole.cpp:73
 #: src/libslic3r/PrintConfig.cpp:1540 src/libslic3r/PrintConfig.cpp:3153
@@ -1524,7 +1524,7 @@ msgstr ""
 #: src/libslic3r/PrintConfig.cpp:885 src/libslic3r/PrintConfig.cpp:897
 #: src/libslic3r/PrintConfig.cpp:2123
 msgid "External perimeters"
-msgstr "Zunanji obodi"
+msgstr "Zunanjih obodov"
 
 #: src/libslic3r/PrintConfig.cpp:886 src/libslic3r/PrintConfig.cpp:999
 #: src/libslic3r/PrintConfig.cpp:1348 src/libslic3r/PrintConfig.cpp:1624
@@ -1532,7 +1532,7 @@ msgstr "Zunanji obodi"
 #: src/libslic3r/PrintConfig.cpp:2834 src/libslic3r/PrintConfig.cpp:3154
 #: src/slic3r/GUI/GUI_Factories.cpp:139
 msgid "Extrusion Width"
-msgstr ""
+msgstr "Širina iztiska"
 
 #: src/libslic3r/PrintConfig.cpp:887
 msgid ""
@@ -1696,7 +1696,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:998
 msgid "Default extrusion width"
-msgstr ""
+msgstr "Privzeta širina izstiska"
 
 #: src/libslic3r/PrintConfig.cpp:1000
 msgid ""
@@ -2077,7 +2077,7 @@ msgstr "Strela"
 #: src/libslic3r/PrintConfig.cpp:1347 src/libslic3r/PrintConfig.cpp:1392
 #: src/slic3r/GUI/GCodeViewer.cpp:4191
 msgid "First layer"
-msgstr "Začetna plast"
+msgstr "Začetne plasti"
 
 #: src/libslic3r/PrintConfig.cpp:1320
 msgid ""
@@ -16174,7 +16174,7 @@ msgstr ""
 
 #: src/slic3r/GUI/Tab.cpp:1667
 msgid "Extrusion width"
-msgstr ""
+msgstr "Širina iztiska"
 
 #: src/slic3r/GUI/Tab.cpp:1677
 msgid "Overlap"

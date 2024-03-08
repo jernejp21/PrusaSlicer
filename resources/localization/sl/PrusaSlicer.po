@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-11 08:57+0100\n"
-"PO-Revision-Date: 2024-02-22 13:32+0100\n"
+"PO-Revision-Date: 2024-03-08 14:41+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: sl\n"
@@ -52,7 +52,7 @@ msgstr "Polnega polnila"
 #: src/libslic3r/PrintConfig.cpp:1540 src/libslic3r/PrintConfig.cpp:3153
 #: src/libslic3r/PrintConfig.cpp:3166
 msgid "Top solid infill"
-msgstr ""
+msgstr "Vrhnje polno polnilo"
 
 #: src/libslic3r/ExtrusionRole.cpp:48 src/libslic3r/ExtrusionRole.cpp:75
 #: src/libslic3r/PrintConfig.cpp:1717 src/libslic3r/PrintConfig.cpp:1723
@@ -1173,7 +1173,7 @@ msgstr "Hitrost"
 
 #: src/libslic3r/PrintConfig.cpp:572
 msgid "Speed for printing bridges."
-msgstr ""
+msgstr "Hitrost za tiskanje mostov."
 
 #: src/libslic3r/PrintConfig.cpp:573 src/libslic3r/PrintConfig.cpp:1055
 #: src/libslic3r/PrintConfig.cpp:1063 src/libslic3r/PrintConfig.cpp:1072
@@ -1436,7 +1436,7 @@ msgstr "plasti"
 
 #: src/libslic3r/PrintConfig.cpp:818
 msgid "Don't support bridges"
-msgstr ""
+msgstr "Brez podpore za mostove"
 
 #: src/libslic3r/PrintConfig.cpp:820
 msgid ""
@@ -1684,7 +1684,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:988
 msgid "Extrusion multiplier"
-msgstr ""
+msgstr "Koeficient iztiska"
 
 #: src/libslic3r/PrintConfig.cpp:989
 msgid ""
@@ -1696,7 +1696,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:998
 msgid "Default extrusion width"
-msgstr "Privzeta širina izstiska"
+msgstr "Privzeta širina iztiska"
 
 #: src/libslic3r/PrintConfig.cpp:1000
 msgid ""
@@ -1997,7 +1997,7 @@ msgstr "g"
 
 #: src/libslic3r/PrintConfig.cpp:1252 src/libslic3r/PrintConfig.cpp:4040
 msgid "(Unknown)"
-msgstr ""
+msgstr "(Neznano)"
 
 #: src/libslic3r/PrintConfig.cpp:1256
 msgid "Fill angle"
@@ -2342,7 +2342,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:1558
 msgid "Combine infill every"
-msgstr ""
+msgstr "Združi polnilo vsakih"
 
 #: src/libslic3r/PrintConfig.cpp:1560
 msgid ""
@@ -2352,7 +2352,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:1563
 msgid "Combine infill every n layers"
-msgstr ""
+msgstr "Združi polnilo vsakih n plasti"
 
 #: src/libslic3r/PrintConfig.cpp:1569
 msgid "Length of the infill anchor"
@@ -2444,7 +2444,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:1651
 msgid "Infill/perimeters overlap"
-msgstr ""
+msgstr "Prekrivanje polnila/obodov"
 
 #: src/libslic3r/PrintConfig.cpp:1653
 msgid ""
@@ -3053,7 +3053,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2238
 msgid "Raft expansion"
-msgstr ""
+msgstr "Razširitev splava"
 
 #: src/libslic3r/PrintConfig.cpp:2240
 msgid "Expansion of the raft in XY plane for better stability."
@@ -3079,7 +3079,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2266
 msgid "Raft layers"
-msgstr ""
+msgstr "Plasti splava"
 
 #: src/libslic3r/PrintConfig.cpp:2268
 msgid ""
@@ -3368,7 +3368,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2489
 msgid "Draft shield"
-msgstr ""
+msgstr "Zaščita proti prepihu"
 
 #: src/libslic3r/PrintConfig.cpp:2490
 msgid ""
@@ -3382,7 +3382,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2496
 msgid "Limited"
-msgstr ""
+msgstr "Omejeno"
 
 #: src/libslic3r/PrintConfig.cpp:2497
 msgid "Enabled"
@@ -3390,7 +3390,7 @@ msgstr "Omogočeno"
 
 #: src/libslic3r/PrintConfig.cpp:2503
 msgid "Loops (minimum)"
-msgstr ""
+msgstr "Najmanjše št. zank"
 
 #: src/libslic3r/PrintConfig.cpp:2504
 msgid "Skirt Loops"
@@ -3923,7 +3923,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:3014
 msgid "Maximum Branch Angle"
-msgstr ""
+msgstr "Največji kot veje"
 
 #. TRN PrintSettings: "Organic supports" > "Maximum Branch Angle"
 #: src/libslic3r/PrintConfig.cpp:3017
@@ -3935,7 +3935,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:3026
 msgid "Preferred Branch Angle"
-msgstr ""
+msgstr "Želen kot veje"
 
 #. TRN PrintSettings: "Organic supports" > "Preferred Branch Angle"
 #: src/libslic3r/PrintConfig.cpp:3029
@@ -3947,16 +3947,16 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:3038
 msgid "Tip Diameter"
-msgstr ""
+msgstr "Premer konice"
 
 #. TRN PrintSettings: "Organic supports" > "Tip Diameter"
 #: src/libslic3r/PrintConfig.cpp:3041
 msgid "Branch tip diameter for organic supports."
-msgstr ""
+msgstr "Premer konice veje pri organskih podporah."
 
 #: src/libslic3r/PrintConfig.cpp:3049
 msgid "Branch Diameter"
-msgstr ""
+msgstr "Premer veje"
 
 #. TRN PrintSettings: "Organic supports" > "Branch Diameter"
 #: src/libslic3r/PrintConfig.cpp:3052
@@ -3968,7 +3968,7 @@ msgstr ""
 #. TRN PrintSettings: #lmFIXME
 #: src/libslic3r/PrintConfig.cpp:3062
 msgid "Branch Diameter Angle"
-msgstr ""
+msgstr "Kot premera veje"
 
 #. TRN PrintSettings: "Organic supports" > "Branch Diameter Angle"
 #: src/libslic3r/PrintConfig.cpp:3065
@@ -3981,7 +3981,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:3075
 msgid "Branch Diameter with double walls"
-msgstr ""
+msgstr "Premer veje z dvojnimi stenami"
 
 #. TRN PrintSettings: "Organic supports" > "Branch Diameter"
 #: src/libslic3r/PrintConfig.cpp:3078
@@ -3994,7 +3994,7 @@ msgstr ""
 #. TRN PrintSettings: #lmFIXME
 #: src/libslic3r/PrintConfig.cpp:3091
 msgid "Branch Distance"
-msgstr ""
+msgstr "Dolžina vej"
 
 #. TRN PrintSettings: "Organic supports" > "Branch Distance"
 #: src/libslic3r/PrintConfig.cpp:3094
@@ -4006,7 +4006,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:3101
 msgid "Branch Density"
-msgstr ""
+msgstr "Gostota vej"
 
 #. TRN PrintSettings: "Organic supports" > "Branch Density"
 #: src/libslic3r/PrintConfig.cpp:3104
@@ -4041,7 +4041,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:3133
 msgid "Detect thin walls"
-msgstr ""
+msgstr "Zaznaj tanke stene"
 
 #: src/libslic3r/PrintConfig.cpp:3135
 msgid ""
@@ -4089,7 +4089,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:3184
 msgid "Top solid layers"
-msgstr ""
+msgstr "Vrhnje polne plasti"
 
 #: src/libslic3r/PrintConfig.cpp:3191
 msgid ""
@@ -4627,7 +4627,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:3765 src/slic3r/GUI/Gizmos/GLGizmoSVG.cpp:1918
 msgid "Mirror horizontally"
-msgstr ""
+msgstr "Zrcali vodoravno"
 
 #: src/libslic3r/PrintConfig.cpp:3766
 msgid "Enable horizontal mirroring of output images"
@@ -4639,7 +4639,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:3772 src/slic3r/GUI/Gizmos/GLGizmoSVG.cpp:1911
 msgid "Mirror vertically"
-msgstr ""
+msgstr "Zrcali navpično"
 
 #: src/libslic3r/PrintConfig.cpp:3773
 msgid "Enable vertical mirroring of output images"
@@ -5624,7 +5624,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:5179 src/libslic3r/PrintConfig.cpp:5187
 msgid "Print time (normal mode)"
-msgstr ""
+msgstr "Čas tiskanje (normalen način)"
 
 #: src/libslic3r/PrintConfig.cpp:5180
 msgid ""
@@ -5656,7 +5656,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:5195
 msgid "Print time (silent mode)"
-msgstr ""
+msgstr "Čas tiskanja (tih način)"
 
 #: src/libslic3r/PrintConfig.cpp:5196
 msgid "Estimated print time when printed in silent mode."
@@ -5664,7 +5664,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:5199
 msgid "Total cost"
-msgstr ""
+msgstr "Skupna cena"
 
 #: src/libslic3r/PrintConfig.cpp:5200
 msgid ""
@@ -6731,7 +6731,7 @@ msgstr "Aktivno"
 
 #: src/slic3r/GUI/ConfigSnapshotDialog.cpp:64
 msgid "PrusaSlicer version"
-msgstr ""
+msgstr "Verzija PrusaSlicer"
 
 #: src/slic3r/GUI/ConfigSnapshotDialog.cpp:69
 msgid "filaments"
@@ -6800,12 +6800,12 @@ msgstr "Vse"
 #: src/slic3r/GUI/ConfigWizard.cpp:572
 #, c-format, boost-format
 msgid "Welcome to the %s Configuration Assistant"
-msgstr ""
+msgstr "Dobrodošli v %s pomočniku za konfiguracijo"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:574
 #, c-format, boost-format
 msgid "Welcome to the %s Configuration Wizard"
-msgstr ""
+msgstr "Dobrodošli v %s čarovniku za konfiguracijo"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:576
 msgid "Welcome"
@@ -6821,12 +6821,14 @@ msgstr ""
 #: src/slic3r/GUI/ConfigWizard.cpp:583
 msgid "Remove user profiles (a snapshot will be taken beforehand)"
 msgstr ""
+"Odstrani uporabniške profile (pred odstranitvijo bo narejen posnetek "
+"konfiguracij)"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:586
 msgid ""
 "Perform desktop integration (Sets this binary to be searchable by the "
 "system)."
-msgstr ""
+msgstr "Izvedi integracijo namizja (Izvede, da sistem najde ta program)."
 
 #: src/slic3r/GUI/ConfigWizard.cpp:638
 #, c-format, boost-format
@@ -6918,11 +6920,11 @@ msgstr ""
 
 #: src/slic3r/GUI/ConfigWizard.cpp:1322
 msgid "Custom Printer Setup"
-msgstr ""
+msgstr "Nastavitve tiskalnika po meri"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:1322
 msgid "Custom Printer"
-msgstr ""
+msgstr "Tiskalnik po meri"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:1324
 msgid "Define a custom printer profile"
@@ -6930,7 +6932,7 @@ msgstr ""
 
 #: src/slic3r/GUI/ConfigWizard.cpp:1325
 msgid "Custom profile name:"
-msgstr ""
+msgstr "Ime tiskalnika po meri:"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:1342
 msgid "Automatic updates"
@@ -6938,7 +6940,7 @@ msgstr "Samodejne posodobitve"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:1342
 msgid "Updates"
-msgstr ""
+msgstr "Posodobitve"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:1349
 msgid "Check for application updates"
@@ -7079,7 +7081,7 @@ msgstr "Strokovni način"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:1688
 msgid "The size of the object can be specified in inches"
-msgstr ""
+msgstr "Velikost objekta je lahko prikazana v palcih"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:1689
 msgid "Use inches"
@@ -7087,12 +7089,12 @@ msgstr "Uporabi palce"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:1709
 msgid "Other Vendors"
-msgstr ""
+msgstr "Ostali proizvajalci"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:1713
 #, c-format, boost-format
 msgid "Pick another vendor supported by %s"
-msgstr ""
+msgstr "Izberite drugega proizvajalca, podprtega v %s"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:1754
 msgid "Firmware Type"
@@ -7179,7 +7181,7 @@ msgstr "Dober približek je 160 do 230°C za PLA in 215 do 250°C za ABS."
 
 #: src/slic3r/GUI/ConfigWizard.cpp:2021
 msgid "Extrusion Temperature:"
-msgstr ""
+msgstr "Temperatura iztiska:"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:2031
 msgid ""
@@ -7205,7 +7207,7 @@ msgstr ""
 
 #: src/slic3r/GUI/ConfigWizard.cpp:2575
 msgid "FFF Technology Printers"
-msgstr ""
+msgstr "Tiskalniki s tehnologijo FFF"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:2580
 msgid "SLA Technology Printers"
@@ -7292,7 +7294,7 @@ msgstr ""
 
 #: src/slic3r/GUI/ConfigWizard.cpp:3242
 msgid "Custom printer was installed and it will be activated."
-msgstr ""
+msgstr "Tiskalnik po meri je bil nameščen in bo aktiviran."
 
 #: src/slic3r/GUI/ConfigWizard.cpp:3335
 msgid "Select all standard printers"
@@ -7329,11 +7331,11 @@ msgstr "Prekliči"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:3367
 msgid "Prusa FFF Technology Printers"
-msgstr ""
+msgstr "Prusa tiskalniki s tehnologijo FFF"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:3375
 msgid "Prusa MSLA Technology Printers"
-msgstr ""
+msgstr "Prusa tiskalniki s tehnologijo MSLA"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:3395
 msgid "Filament Profiles Selection"
@@ -7406,7 +7408,7 @@ msgstr ""
 #: src/slic3r/GUI/DesktopIntegrationDialog.cpp:631
 #: src/slic3r/GUI/GUI_App.cpp:2480
 msgid "Desktop Integration"
-msgstr ""
+msgstr "Integracija z namizjem"
 
 #: src/slic3r/GUI/DesktopIntegrationDialog.cpp:638
 msgid ""
@@ -7414,10 +7416,13 @@ msgid ""
 "\n"
 "Press \"Perform\" to proceed."
 msgstr ""
+"Integracija z namizjem omogoči, da sistem najde ta program.\n"
+"\n"
+"Pritisnite \"Izvedi\" za nadaljevanje."
 
 #: src/slic3r/GUI/DesktopIntegrationDialog.cpp:652
 msgid "Perform"
-msgstr ""
+msgstr "Izvedi"
 
 #: src/slic3r/GUI/DesktopIntegrationDialog.cpp:658
 #: src/slic3r/GUI/GLCanvas3D.cpp:5470 src/slic3r/GUI/KBShortcutsDialog.cpp:111
@@ -7472,7 +7477,7 @@ msgstr ""
 
 #: src/slic3r/GUI/DoubleSlider.cpp:1485
 msgid "Print mode"
-msgstr ""
+msgstr "Način tiskanja"
 
 #: src/slic3r/GUI/DoubleSlider.cpp:1499
 msgid "Add extruder change - Left click"
@@ -8001,27 +8006,27 @@ msgstr "Odpri"
 
 #: src/slic3r/GUI/FirmwareDialog.cpp:156
 msgid "Flash!"
-msgstr ""
+msgstr "Zapeči!"
 
 #: src/slic3r/GUI/FirmwareDialog.cpp:158
 msgid "Flashing in progress. Please do not disconnect the printer!"
-msgstr ""
+msgstr "Peka v teku. Prosimo, ne odklopite tiskalnika!"
 
 #: src/slic3r/GUI/FirmwareDialog.cpp:205
 msgid "Flashing failed"
-msgstr ""
+msgstr "Peka ni uspela"
 
 #: src/slic3r/GUI/FirmwareDialog.cpp:287
 msgid "Flashing succeeded!"
-msgstr ""
+msgstr "Uspešno zapečeno!"
 
 #: src/slic3r/GUI/FirmwareDialog.cpp:288
 msgid "Flashing failed. Please see the avrdude log below."
-msgstr ""
+msgstr "Peka ni uspela. Prosim, poglejte avrdude dnevnik spodaj."
 
 #: src/slic3r/GUI/FirmwareDialog.cpp:289
 msgid "Flashing cancelled."
-msgstr ""
+msgstr "Pečenje preklicano."
 
 #: src/slic3r/GUI/FirmwareDialog.cpp:337
 #, c-format, boost-format
@@ -8130,7 +8135,7 @@ msgstr "Preklicujem..."
 
 #: src/slic3r/GUI/GalleryDialog.cpp:73 src/slic3r/GUI/MainFrame.cpp:1516
 msgid "Shape Gallery"
-msgstr ""
+msgstr "Galerija oblik"
 
 #: src/slic3r/GUI/GalleryDialog.cpp:80
 msgid "Select shape from the gallery"
@@ -8252,7 +8257,7 @@ msgstr "od"
 
 #: src/slic3r/GUI/GCodeViewer.cpp:3656
 msgid "to"
-msgstr ""
+msgstr "do"
 
 #: src/slic3r/GUI/GCodeViewer.cpp:3706 src/slic3r/GUI/GCodeViewer.cpp:3707
 #: src/slic3r/GUI/GCodeViewer.cpp:3790
@@ -8339,7 +8344,7 @@ msgstr ""
 
 #: src/slic3r/GUI/GCodeViewer.cpp:4055 src/slic3r/GUI/GCodeViewer.cpp:4058
 msgid "Duration"
-msgstr ""
+msgstr "Trajanje"
 
 #: src/slic3r/GUI/GCodeViewer.cpp:4134 src/slic3r/GUI/GUI.cpp:338
 #: src/slic3r/GUI/Plater.cpp:878 src/slic3r/GUI/Tab.cpp:2166
@@ -8369,7 +8374,7 @@ msgstr "Tihi način"
 
 #: src/slic3r/GUI/GCodeViewer.cpp:4195
 msgid "Total"
-msgstr ""
+msgstr "Skupno"
 
 #: src/slic3r/GUI/GCodeViewer.cpp:4214
 msgid "Show stealth mode"
@@ -8725,7 +8730,7 @@ msgstr "Kosi"
 
 #: src/slic3r/GUI/Gizmos/GLGizmoCut.cpp:2794
 msgid "Perform cut"
-msgstr ""
+msgstr "Izvedi rez"
 
 #: src/slic3r/GUI/Gizmos/GLGizmoCut.cpp:2897
 msgid "Invalid connectors detected"
@@ -10324,7 +10329,7 @@ msgstr ""
 #: src/slic3r/GUI/Gizmos/GLGizmoSVG.cpp:2092
 #: src/slic3r/GUI/GUI_Factories.cpp:1015
 msgid "Mirror"
-msgstr ""
+msgstr "Zrcaljenje"
 
 #: src/slic3r/GUI/Gizmos/GLGizmoSVG.cpp:2134
 msgid "Choose SVG file for emboss:"
@@ -10338,7 +10343,7 @@ msgstr ""
 #: src/slic3r/GUI/Gizmos/GLGizmoSVG.cpp:2193
 #, boost-format
 msgid "Filename has to end with \".svg\" but you selected %1%"
-msgstr ""
+msgstr "Ime datoteke se mora končati s \".svg\", vendar ste izbrali %1%"
 
 #: src/slic3r/GUI/Gizmos/GLGizmoSVG.cpp:2198
 #, boost-format
@@ -10460,7 +10465,7 @@ msgstr "Spremenljiva višina plasti - zgladi vse"
 
 #: src/slic3r/GUI/GLCanvas3D.cpp:2211
 msgid "Mirror Object"
-msgstr ""
+msgstr "Zrcali objekt"
 
 #: src/slic3r/GUI/GLCanvas3D.cpp:3865
 msgid "Move Object"
@@ -10965,7 +10970,7 @@ msgstr ""
 
 #: src/slic3r/GUI/GUI_App.cpp:2475
 msgid "Take Configuration &Snapshot"
-msgstr ""
+msgstr "&Zajemi posnetek konfiguracije"
 
 #: src/slic3r/GUI/GUI_App.cpp:2475
 msgid "Capture a configuration snapshot"
@@ -11018,7 +11023,7 @@ msgstr "&Jezik"
 
 #: src/slic3r/GUI/GUI_App.cpp:2509
 msgid "Flash Printer &Firmware"
-msgstr ""
+msgstr "Zapeči strojno programsko opremo na tiskalnik"
 
 #: src/slic3r/GUI/GUI_App.cpp:2509
 msgid "Upload a firmware image into an Arduino based printer"
@@ -11026,7 +11031,7 @@ msgstr ""
 
 #: src/slic3r/GUI/GUI_App.cpp:2513
 msgid "Wi-Fi Configuration File"
-msgstr ""
+msgstr "Konfiguracijska datoteka za Wi-Fi"
 
 #. TRN Wifi config dialog explanation line 1.
 #: src/slic3r/GUI/GUI_App.cpp:2513 src/slic3r/GUI/WifiConfigDialog.cpp:37
@@ -11329,7 +11334,7 @@ msgstr ""
 
 #: src/slic3r/GUI/GUI_Factories.cpp:763
 msgid "Printable"
-msgstr ""
+msgstr "Za tiskanje"
 
 #: src/slic3r/GUI/GUI_Factories.cpp:799 src/slic3r/GUI/GUI_ObjectList.cpp:2007
 #: src/slic3r/GUI/GUI_ObjectList.cpp:2501
@@ -11390,7 +11395,7 @@ msgstr ""
 
 #: src/slic3r/GUI/GUI_Factories.cpp:989
 msgid "Merge objects to the one multipart object"
-msgstr ""
+msgstr "Spoji objekte v več-kosovni objekt"
 
 #: src/slic3r/GUI/GUI_Factories.cpp:1008
 msgid "Along X axis"
@@ -11398,7 +11403,7 @@ msgstr ""
 
 #: src/slic3r/GUI/GUI_Factories.cpp:1008
 msgid "Mirror the selected object along the X axis"
-msgstr ""
+msgstr "Zrcali izbran objekt po X osi"
 
 #: src/slic3r/GUI/GUI_Factories.cpp:1010
 msgid "Along Y axis"
@@ -11406,7 +11411,7 @@ msgstr ""
 
 #: src/slic3r/GUI/GUI_Factories.cpp:1010
 msgid "Mirror the selected object along the Y axis"
-msgstr ""
+msgstr "Zrcali izbran objekt po Y osi"
 
 #: src/slic3r/GUI/GUI_Factories.cpp:1012
 msgid "Along Z axis"
@@ -11414,7 +11419,7 @@ msgstr ""
 
 #: src/slic3r/GUI/GUI_Factories.cpp:1012
 msgid "Mirror the selected object along the Z axis"
-msgstr ""
+msgstr "Zrcali izbran objekt po Z osi"
 
 #: src/slic3r/GUI/GUI_Factories.cpp:1015
 msgid "Mirror the selected object"
@@ -11482,7 +11487,7 @@ msgstr ""
 
 #: src/slic3r/GUI/GUI_Factories.cpp:1353
 msgid "Fill bed with instances"
-msgstr ""
+msgstr "Zapolni mizo z instancami"
 
 #: src/slic3r/GUI/GUI_Factories.cpp:1353
 msgid "Fill the remaining area of bed with instances of the selected object"
@@ -11802,11 +11807,11 @@ msgstr ""
 
 #: src/slic3r/GUI/GUI_ObjectList.cpp:2234
 msgid "Merged"
-msgstr ""
+msgstr "Spojeno"
 
 #: src/slic3r/GUI/GUI_ObjectList.cpp:2309
 msgid "Merge all parts to the one single object"
-msgstr ""
+msgstr "Spoji vse kose v en objekt"
 
 #: src/slic3r/GUI/GUI_ObjectList.cpp:2341
 msgid "Add Layers"
@@ -12028,7 +12033,7 @@ msgstr "Velikost [Svet]"
 #: src/slic3r/GUI/GUI_ObjectManipulation.cpp:290
 #, boost-format
 msgid "Mirror along %1% axis"
-msgstr ""
+msgstr "Zrcali po %1% osi"
 
 #: src/slic3r/GUI/GUI_ObjectManipulation.cpp:355
 #: src/slic3r/GUI/GUI_ObjectManipulation.cpp:370
@@ -12036,7 +12041,7 @@ msgstr ""
 #: src/slic3r/GUI/GUI_ObjectManipulation.cpp:386
 #: src/slic3r/GUI/GUI_ObjectManipulation.cpp:392
 msgid "Drop to bed"
-msgstr ""
+msgstr "Spusti na mizo"
 
 #: src/slic3r/GUI/GUI_ObjectManipulation.cpp:433
 msgid "Reset Rotation"
@@ -12405,7 +12410,7 @@ msgstr ""
 
 #: src/slic3r/GUI/KBShortcutsDialog.cpp:108
 msgid "Deselect all"
-msgstr ""
+msgstr "Prekliči izbor vsega"
 
 #: src/slic3r/GUI/KBShortcutsDialog.cpp:109
 msgid "Delete selected"
@@ -12448,7 +12453,7 @@ msgstr "Preklopi v predogled"
 #: src/slic3r/GUI/KBShortcutsDialog.cpp:128
 #: src/slic3r/GUI/PrintHostDialogs.cpp:271
 msgid "Print host upload queue"
-msgstr ""
+msgstr "Vrsta za tiskanje"
 
 #: src/slic3r/GUI/KBShortcutsDialog.cpp:129 src/slic3r/GUI/MainFrame.cpp:88
 msgid "Open new instance"
@@ -12871,7 +12876,7 @@ msgstr ""
 
 #: src/slic3r/GUI/MainFrame.cpp:245
 msgid "PrusaSlicer is closing"
-msgstr ""
+msgstr "PrusaSlicer se zapira"
 
 #: src/slic3r/GUI/MainFrame.cpp:245
 msgid "Closing PrusaSlicer while some presets are modified."
@@ -12931,7 +12936,7 @@ msgstr ""
 #. TRN Item from "Help" menu
 #: src/slic3r/GUI/MainFrame.cpp:1189
 msgid "&Quick Start"
-msgstr ""
+msgstr "&Hiter začetek"
 
 #. TRN Item from "Help" menu
 #: src/slic3r/GUI/MainFrame.cpp:1193
@@ -13008,7 +13013,7 @@ msgstr "Zgoraj"
 
 #: src/slic3r/GUI/MainFrame.cpp:1243
 msgid "Top View"
-msgstr ""
+msgstr "Pogled od zgorajl"
 
 #. TRN Main menu: View->Bottom
 #: src/slic3r/GUI/MainFrame.cpp:1246
@@ -13302,7 +13307,7 @@ msgstr "Izberi vse objekte"
 
 #: src/slic3r/GUI/MainFrame.cpp:1441
 msgid "D&eselect All"
-msgstr ""
+msgstr "Pr&ekliči izbor vsega"
 
 #: src/slic3r/GUI/MainFrame.cpp:1442
 msgid "Deselects all objects"
@@ -13330,7 +13335,7 @@ msgstr "&Razveljavi"
 
 #: src/slic3r/GUI/MainFrame.cpp:1456
 msgid "&Redo"
-msgstr "&Znova uveljavi"
+msgstr "Znova &uveljavi"
 
 #: src/slic3r/GUI/MainFrame.cpp:1461
 msgid "&Copy"
@@ -13351,7 +13356,7 @@ msgstr ""
 #: src/slic3r/GUI/MainFrame.cpp:1470 src/slic3r/GUI/MainFrame.cpp:1474
 #: src/slic3r/GUI/MainFrame.cpp:1637 src/slic3r/GUI/MainFrame.cpp:1641
 msgid "Re&load from Disk"
-msgstr "&Ponovno naloži iz diska"
+msgstr "Ponovno &naloži iz diska"
 
 #: src/slic3r/GUI/MainFrame.cpp:1480
 msgid "Searc&h"
@@ -13387,7 +13392,7 @@ msgstr ""
 
 #: src/slic3r/GUI/MainFrame.cpp:1501
 msgid "Print&er Settings Tab"
-msgstr "Zavihek Nastavitve &tiskalnika"
+msgstr "Zavihek Nastavitve tis&kalnika"
 
 #: src/slic3r/GUI/MainFrame.cpp:1501
 msgid "Show the printer settings"
@@ -13415,7 +13420,7 @@ msgstr ""
 
 #: src/slic3r/GUI/MainFrame.cpp:1527
 msgid "Print &Host Upload Queue"
-msgstr ""
+msgstr "&Vrsta za tiskanje"
 
 #: src/slic3r/GUI/MainFrame.cpp:1527
 msgid "Display the Print Host Upload Queue window"
@@ -13664,7 +13669,7 @@ msgstr ""
 
 #: src/slic3r/GUI/NotificationManager.hpp:929
 msgid "Desktop integration failed."
-msgstr ""
+msgstr "Integracija z namizjem spodletela."
 
 #: src/slic3r/GUI/NotificationManager.hpp:931
 msgid "Undo desktop integration was successful."
@@ -13909,7 +13914,7 @@ msgstr ""
 
 #: src/slic3r/GUI/PhysicalPrinterDialog.cpp:214 src/slic3r/GUI/Tab.cpp:2573
 msgid "Print Host upload"
-msgstr ""
+msgstr "Nalaganje na tiskalnik"
 
 #: src/slic3r/GUI/PhysicalPrinterDialog.cpp:275
 msgid "Connection to printers connected via the print host failed."
@@ -15485,7 +15490,7 @@ msgstr "polno polnilo"
 
 #: src/slic3r/GUI/PresetHints.cpp:183
 msgid "top solid infill"
-msgstr ""
+msgstr "vrhnje polno polnilo"
 
 #: src/slic3r/GUI/PresetHints.cpp:186
 msgid "support"
@@ -15567,7 +15572,7 @@ msgstr "Najnižja debelina zgornje plasti je %1% mm."
 
 #: src/slic3r/GUI/PresetHints.cpp:293
 msgid "Top is open."
-msgstr ""
+msgstr "Zgornji del je odprt."
 
 #: src/slic3r/GUI/PresetHints.cpp:306
 #, boost-format
@@ -15644,11 +15649,11 @@ msgstr "Velikost"
 
 #: src/slic3r/GUI/PrintHostDialogs.cpp:307
 msgid "Filename"
-msgstr ""
+msgstr "Ime datoteke"
 
 #: src/slic3r/GUI/PrintHostDialogs.cpp:308
 msgid "Message"
-msgstr ""
+msgstr "Sporočilo"
 
 #: src/slic3r/GUI/PrintHostDialogs.cpp:312
 msgid "Cancel selected"
@@ -16126,7 +16131,7 @@ msgstr ""
 
 #: src/slic3r/GUI/Tab.cpp:1551
 msgid "Raft"
-msgstr ""
+msgstr "Splav"
 
 #: src/slic3r/GUI/Tab.cpp:1556
 msgid "Options for support material and raft"
@@ -16134,11 +16139,11 @@ msgstr ""
 
 #: src/slic3r/GUI/Tab.cpp:1575
 msgid "Organic supports"
-msgstr ""
+msgstr "Organske podpore"
 
 #: src/slic3r/GUI/Tab.cpp:1587
 msgid "Speed for print moves"
-msgstr ""
+msgstr "Hitrost tiskanja"
 
 #: src/slic3r/GUI/Tab.cpp:1600
 msgid "Dynamic overhang speed"
@@ -16146,7 +16151,7 @@ msgstr ""
 
 #: src/slic3r/GUI/Tab.cpp:1607
 msgid "Speed for non-print moves"
-msgstr ""
+msgstr "Hitrost premikov"
 
 #: src/slic3r/GUI/Tab.cpp:1611
 msgid "Modifiers"
@@ -16583,7 +16588,7 @@ msgstr ""
 #: src/slic3r/GUI/Tab.cpp:4454
 #, boost-format
 msgid "%1% Preset"
-msgstr ""
+msgstr "%1% Prednastavitev"
 
 #: src/slic3r/GUI/Tab.cpp:4540 src/slic3r/GUI/Tab.cpp:4927
 msgid "Set"
@@ -16607,7 +16612,7 @@ msgstr ""
 
 #: src/slic3r/GUI/Tab.cpp:4758
 msgid "Whole word"
-msgstr ""
+msgstr "Cela beseda"
 
 #: src/slic3r/GUI/Tab.cpp:4762
 msgid "Match single line"
@@ -16661,7 +16666,7 @@ msgstr ""
 
 #: src/slic3r/GUI/Tab.cpp:5067
 msgid "WHITE BULLET"
-msgstr ""
+msgstr "BELA TOČKA"
 
 #. TRN Description for "WHITE BULLET"
 #: src/slic3r/GUI/Tab.cpp:5069
@@ -16709,12 +16714,15 @@ msgstr ""
 #: src/slic3r/GUI/Tab.cpp:5093
 msgid "WHITE BULLET icon indicates a non system (or non default) preset."
 msgstr ""
+"Ikona BELA TOČKA ponazarja ne sistemsko (ali ne privzeto) prednastavitev."
 
 #: src/slic3r/GUI/Tab.cpp:5096
 msgid ""
 "WHITE BULLET icon indicates that the settings are the same as in the last "
 "saved preset for the current option group."
 msgstr ""
+"Ikona BELA TOČKA ponazarja, da so nastavitve enake kot nazadnje shranjena "
+"prednastavitev za trenutno skupino opcij."
 
 #: src/slic3r/GUI/Tab.cpp:5098
 msgid ""
@@ -16742,6 +16750,8 @@ msgid ""
 "WHITE BULLET icon indicates that the value is the same as in the last saved "
 "preset."
 msgstr ""
+"Ikona BELA TOČKA ponazarja, da so nastavitve enake kot nazadnje shranjena "
+"prednastavitev."
 
 #: src/slic3r/GUI/Tab.cpp:5112
 msgid ""
@@ -17104,7 +17114,7 @@ msgstr ""
 
 #: src/slic3r/GUI/UpdateDialogs.cpp:275
 msgid "Opening Configuration Wizard"
-msgstr ""
+msgstr "Odpiram čarovnika za konfiguracijo"
 
 #: src/slic3r/GUI/UpdateDialogs.cpp:275 src/slic3r/GUI/UpdateDialogs.cpp:456
 msgid "Configuration update"
@@ -17254,7 +17264,7 @@ msgstr ""
 #. TRN: This is the dialog title.
 #: src/slic3r/GUI/WifiConfigDialog.cpp:27
 msgid "Wi-Fi Configuration File Generator"
-msgstr ""
+msgstr "Generator konfiguracijske datoteke za Wi-Fi"
 
 #. TRN Wifi config dialog explanation line 2.
 #: src/slic3r/GUI/WifiConfigDialog.cpp:39
@@ -17289,7 +17299,7 @@ msgstr ""
 #. TRN description of Combo Box with path to USB drive.
 #: src/slic3r/GUI/WifiConfigDialog.cpp:78
 msgid "Drive"
-msgstr ""
+msgstr "Pogon"
 
 #. TRN Text of button to write config file in Wifi Config dialog.
 #: src/slic3r/GUI/WifiConfigDialog.cpp:88
@@ -17309,7 +17319,7 @@ msgstr ""
 #. TRN Alert message when writing WiFi configuration file to usb drive.
 #: src/slic3r/GUI/WifiConfigDialog.cpp:221
 msgid "Drive field is empty."
-msgstr ""
+msgstr "Polje pogona je prazno."
 
 #. TRN Alert message when writing WiFi configuration file to usb drive.
 #: src/slic3r/GUI/WifiConfigDialog.cpp:231
@@ -17922,6 +17932,10 @@ msgid ""
 "model without having to move or delete it? Toggle the Printable property of "
 "a model from the Right-click context menu."
 msgstr ""
+"Preklop za tiskanje\n"
+"Ali ste vedeli, da lahko onemogočite ustvarjanje g-kode za izbrane model, ne "
+"da bi ga premaknili ali izbrisali? Preklopite lastnost modela \"Za "
+"tiskanje\" iz menija, dostopnega z desnim klikom na model."
 
 #: resources/data/hints.ini: [hint:Mirror]
 msgid ""

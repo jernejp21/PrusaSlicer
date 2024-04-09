@@ -6,11 +6,11 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
+"Project-Id-Version: PrusaSlicer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-11 08:57+0100\n"
-"PO-Revision-Date: 2024-03-08 14:41+0100\n"
-"Last-Translator: \n"
+"PO-Revision-Date: 2024-03-14 13:17+0100\n"
+"Last-Translator: Jernej Pangerc <jernej.pangerc@tuta.com>\n"
 "Language-Team: \n"
 "Language: sl\n"
 "MIME-Version: 1.0\n"
@@ -108,7 +108,7 @@ msgstr "Vmesnik za podporni material"
 #: src/libslic3r/ExtrusionRole.cpp:54 src/libslic3r/ExtrusionRole.cpp:87
 #: src/slic3r/GUI/Tab.cpp:1648
 msgid "Wipe tower"
-msgstr ""
+msgstr "Stolp za brisanje"
 
 #: src/libslic3r/ExtrusionRole.cpp:55 src/libslic3r/ExtrusionRole.cpp:89
 #: src/slic3r/GUI/BedShapeDialog.cpp:91
@@ -255,7 +255,7 @@ msgstr ""
 #: src/slic3r/GUI/Tab.cpp:2302 src/slic3r/GUI/Tab.cpp:2800
 #: src/slic3r/GUI/Tab.cpp:4997
 msgid "Custom G-code"
-msgstr ""
+msgstr "G-koda po meri"
 
 #: src/libslic3r/GCode.cpp:570
 msgid "In the custom G-code were found reserved keywords:"
@@ -306,7 +306,7 @@ msgstr ""
 
 #: src/libslic3r/miniz_extension.cpp:105
 msgid "not a ZIP archive"
-msgstr ""
+msgstr "ni ZIP arhiv"
 
 #: src/libslic3r/miniz_extension.cpp:107
 msgid "invalid header or archive is corrupted"
@@ -330,7 +330,7 @@ msgstr ""
 
 #: src/libslic3r/miniz_extension.cpp:117
 msgid "CRC-32 check failed"
-msgstr ""
+msgstr "CRC-32 preverjanje je spodletelo"
 
 #: src/libslic3r/miniz_extension.cpp:119
 msgid "unsupported central directory size"
@@ -491,18 +491,24 @@ msgid ""
 "The wipe tower is only supported if all extruders have the same nozzle "
 "diameter and use filaments of the same diameter."
 msgstr ""
+"Stolp za brisanje je podprt le, če imajo vsi ekstruderji enak premer šobe in "
+"uporabljajo filamente enakega premera."
 
 #: src/libslic3r/Print.cpp:619
 msgid ""
 "The Wipe Tower is currently only supported for the Marlin, Klipper, RepRap/"
 "Sprinter, RepRapFirmware and Repetier G-code flavors."
 msgstr ""
+"Stolp za brisanje je trenutno podprt le za Marlin, Klipper, RepRap/Sprinter, "
+"RepRapFirmware in Repetier pridihe g-kode."
 
 #: src/libslic3r/Print.cpp:621
 msgid ""
 "The Wipe Tower is currently only supported with the relative extruder "
 "addressing (use_relative_e_distances=1)."
 msgstr ""
+"Stolp za brisanje je trenutno podprt le z relativnim naslavljanjem "
+"iztiskavanja (use_relative_e_distances=1)."
 
 #: src/libslic3r/Print.cpp:623
 msgid ""
@@ -514,24 +520,29 @@ msgstr ""
 msgid ""
 "The Wipe Tower currently does not support volumetric E (use_volumetric_e=0)."
 msgstr ""
+"Stolp za brisanje trenutno ne podpira prostorninskega E (use_volumetric_e=0)."
 
 #: src/libslic3r/Print.cpp:627
 msgid ""
 "The Wipe Tower is currently not supported for multimaterial sequential "
 "prints."
 msgstr ""
+"Stolp za brisanje trenutno ni podprt za več materialne zaporedne tiske."
 
 #: src/libslic3r/Print.cpp:637
 msgid ""
 "The Wipe Tower is only supported for multiple objects if they have equal "
 "layer heights"
 msgstr ""
+"Stolp za brisanje je za več predmetov podprt le, če imajo enake višine plasti"
 
 #: src/libslic3r/Print.cpp:639
 msgid ""
 "The Wipe Tower is only supported for multiple objects if they are printed "
 "over an equal number of raft layers"
 msgstr ""
+"Stolp za brisanje je za več predmetov podprt le, če so natisnjeni na enakem "
+"številu slojev splava"
 
 #: src/libslic3r/Print.cpp:642
 msgid ""
@@ -544,12 +555,15 @@ msgid ""
 "The Wipe Tower is only supported for multiple objects if they are sliced "
 "equally."
 msgstr ""
+"Stolp za brisanje je za več predmetov podprt le, če so razrezani enako."
 
 #: src/libslic3r/Print.cpp:669
 msgid ""
 "The Wipe tower is only supported if all objects have the same variable layer "
 "height"
 msgstr ""
+"Stolp brisanja je podprt le, če imajo vsi predmeti enako spremenljivo višino "
+"plasti"
 
 #: src/libslic3r/Print.cpp:693
 msgid ""
@@ -1127,7 +1141,7 @@ msgstr "°"
 
 #: src/libslic3r/PrintConfig.cpp:549
 msgid "Bridges fan speed"
-msgstr ""
+msgstr "Hitrost ventilatorja na mostovih"
 
 #: src/libslic3r/PrintConfig.cpp:550
 msgid "This fan speed is enforced during all bridges and overhangs."
@@ -1234,7 +1248,7 @@ msgstr "hitrost za 75% prekrivanja"
 
 #: src/libslic3r/PrintConfig.cpp:629
 msgid "Enable dynamic fan speeds"
-msgstr ""
+msgstr "Omogoči dinamično hitrost ventilatorja"
 
 #: src/libslic3r/PrintConfig.cpp:630
 msgid "This setting enables dynamic fan speed control on overhangs."
@@ -1312,11 +1326,11 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:714 src/slic3r/GUI/Tab.cpp:96
 msgid "Compatible printers"
-msgstr ""
+msgstr "Združljivi tiskalniki"
 
 #: src/libslic3r/PrintConfig.cpp:720
 msgid "Compatible printers condition"
-msgstr ""
+msgstr "Pogoji združljivih tiskalnikov"
 
 #: src/libslic3r/PrintConfig.cpp:721
 msgid ""
@@ -1327,11 +1341,11 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:729 src/slic3r/GUI/Tab.cpp:102
 msgid "Compatible print profiles"
-msgstr ""
+msgstr "Združljivi profili za tiskanje"
 
 #: src/libslic3r/PrintConfig.cpp:735
 msgid "Compatible print profiles condition"
-msgstr ""
+msgstr "Pogoji združljivih profilov za tiskanje"
 
 #: src/libslic3r/PrintConfig.cpp:736
 msgid ""
@@ -1405,7 +1419,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:801
 msgid "Default print profile"
-msgstr ""
+msgstr "Privzet profil za tiskanje"
 
 #: src/libslic3r/PrintConfig.cpp:802 src/libslic3r/PrintConfig.cpp:4045
 #: src/libslic3r/PrintConfig.cpp:4056
@@ -1417,7 +1431,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:808
 msgid "Disable fan for the first"
-msgstr ""
+msgstr "Onemogoči ventilator za prvih"
 
 #: src/libslic3r/PrintConfig.cpp:809
 msgid ""
@@ -1719,7 +1733,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:1018
 msgid "Enable fan if layer print time is below"
-msgstr ""
+msgstr "Omogoči ventilator, če je čas tiskanja plasti pod"
 
 #: src/libslic3r/PrintConfig.cpp:1019
 msgid ""
@@ -1730,7 +1744,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:1021 src/libslic3r/PrintConfig.cpp:2516
 msgid "approximate seconds"
-msgstr ""
+msgstr "približno sekund"
 
 #: src/libslic3r/PrintConfig.cpp:1028 src/libslic3r/PrintConfig.cpp:3889
 msgid "Color"
@@ -1746,7 +1760,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:1043 src/libslic3r/PrintConfig.cpp:1961
 msgid "Max volumetric speed"
-msgstr ""
+msgstr "Največji pretok"
 
 #: src/libslic3r/PrintConfig.cpp:1044
 msgid ""
@@ -1754,6 +1768,8 @@ msgid ""
 "volumetric speed of a print to the minimum of print and filament volumetric "
 "speed. Set to zero for no limit."
 msgstr ""
+"Največji dovoljen pretok za ta filament. Omeji največji pretok na najnižjo "
+"vrednost med pretokom tiskanja in filamenta. Vnesite nič za brez omejitve."
 
 #: src/libslic3r/PrintConfig.cpp:1047 src/libslic3r/PrintConfig.cpp:1173
 #: src/libslic3r/PrintConfig.cpp:1964 src/slic3r/GUI/RammingChart.cpp:99
@@ -1762,7 +1778,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:1053
 msgid "Loading speed"
-msgstr ""
+msgstr "Hitrost polnjenja"
 
 #: src/libslic3r/PrintConfig.cpp:1054
 msgid "Speed used for loading the filament on the wipe tower."
@@ -1770,7 +1786,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:1061
 msgid "Loading speed at the start"
-msgstr ""
+msgstr "Hitrost polnjenja na začetku"
 
 #: src/libslic3r/PrintConfig.cpp:1062
 msgid "Speed used at the very beginning of loading phase."
@@ -1778,7 +1794,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:1069
 msgid "Unloading speed"
-msgstr ""
+msgstr "Hitrost praznjenja"
 
 #: src/libslic3r/PrintConfig.cpp:1070
 msgid ""
@@ -1788,7 +1804,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:1078
 msgid "Unloading speed at the start"
-msgstr ""
+msgstr "Hitrost praznjenja na začetku"
 
 #: src/libslic3r/PrintConfig.cpp:1079
 msgid ""
@@ -1797,7 +1813,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:1086
 msgid "Delay after unloading"
-msgstr ""
+msgstr "Zakasnitev po praznjenju"
 
 #: src/libslic3r/PrintConfig.cpp:1087
 msgid ""
@@ -1818,7 +1834,7 @@ msgstr "s"
 
 #: src/libslic3r/PrintConfig.cpp:1096
 msgid "Number of cooling moves"
-msgstr ""
+msgstr "Število premikov ohlajanja"
 
 #: src/libslic3r/PrintConfig.cpp:1097
 msgid ""
@@ -1828,7 +1844,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:1105
 msgid "Speed of the first cooling move"
-msgstr ""
+msgstr "Hitrost prvega pomika za hlajenje"
 
 #: src/libslic3r/PrintConfig.cpp:1106
 msgid "Cooling moves are gradually accelerating beginning at this speed."
@@ -1836,7 +1852,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:1113
 msgid "Minimal purge on wipe tower"
-msgstr ""
+msgstr "Minimalno čiščenje na stolpu za brisanje"
 
 #: src/libslic3r/PrintConfig.cpp:1114
 msgid ""
@@ -1853,7 +1869,7 @@ msgstr "mm³"
 
 #: src/libslic3r/PrintConfig.cpp:1124
 msgid "Speed of the last cooling move"
-msgstr ""
+msgstr "Hitrost zadnjega pomika za hlajenje"
 
 #: src/libslic3r/PrintConfig.cpp:1125
 msgid "Cooling moves are gradually accelerating towards this speed."
@@ -1861,7 +1877,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:1132
 msgid "Filament load time"
-msgstr ""
+msgstr "Čas polnjenja filamenta"
 
 #: src/libslic3r/PrintConfig.cpp:1133
 msgid ""
@@ -1872,7 +1888,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:1140
 msgid "Ramming parameters"
-msgstr ""
+msgstr "Parametri hitrega iztiska"
 
 #: src/libslic3r/PrintConfig.cpp:1141
 msgid ""
@@ -1882,7 +1898,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:1147
 msgid "Filament unload time"
-msgstr ""
+msgstr "Čas praznjenja filamenta"
 
 #: src/libslic3r/PrintConfig.cpp:1148
 msgid ""
@@ -1893,7 +1909,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:1155
 msgid "Enable ramming for multitool setups"
-msgstr ""
+msgstr "Omogoči hiter iztisk"
 
 #: src/libslic3r/PrintConfig.cpp:1156
 msgid ""
@@ -1905,7 +1921,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:1163
 msgid "Multitool ramming volume"
-msgstr ""
+msgstr "Prostornina več-orodnega hitrega iztiska"
 
 #: src/libslic3r/PrintConfig.cpp:1164
 msgid "The volume to be rammed before the toolchange."
@@ -1913,7 +1929,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:1171
 msgid "Multitool ramming flow"
-msgstr ""
+msgstr "Pretok več-orodnega hitrega iztiska"
 
 #: src/libslic3r/PrintConfig.cpp:1172
 msgid "Flow used for ramming the filament before the toolchange."
@@ -1958,7 +1974,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:1225
 msgid "Soluble material"
-msgstr ""
+msgstr "Topen material"
 
 #: src/libslic3r/PrintConfig.cpp:1226
 msgid "Soluble material is most likely used for a soluble support."
@@ -1977,7 +1993,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:1233
 msgid "money/kg"
-msgstr ""
+msgstr "denar/kg"
 
 #: src/libslic3r/PrintConfig.cpp:1238
 msgid "Spool weight"
@@ -2077,7 +2093,7 @@ msgstr "Strela"
 #: src/libslic3r/PrintConfig.cpp:1347 src/libslic3r/PrintConfig.cpp:1392
 #: src/slic3r/GUI/GCodeViewer.cpp:4191
 msgid "First layer"
-msgstr "Začetne plasti"
+msgstr "Začetna plast"
 
 #: src/libslic3r/PrintConfig.cpp:1320
 msgid ""
@@ -2266,7 +2282,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:1493
 msgid "Label objects"
-msgstr ""
+msgstr "Označi objekte"
 
 #: src/libslic3r/PrintConfig.cpp:1494
 msgid ""
@@ -2488,7 +2504,7 @@ msgstr ""
 #: src/libslic3r/PrintConfig.cpp:1697 src/libslic3r/PrintConfig.cpp:1708
 #: src/libslic3r/PrintConfig.cpp:2324 src/libslic3r/PrintConfig.cpp:2333
 msgid "mm (zero to disable)"
-msgstr ""
+msgstr "mm (nič za onemogočiti)"
 
 #: src/libslic3r/PrintConfig.cpp:1704
 msgid "Interlocking depth of a segmented region"
@@ -2584,11 +2600,11 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:1796
 msgid "How to apply limits"
-msgstr ""
+msgstr "Kako uveljaviti omejitve"
 
 #: src/libslic3r/PrintConfig.cpp:1797
 msgid "Purpose of Machine Limits"
-msgstr ""
+msgstr "Namen omejitev stroja"
 
 #: src/libslic3r/PrintConfig.cpp:1798 src/libslic3r/PrintConfig.cpp:1831
 #: src/libslic3r/PrintConfig.cpp:1848 src/libslic3r/PrintConfig.cpp:1865
@@ -2597,15 +2613,15 @@ msgstr ""
 #: src/libslic3r/PrintConfig.cpp:1923 src/slic3r/GUI/Tab.cpp:3035
 #: src/slic3r/GUI/Tab.cpp:3335
 msgid "Machine limits"
-msgstr ""
+msgstr "Omejitve stroja"
 
 #: src/libslic3r/PrintConfig.cpp:1799
 msgid "How to apply the Machine Limits"
-msgstr ""
+msgstr "Kako uveljaviti omejitve stroja"
 
 #: src/libslic3r/PrintConfig.cpp:1801
 msgid "Emit to G-code"
-msgstr ""
+msgstr "Dodaj v g-kodo"
 
 #: src/libslic3r/PrintConfig.cpp:1802
 msgid "Use for time estimate"
@@ -2613,103 +2629,103 @@ msgstr "Uporabi za čas. približek"
 
 #: src/libslic3r/PrintConfig.cpp:1803
 msgid "Ignore"
-msgstr ""
+msgstr "Prezri"
 
 #: src/libslic3r/PrintConfig.cpp:1827
 msgid "Maximum feedrate X"
-msgstr ""
+msgstr "Največja podajalna hitrost X"
 
 #: src/libslic3r/PrintConfig.cpp:1828
 msgid "Maximum feedrate Y"
-msgstr ""
+msgstr "Največja podajalna hitrost Y"
 
 #: src/libslic3r/PrintConfig.cpp:1829
 msgid "Maximum feedrate Z"
-msgstr ""
+msgstr "Največja podajalna hitrost Z"
 
 #: src/libslic3r/PrintConfig.cpp:1830
 msgid "Maximum feedrate E"
-msgstr ""
+msgstr "Največja podajalna hitrost E"
 
 #: src/libslic3r/PrintConfig.cpp:1833
 msgid "Maximum feedrate of the X axis"
-msgstr ""
+msgstr "Največja podajalna hitrost osi X"
 
 #: src/libslic3r/PrintConfig.cpp:1834
 msgid "Maximum feedrate of the Y axis"
-msgstr ""
+msgstr "Največja podajalna hitrost osi Y"
 
 #: src/libslic3r/PrintConfig.cpp:1835
 msgid "Maximum feedrate of the Z axis"
-msgstr ""
+msgstr "Največja podajalna hitrost osi Z"
 
 #: src/libslic3r/PrintConfig.cpp:1836
 msgid "Maximum feedrate of the E axis"
-msgstr ""
+msgstr "Največja podajalna hitrost osi E"
 
 #: src/libslic3r/PrintConfig.cpp:1844
 msgid "Maximum acceleration X"
-msgstr ""
+msgstr "Največji pospešek X"
 
 #: src/libslic3r/PrintConfig.cpp:1845
 msgid "Maximum acceleration Y"
-msgstr ""
+msgstr "Največji pospešek Y"
 
 #: src/libslic3r/PrintConfig.cpp:1846
 msgid "Maximum acceleration Z"
-msgstr ""
+msgstr "Največji pospešek Z"
 
 #: src/libslic3r/PrintConfig.cpp:1847
 msgid "Maximum acceleration E"
-msgstr ""
+msgstr "Največji pospešek E"
 
 #: src/libslic3r/PrintConfig.cpp:1850
 msgid "Maximum acceleration of the X axis"
-msgstr ""
+msgstr "Največji pospešek osi X"
 
 #: src/libslic3r/PrintConfig.cpp:1851
 msgid "Maximum acceleration of the Y axis"
-msgstr ""
+msgstr "Največji pospešek osi Y"
 
 #: src/libslic3r/PrintConfig.cpp:1852
 msgid "Maximum acceleration of the Z axis"
-msgstr ""
+msgstr "Največji pospešek osi Z"
 
 #: src/libslic3r/PrintConfig.cpp:1853
 msgid "Maximum acceleration of the E axis"
-msgstr ""
+msgstr "Največji pospešek osi E"
 
 #: src/libslic3r/PrintConfig.cpp:1861
 msgid "Maximum jerk X"
-msgstr ""
+msgstr "Največja hitrosti spremembe smeri X"
 
 #: src/libslic3r/PrintConfig.cpp:1862
 msgid "Maximum jerk Y"
-msgstr ""
+msgstr "Največja hitrosti spremembe smeri Y"
 
 #: src/libslic3r/PrintConfig.cpp:1863
 msgid "Maximum jerk Z"
-msgstr ""
+msgstr "Največja hitrosti spremembe smeri Z"
 
 #: src/libslic3r/PrintConfig.cpp:1864
 msgid "Maximum jerk E"
-msgstr ""
+msgstr "Največja hitrosti spremembe smeri E"
 
 #: src/libslic3r/PrintConfig.cpp:1867
 msgid "Maximum jerk of the X axis"
-msgstr ""
+msgstr "Največja hitrosti spremembe smeri osi X"
 
 #: src/libslic3r/PrintConfig.cpp:1868
 msgid "Maximum jerk of the Y axis"
-msgstr ""
+msgstr "Največja hitrosti spremembe smeri osi Y"
 
 #: src/libslic3r/PrintConfig.cpp:1869
 msgid "Maximum jerk of the Z axis"
-msgstr ""
+msgstr "Največja hitrosti spremembe smeri osi Z"
 
 #: src/libslic3r/PrintConfig.cpp:1870
 msgid "Maximum jerk of the E axis"
-msgstr ""
+msgstr "Največja hitrosti spremembe smeri osi E"
 
 #: src/libslic3r/PrintConfig.cpp:1880
 msgid "Minimum feedrate when extruding"
@@ -2830,7 +2846,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2012
 msgid "Min print speed"
-msgstr ""
+msgstr "Najmanjša hitrost tiskanja"
 
 #: src/libslic3r/PrintConfig.cpp:2013
 msgid "Slic3r will not scale speed down below this speed."
@@ -2946,7 +2962,7 @@ msgstr ""
 #: src/libslic3r/PrintConfig.cpp:2115 src/libslic3r/PrintConfig.cpp:2140
 #: src/libslic3r/PrintConfig.cpp:2154 src/libslic3r/PrintConfig.cpp:2164
 msgid "Perimeters"
-msgstr "Obodov"
+msgstr "Obodi"
 
 #: src/libslic3r/PrintConfig.cpp:2116
 msgid ""
@@ -3101,7 +3117,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2287
 msgid "G-code resolution"
-msgstr ""
+msgstr "Resolucija g-kode"
 
 #: src/libslic3r/PrintConfig.cpp:2288
 msgid ""
@@ -3116,7 +3132,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2299
 msgid "Minimum travel after retraction"
-msgstr ""
+msgstr "Najmanjši pomik po brisanju"
 
 #: src/libslic3r/PrintConfig.cpp:2300
 msgid ""
@@ -3125,7 +3141,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2306
 msgid "Retract amount before wipe"
-msgstr ""
+msgstr "Količina umika pred brisanjem"
 
 #: src/libslic3r/PrintConfig.cpp:2307
 msgid ""
@@ -3135,7 +3151,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2314
 msgid "Retract on layer change"
-msgstr ""
+msgstr "Umakni ob spremembi plasti"
 
 #: src/libslic3r/PrintConfig.cpp:2315
 msgid "This flag enforces a retraction whenever a Z move is done."
@@ -3159,7 +3175,7 @@ msgstr ""
 #: src/libslic3r/PrintConfig.cpp:2328
 #: src/slic3r/GUI/Gizmos/GLGizmoMeasure.cpp:2016
 msgid "Length"
-msgstr ""
+msgstr "Dolžina"
 
 #: src/libslic3r/PrintConfig.cpp:2329
 msgid "Retraction Length (Toolchange)"
@@ -3174,15 +3190,15 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2338
 msgid "Ramping slope angle"
-msgstr ""
+msgstr "Kot klančine za dvig"
 
 #: src/libslic3r/PrintConfig.cpp:2339
 msgid "Slope of the ramp in the initial phase of the travel."
-msgstr ""
+msgstr "Naklon klančine v začetni fazi premika."
 
 #: src/libslic3r/PrintConfig.cpp:2347
 msgid "Use ramping lift"
-msgstr ""
+msgstr "Uporabi naraščajoč dvig"
 
 #: src/libslic3r/PrintConfig.cpp:2348
 msgid ""
@@ -3193,7 +3209,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2355
 msgid "Maximum ramping lift"
-msgstr ""
+msgstr "Največji naraščajoč dvig"
 
 #: src/libslic3r/PrintConfig.cpp:2356
 msgid ""
@@ -3203,7 +3219,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2365
 msgid "Steeper ramp before obstacles"
-msgstr ""
+msgstr "Strmejša klančina pred ovirami"
 
 #: src/libslic3r/PrintConfig.cpp:2366
 msgid ""
@@ -3226,7 +3242,7 @@ msgstr "Nad Z"
 
 #: src/libslic3r/PrintConfig.cpp:2382
 msgid "Only lift Z above"
-msgstr ""
+msgstr "Dvigni samo Z nad"
 
 #: src/libslic3r/PrintConfig.cpp:2383
 msgid ""
@@ -3241,7 +3257,7 @@ msgstr "Pod Z"
 
 #: src/libslic3r/PrintConfig.cpp:2391
 msgid "Only lift Z below"
-msgstr ""
+msgstr "Dvigni samo Z pod"
 
 #: src/libslic3r/PrintConfig.cpp:2392
 msgid ""
@@ -3252,7 +3268,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2400
 msgid "Deretraction extra length"
-msgstr ""
+msgstr "Dodatna dolžina po umiku"
 
 #: src/libslic3r/PrintConfig.cpp:2401
 msgid ""
@@ -3262,13 +3278,15 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2408
 msgid "Extra length on restart"
-msgstr ""
+msgstr "Dodatna dolžina na začetku"
 
 #: src/libslic3r/PrintConfig.cpp:2409
 msgid ""
 "When the retraction is compensated after changing tool, the extruder will "
 "push this additional amount of filament."
 msgstr ""
+"Ko je umik kompenziran po menjavi orodja, bo ekstruder iztisnil toliko "
+"dodatnega filamenta."
 
 #: src/libslic3r/PrintConfig.cpp:2416 src/libslic3r/PrintConfig.cpp:2417
 msgid "Retraction Speed"
@@ -3280,7 +3298,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2424 src/libslic3r/PrintConfig.cpp:2425
 msgid "Deretraction Speed"
-msgstr ""
+msgstr "Hitrost po umiku"
 
 #: src/libslic3r/PrintConfig.cpp:2426
 msgid ""
@@ -3405,7 +3423,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2513
 msgid "Slow down if layer print time is below"
-msgstr ""
+msgstr "Upočasni, če je čas tiskanja plasti pod"
 
 #: src/libslic3r/PrintConfig.cpp:2514
 msgid ""
@@ -3690,7 +3708,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2787
 msgid "0 (soluble)"
-msgstr ""
+msgstr "0 (topen)"
 
 #: src/libslic3r/PrintConfig.cpp:2788
 msgid "0.1 (detachable)"
@@ -3880,7 +3898,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2975
 msgid "Snug"
-msgstr ""
+msgstr "Tesno"
 
 #: src/libslic3r/PrintConfig.cpp:2976
 msgid "Organic"
@@ -4163,7 +4181,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:3250
 msgid "Wipe while retracting"
-msgstr ""
+msgstr "Obriši med umikov"
 
 #: src/libslic3r/PrintConfig.cpp:3251
 msgid ""
@@ -4517,7 +4535,7 @@ msgstr "Križ"
 
 #: src/libslic3r/PrintConfig.cpp:3628
 msgid "Dynamic"
-msgstr ""
+msgstr "Dinamično"
 
 #: src/libslic3r/PrintConfig.cpp:3640
 msgid "Pillar widening factor"
@@ -4559,7 +4577,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:3687
 msgid "Critical angle"
-msgstr ""
+msgstr "Kritični kot"
 
 #: src/libslic3r/PrintConfig.cpp:3689
 msgid "The default angle for connecting support sticks and junctions."
@@ -4813,7 +4831,7 @@ msgstr "g/ml"
 
 #: src/libslic3r/PrintConfig.cpp:3942
 msgid "money/bottle"
-msgstr ""
+msgstr "denar/steklenico"
 
 #: src/libslic3r/PrintConfig.cpp:3947
 msgid "Faded layers"
@@ -5064,7 +5082,7 @@ msgstr "Izdolbi model za prazno notranjost"
 
 #: src/libslic3r/PrintConfig.cpp:4246
 msgid "Wall thickness"
-msgstr ""
+msgstr "Debelina stene"
 
 #: src/libslic3r/PrintConfig.cpp:4248
 msgid "Minimum wall thickness of a hollowed model."
@@ -5431,7 +5449,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:5051
 msgid "Load config file"
-msgstr ""
+msgstr "Naloži konfiguracijsko datoteko"
 
 #: src/libslic3r/PrintConfig.cpp:5052
 msgid ""
@@ -5674,7 +5692,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:5203 src/libslic3r/PrintConfig.cpp:5231
 msgid "Total weight"
-msgstr ""
+msgstr "Skupna masa"
 
 #: src/libslic3r/PrintConfig.cpp:5204 src/libslic3r/PrintConfig.cpp:5232
 msgid ""
@@ -5718,7 +5736,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:5223
 msgid "Total volume"
-msgstr ""
+msgstr "Skupna prostornina"
 
 #: src/libslic3r/PrintConfig.cpp:5224
 msgid "Total volume of filament used during the entire print."
@@ -5736,7 +5754,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:5235
 msgid "Total layer count"
-msgstr ""
+msgstr "Skupno število plasti"
 
 #: src/libslic3r/PrintConfig.cpp:5236
 msgid "Number of layers in the entire print."
@@ -6328,7 +6346,7 @@ msgstr ""
 
 #: src/slic3r/GUI/BackgroundSlicingProcess.cpp:300
 msgid "Illegal instruction"
-msgstr ""
+msgstr "Nedovoljen ukaz"
 
 #: src/slic3r/GUI/BackgroundSlicingProcess.cpp:302
 msgid "Divide by zero"
@@ -6455,7 +6473,7 @@ msgstr "Oblika postelje"
 
 #: src/slic3r/GUI/BedShapeDialog.cpp:219
 msgid "Load shape from STL..."
-msgstr ""
+msgstr "Naloži obliko iz STL..."
 
 #: src/slic3r/GUI/BedShapeDialog.cpp:266 src/slic3r/GUI/GCodeViewer.cpp:4112
 #: src/slic3r/GUI/MainFrame.cpp:2149
@@ -7537,7 +7555,7 @@ msgstr ""
 #: src/slic3r/GUI/DoubleSlider.cpp:1544
 #, boost-format
 msgid "Custom template (\"%1%\")"
-msgstr ""
+msgstr "Predloga po meri (\"%1%\")"
 
 #: src/slic3r/GUI/DoubleSlider.cpp:1546
 #, boost-format
@@ -7659,7 +7677,7 @@ msgstr "Zbriši spremembo barve"
 
 #: src/slic3r/GUI/DoubleSlider.cpp:2086
 msgid "Delete tool change"
-msgstr ""
+msgstr "Izbriši spremembo orodja"
 
 #: src/slic3r/GUI/DoubleSlider.cpp:2087
 msgid "Delete pause print"
@@ -7733,7 +7751,7 @@ msgstr ""
 #: src/slic3r/GUI/WifiConfigDialog.cpp:239
 #: src/slic3r/GUI/WipeTowerDialog.cpp:69 src/slic3r/GUI/WipeTowerDialog.cpp:435
 msgid "Warning"
-msgstr ""
+msgstr "Opozorilo"
 
 #: src/slic3r/GUI/DoubleSlider.cpp:2289
 msgid "Enter custom G-code used on current layer"
@@ -7742,7 +7760,7 @@ msgstr ""
 #: src/slic3r/GUI/DoubleSlider.cpp:2290
 #, boost-format
 msgid "Custom G-code on current layer (%1% mm)."
-msgstr ""
+msgstr "G-koda po meri na trenutni plasti (%1% mm)."
 
 #: src/slic3r/GUI/DoubleSlider.cpp:2311
 msgid "Enter short message shown on Printer display when a print is paused"
@@ -8127,7 +8145,7 @@ msgstr ""
 
 #: src/slic3r/GUI/FirmwareDialog.cpp:924
 msgid "Confirmation"
-msgstr ""
+msgstr "Potrditev"
 
 #: src/slic3r/GUI/FirmwareDialog.cpp:927
 msgid "Cancelling..."
@@ -8296,7 +8314,7 @@ msgstr "Temperatura (°C)"
 
 #: src/slic3r/GUI/GCodeViewer.cpp:3764 src/slic3r/GUI/GCodeViewer.cpp:3770
 msgid "Volumetric flow rate (mm³/s)"
-msgstr ""
+msgstr "Pretok (mm³/s)"
 
 #: src/slic3r/GUI/GCodeViewer.cpp:3764
 msgid "Layer time (linear)"
@@ -8414,7 +8432,7 @@ msgstr ""
 
 #: src/slic3r/GUI/GCodeViewer.cpp:4300
 msgid "Custom G-codes"
-msgstr ""
+msgstr "G-kode po meri"
 
 #: src/slic3r/GUI/GCodeViewer.cpp:4304
 msgid "Center of gravity"
@@ -8455,7 +8473,7 @@ msgstr "Čep"
 #. TRN Connectors type next to "Plug" and "Dowel"
 #: src/slic3r/GUI/Gizmos/GLGizmoCut.cpp:203
 msgid "Snap"
-msgstr ""
+msgstr "Zaskočka"
 
 #: src/slic3r/GUI/Gizmos/GLGizmoCut.cpp:211
 msgid "Prism"
@@ -8594,7 +8612,7 @@ msgstr "Toleranca"
 #: src/slic3r/GUI/Gizmos/GLGizmoSlaSupports.cpp:1275
 #: src/slic3r/GUI/Gizmos/GLGizmoSlaSupports.cpp:1276
 msgid "Left click"
-msgstr ""
+msgstr "Levi klik"
 
 #: src/slic3r/GUI/Gizmos/GLGizmoCut.cpp:1180
 #: src/slic3r/GUI/Gizmos/GLGizmoCut.cpp:3558
@@ -8644,7 +8662,7 @@ msgstr ""
 
 #: src/slic3r/GUI/Gizmos/GLGizmoCut.cpp:2339
 msgid "Bulge"
-msgstr ""
+msgstr "Izboklina"
 
 #: src/slic3r/GUI/Gizmos/GLGizmoCut.cpp:2339
 msgid "Bulge proportion related to radius"
@@ -8784,7 +8802,7 @@ msgstr ""
 
 #: src/slic3r/GUI/Gizmos/GLGizmoCut.cpp:3585
 msgid "Delete connector"
-msgstr ""
+msgstr "Izbriši konektor"
 
 #: src/slic3r/GUI/Gizmos/GLGizmoCut.hpp:332
 msgid "Entering Cut gizmo"
@@ -8830,7 +8848,7 @@ msgstr ""
 
 #: src/slic3r/GUI/Gizmos/GLGizmoEmboss.cpp:1006
 msgid "NORMAL"
-msgstr ""
+msgstr "NORMALNO"
 
 #: src/slic3r/GUI/Gizmos/GLGizmoEmboss.cpp:1007
 msgid "SMALL"
@@ -8854,7 +8872,7 @@ msgstr "Začetni font"
 
 #: src/slic3r/GUI/Gizmos/GLGizmoEmboss.cpp:1051
 msgid "Default font"
-msgstr ""
+msgstr "Privzeta pisava"
 
 #: src/slic3r/GUI/Gizmos/GLGizmoEmboss.cpp:1492
 msgid ""
@@ -8935,7 +8953,7 @@ msgstr ""
 #: src/slic3r/GUI/Gizmos/GLGizmoSVG.cpp:1968
 msgctxt "EmbossOperation"
 msgid "Cut"
-msgstr "Odvzem"
+msgstr "Odvzemi"
 
 #: src/slic3r/GUI/Gizmos/GLGizmoEmboss.cpp:1872
 #: src/slic3r/GUI/Gizmos/GLGizmoSVG.cpp:1974
@@ -8946,7 +8964,7 @@ msgstr ""
 #: src/slic3r/GUI/Gizmos/GLGizmoSVG.cpp:1980
 #: src/slic3r/GUI/GUI_ObjectList.cpp:4268
 msgid "Modifier"
-msgstr ""
+msgstr "Pripomoček"
 
 #: src/slic3r/GUI/Gizmos/GLGizmoEmboss.cpp:1884
 #: src/slic3r/GUI/Gizmos/GLGizmoSVG.cpp:1986
@@ -9033,7 +9051,7 @@ msgstr ""
 #: src/slic3r/GUI/Gizmos/GLGizmoEmboss.cpp:2125
 #, boost-format
 msgid "Delete \"%1%\" style."
-msgstr ""
+msgstr "Izbriši slog %1%."
 
 #: src/slic3r/GUI/Gizmos/GLGizmoEmboss.cpp:2126
 #, boost-format
@@ -9235,7 +9253,7 @@ msgstr ""
 
 #: src/slic3r/GUI/Gizmos/GLGizmoEmboss.cpp:3512
 msgid "No symbol"
-msgstr ""
+msgstr "Brez simbola"
 
 #: src/slic3r/GUI/Gizmos/GLGizmoEmboss.cpp:3513
 #: src/slic3r/GUI/GUI_ObjectList.cpp:1550 src/slic3r/GUI/Plater.cpp:2522
@@ -9275,7 +9293,7 @@ msgstr ""
 #. TRN - Input label. Be short as possible
 #: src/slic3r/GUI/Gizmos/GLGizmoEmboss.cpp:3629
 msgid "Line gap"
-msgstr ""
+msgstr "Vrzel med črtami"
 
 #. TRN - Input label. Be short as possible
 #: src/slic3r/GUI/Gizmos/GLGizmoEmboss.cpp:3631
@@ -9881,7 +9899,7 @@ msgstr ""
 
 #: src/slic3r/GUI/Gizmos/GLGizmoSimplify.cpp:97
 msgid "Level of detail"
-msgstr ""
+msgstr "Nivo podrobnosti"
 
 #: src/slic3r/GUI/Gizmos/GLGizmoSimplify.cpp:98
 msgid "Decimate ratio"
@@ -10032,7 +10050,7 @@ msgstr "Dodaj podporno točko"
 
 #: src/slic3r/GUI/Gizmos/GLGizmoSlaSupports.cpp:472
 msgid "Delete support point"
-msgstr ""
+msgstr "Izbriši podporne točke"
 
 #: src/slic3r/GUI/Gizmos/GLGizmoSlaSupports.cpp:638
 msgid "Change point head diameter"
@@ -10759,7 +10777,7 @@ msgstr ""
 
 #: src/slic3r/GUI/GUI_App.cpp:752
 msgid "Critical error"
-msgstr ""
+msgstr "Kritična napaka"
 
 #: src/slic3r/GUI/GUI_App.cpp:757
 #, boost-format
@@ -11052,7 +11070,7 @@ msgstr ""
 
 #: src/slic3r/GUI/GUI_App.cpp:2535
 msgid "Snapshot name"
-msgstr ""
+msgstr "Ime posnetka"
 
 #: src/slic3r/GUI/GUI_App.cpp:2551
 msgid "Loading a configuration snapshot"
@@ -11677,7 +11695,7 @@ msgstr "Naloži kos"
 
 #: src/slic3r/GUI/GUI_ObjectList.cpp:1522
 msgid "Load Modifier"
-msgstr ""
+msgstr "Naloži pripomoček"
 
 #: src/slic3r/GUI/GUI_ObjectList.cpp:1581 src/slic3r/GUI/Plater.cpp:2564
 msgid "Loading file"
@@ -11729,7 +11747,7 @@ msgstr "Zbriši nastavitve"
 
 #: src/slic3r/GUI/GUI_ObjectList.cpp:1961
 msgid "Delete All Instances from Object"
-msgstr ""
+msgstr "Izbriši vse instance iz objekta"
 
 #: src/slic3r/GUI/GUI_ObjectList.cpp:1977
 msgid "Delete Height Range"
@@ -11768,7 +11786,7 @@ msgstr ""
 #: src/slic3r/GUI/GUI_ObjectList.cpp:2009
 #: src/slic3r/GUI/GUI_ObjectList.cpp:2531
 msgid "Delete all connectors"
-msgstr ""
+msgstr "Izbriši vse konektorje"
 
 #: src/slic3r/GUI/GUI_ObjectList.cpp:2040
 msgid "From Object List You can't delete the last solid part from object."
@@ -12083,7 +12101,7 @@ msgstr "Premakni"
 
 #: src/slic3r/GUI/GUI_ObjectManipulation.cpp:847
 msgid "Left handed"
-msgstr ""
+msgstr "Levo ročno"
 
 #: src/slic3r/GUI/GUI_ObjectManipulation.cpp:909
 msgid "World coordinates"
@@ -12149,7 +12167,7 @@ msgstr ""
 #: src/slic3r/GUI/NotificationManager.cpp:461
 #: src/slic3r/GUI/NotificationManager.cpp:478
 msgid "More"
-msgstr ""
+msgstr "Več"
 
 #: src/slic3r/GUI/HintNotification.cpp:919
 msgid "Open Preferences."
@@ -12354,7 +12372,7 @@ msgstr ""
 
 #: src/slic3r/GUI/KBShortcutsDialog.cpp:22 src/slic3r/GUI/MainFrame.cpp:1225
 msgid "Keyboard Shortcuts"
-msgstr ""
+msgstr "Tipkovne bližnjice"
 
 #: src/slic3r/GUI/KBShortcutsDialog.cpp:91
 msgid "New project, clear plater"
@@ -12847,7 +12865,7 @@ msgstr ""
 
 #: src/slic3r/GUI/KBShortcutsDialog.cpp:289
 msgid "Keyboard shortcuts"
-msgstr ""
+msgstr "Tipkovne bližnjice"
 
 #: src/slic3r/GUI/MainFrame.cpp:88 src/slic3r/GUI/MainFrame.cpp:102
 #: src/slic3r/GUI/MainFrame.cpp:1531
@@ -12953,7 +12971,7 @@ msgstr ""
 
 #: src/slic3r/GUI/MainFrame.cpp:1199
 msgid "Software &Releases"
-msgstr ""
+msgstr "Programske &izdaje"
 
 #: src/slic3r/GUI/MainFrame.cpp:1199
 msgid "Open the software releases page in your browser"
@@ -13042,7 +13060,7 @@ msgstr "Levo"
 
 #: src/slic3r/GUI/MainFrame.cpp:1252
 msgid "Left View"
-msgstr ""
+msgstr "Levi pogled"
 
 #: src/slic3r/GUI/MainFrame.cpp:1254
 msgid "Right"
@@ -13100,7 +13118,7 @@ msgstr "Uvozi STL/3MF/STEP/OBJ/AM&F"
 
 #: src/slic3r/GUI/MainFrame.cpp:1325
 msgid "Load a model"
-msgstr ""
+msgstr "Naloži model"
 
 #: src/slic3r/GUI/MainFrame.cpp:1329
 msgid "Import STL (Imperial Units)"
@@ -13108,7 +13126,7 @@ msgstr "Uvozi STL (imperialne enote)"
 
 #: src/slic3r/GUI/MainFrame.cpp:1329
 msgid "Load an model saved with imperial units"
-msgstr ""
+msgstr "Naloži model, shranjen z empiričnimi enotami"
 
 #: src/slic3r/GUI/MainFrame.cpp:1333
 msgid "Import SLA Archive"
@@ -13116,7 +13134,7 @@ msgstr "Uvozi SLA arhiv"
 
 #: src/slic3r/GUI/MainFrame.cpp:1333
 msgid "Load an SLA archive"
-msgstr ""
+msgstr "Naloži SLA arhiv"
 
 #: src/slic3r/GUI/MainFrame.cpp:1337
 msgid "Import ZIP Archive"
@@ -13124,7 +13142,7 @@ msgstr "Uvozi ZIP arhiv"
 
 #: src/slic3r/GUI/MainFrame.cpp:1337
 msgid "Load a ZIP archive"
-msgstr ""
+msgstr "Naloži ZIP arhiv"
 
 #: src/slic3r/GUI/MainFrame.cpp:1342
 msgid "Import &Config"
@@ -13148,7 +13166,7 @@ msgstr "Uvozi &paket konfiguracij"
 
 #: src/slic3r/GUI/MainFrame.cpp:1349
 msgid "Load presets from a bundle"
-msgstr ""
+msgstr "Naloži prednastavitve iz paketa"
 
 #: src/slic3r/GUI/MainFrame.cpp:1352
 msgid "&Import"
@@ -13319,7 +13337,7 @@ msgstr "&Zbriši izbrano"
 
 #: src/slic3r/GUI/MainFrame.cpp:1446
 msgid "Deletes the current selection"
-msgstr ""
+msgstr "Izbriši trenutno izbiro"
 
 #: src/slic3r/GUI/MainFrame.cpp:1448
 msgid "Delete &All"
@@ -13327,7 +13345,7 @@ msgstr "Zbriši &vse"
 
 #: src/slic3r/GUI/MainFrame.cpp:1449
 msgid "Deletes all objects"
-msgstr ""
+msgstr "Izbriše vse objekte"
 
 #: src/slic3r/GUI/MainFrame.cpp:1453
 msgid "&Undo"
@@ -13665,7 +13683,7 @@ msgstr ""
 
 #: src/slic3r/GUI/NotificationManager.hpp:927
 msgid "Desktop integration was successful."
-msgstr ""
+msgstr "Integracija z namizjem je bila uspešna."
 
 #: src/slic3r/GUI/NotificationManager.hpp:929
 msgid "Desktop integration failed."
@@ -14497,7 +14515,7 @@ msgstr ""
 
 #: src/slic3r/GUI/Plater.cpp:4212
 msgid "More info at"
-msgstr ""
+msgstr "Več informacij na"
 
 #: src/slic3r/GUI/Plater.cpp:4353
 msgid "There are active warnings concerning sliced models:"
@@ -14529,11 +14547,11 @@ msgstr ""
 
 #: src/slic3r/GUI/Plater.cpp:5349
 msgid "Creating a new project while the current project is modified."
-msgstr ""
+msgstr "Ustvarjam nov projekt s spremembami v trenutnem projektu."
 
 #: src/slic3r/GUI/Plater.cpp:5352
 msgid "Creating a new project while some presets are modified."
-msgstr ""
+msgstr "Ustvarjam nov projekt s spremembami nekaterih prednastavitev."
 
 #: src/slic3r/GUI/Plater.cpp:5353
 msgid "You can keep presets modifications to the new project or discard them"
@@ -14548,7 +14566,7 @@ msgstr ""
 
 #: src/slic3r/GUI/Plater.cpp:5359
 msgid "Creating a new project"
-msgstr ""
+msgstr "Ustvarjam nov projekt"
 
 #: src/slic3r/GUI/Plater.cpp:5393
 msgid "Load Project"
@@ -14672,7 +14690,7 @@ msgstr ""
 
 #: src/slic3r/GUI/Plater.cpp:6174
 msgid "Load project file"
-msgstr ""
+msgstr "Naloži projekt iz datoteke"
 
 #: src/slic3r/GUI/Plater.cpp:6183
 msgid "Open as project"
@@ -15335,7 +15353,7 @@ msgstr "Sistemske prednastavitve"
 #: src/slic3r/GUI/PresetComboBoxes.cpp:977
 #: src/slic3r/GUI/PresetComboBoxes.cpp:1243
 msgid "User presets"
-msgstr ""
+msgstr "Uporabniške prednastavitve"
 
 #: src/slic3r/GUI/PresetComboBoxes.cpp:359
 msgid "Incompatible presets"
@@ -15348,7 +15366,7 @@ msgstr ""
 
 #: src/slic3r/GUI/PresetComboBoxes.cpp:404
 msgid "Delete Physical Printer"
-msgstr ""
+msgstr "Izbriši fizičen tiskalnik"
 
 #: src/slic3r/GUI/PresetComboBoxes.cpp:651
 msgid "Click to edit preset"
@@ -15386,7 +15404,7 @@ msgstr ""
 
 #: src/slic3r/GUI/PresetComboBoxes.cpp:814
 msgid "Delete physical printer"
-msgstr ""
+msgstr "Izbriši fizičen tiskalnik"
 
 #: src/slic3r/GUI/PresetComboBoxes.cpp:989
 #: src/slic3r/GUI/PresetComboBoxes.cpp:1258
@@ -15444,6 +15462,8 @@ msgstr ""
 #, boost-format
 msgid "Fan speed will be ramped from zero at layer %1% to %2%%% at layer %3%."
 msgstr ""
+"Hitrost ventilatorja bo naraščala od nič pri plasti %1% do %2% pri plasti "
+"%3%."
 
 #: src/slic3r/GUI/PresetHints.cpp:62
 #, boost-format
@@ -15474,7 +15494,7 @@ msgstr ""
 
 #: src/slic3r/GUI/PresetHints.cpp:175
 msgid "external perimeters"
-msgstr "zunanji obodi"
+msgstr "zunanjih obodov"
 
 #: src/slic3r/GUI/PresetHints.cpp:176
 msgid "perimeters"
@@ -15482,56 +15502,56 @@ msgstr "obodov"
 
 #: src/slic3r/GUI/PresetHints.cpp:179
 msgid "infill"
-msgstr "polnilo"
+msgstr "polnila"
 
 #: src/slic3r/GUI/PresetHints.cpp:181
 msgid "solid infill"
-msgstr "polno polnilo"
+msgstr "polnega polnila"
 
 #: src/slic3r/GUI/PresetHints.cpp:183
 msgid "top solid infill"
-msgstr "vrhnje polno polnilo"
+msgstr "vrhnjega polnega polnila"
 
 #: src/slic3r/GUI/PresetHints.cpp:186
 msgid "support"
-msgstr "podpora"
+msgstr "podpor"
 
 #: src/slic3r/GUI/PresetHints.cpp:188
 msgid "support interface"
-msgstr ""
+msgstr "podpornega vmesnika"
 
 #: src/slic3r/GUI/PresetHints.cpp:192
 msgid "First layer volumetric"
-msgstr ""
+msgstr "Pretok prve plasti"
 
 #: src/slic3r/GUI/PresetHints.cpp:192
 msgid "Bridging volumetric"
-msgstr ""
+msgstr "Pretok mosta"
 
 #: src/slic3r/GUI/PresetHints.cpp:192
 msgid "Volumetric"
-msgstr ""
+msgstr "Pretok"
 
 #: src/slic3r/GUI/PresetHints.cpp:193
 msgid "flow rate is maximized"
-msgstr ""
+msgstr "je največji"
 
 #: src/slic3r/GUI/PresetHints.cpp:196
 msgid "by the print profile maximum"
-msgstr ""
+msgstr "pri profilu tiskanja"
 
 #: src/slic3r/GUI/PresetHints.cpp:197
 msgid "when printing"
-msgstr ""
+msgstr "pri tiskanju"
 
 #: src/slic3r/GUI/PresetHints.cpp:198
 msgid "with a volumetric rate"
-msgstr ""
+msgstr "s pretokom"
 
 #: src/slic3r/GUI/PresetHints.cpp:202
 #, c-format, boost-format
 msgid "%3.2f mm³/s at filament speed %3.2f mm/s."
-msgstr ""
+msgstr "%3.2f mm³/s pri hitrosti filamenta %3.2f mm/s."
 
 #: src/slic3r/GUI/PresetHints.cpp:220
 msgid ""
@@ -15694,7 +15714,7 @@ msgstr ""
 
 #: src/slic3r/GUI/RammingChart.cpp:99
 msgid "Volumetric speed"
-msgstr ""
+msgstr "Pretok"
 
 #: src/slic3r/GUI/SavePresetDialog.cpp:95
 #: src/slic3r/GUI/SavePresetDialog.cpp:96
@@ -15836,7 +15856,7 @@ msgstr "Tiho"
 #: src/slic3r/GUI/Search.cpp:101 src/slic3r/GUI/Search.cpp:395
 #: src/slic3r/GUI/Tab.cpp:3080
 msgid "Normal"
-msgstr ""
+msgstr "Normalno"
 
 #: src/slic3r/GUI/Selection.cpp:164
 msgid "Selection-Add"
@@ -16019,7 +16039,7 @@ msgstr ""
 
 #: src/slic3r/GUI/Tab.cpp:1290
 msgid "Detach from system preset"
-msgstr ""
+msgstr "Odklopi od sistemske prednastavitve"
 
 #: src/slic3r/GUI/Tab.cpp:1303
 msgid ""
@@ -16038,36 +16058,37 @@ msgstr ""
 
 #: src/slic3r/GUI/Tab.cpp:1313
 msgid "Detach preset"
-msgstr ""
+msgstr "Odklopi prednastavitev"
 
 #: src/slic3r/GUI/Tab.cpp:1339
 msgid "This is a default preset."
-msgstr ""
+msgstr "To je privzeta prednastavitev."
 
 #: src/slic3r/GUI/Tab.cpp:1341
 msgid "This is a system preset."
-msgstr ""
+msgstr "To je sistemska prednastavitev."
 
 #: src/slic3r/GUI/Tab.cpp:1343
 msgid "Current preset is inherited from the default preset."
-msgstr ""
+msgstr "Trenutna prednastavitev je podedovana iz privzete prednastavitve."
 
 #: src/slic3r/GUI/Tab.cpp:1347
 msgid "Current preset is inherited from"
-msgstr ""
+msgstr "Trenutna prednastavitev je podedovana iz"
 
 #: src/slic3r/GUI/Tab.cpp:1351
 msgid "It can't be deleted or modified."
-msgstr ""
+msgstr "Ne more biti zbrisana ali spremenjena."
 
 #: src/slic3r/GUI/Tab.cpp:1352
 msgid ""
 "Any modifications should be saved as a new preset inherited from this one."
 msgstr ""
+"Vse spremembe morajo biti shranjene kot nova prednastavitev, ki deduje iz te."
 
 #: src/slic3r/GUI/Tab.cpp:1353
 msgid "To do that please specify a new name for the preset."
-msgstr ""
+msgstr "Da to storite, prosimo vnesite novo ime prednastavitve."
 
 #: src/slic3r/GUI/Tab.cpp:1357
 msgid "Additional information:"
@@ -16075,31 +16096,31 @@ msgstr "Dodatne informacije:"
 
 #: src/slic3r/GUI/Tab.cpp:1363
 msgid "printer model"
-msgstr ""
+msgstr "model tiskalnika"
 
 #: src/slic3r/GUI/Tab.cpp:1371
 msgid "default print profile"
-msgstr ""
+msgstr "privzet profil za tiskanje"
 
 #: src/slic3r/GUI/Tab.cpp:1374
 msgid "default filament profile"
-msgstr ""
+msgstr "privzet profil filamenta"
 
 #: src/slic3r/GUI/Tab.cpp:1388
 msgid "default SLA material profile"
-msgstr ""
+msgstr "privzet SLA profil materiala"
 
 #: src/slic3r/GUI/Tab.cpp:1392
 msgid "default SLA print profile"
-msgstr ""
+msgstr "privzet SLA profil tiska"
 
 #: src/slic3r/GUI/Tab.cpp:1400
 msgid "full profile name"
-msgstr ""
+msgstr "polno ime profila"
 
 #: src/slic3r/GUI/Tab.cpp:1401
 msgid "symbolic profile name"
-msgstr ""
+msgstr "simbolično ime profila"
 
 #: src/slic3r/GUI/Tab.cpp:1439 src/slic3r/GUI/Tab.cpp:5465
 msgid "Layers and perimeters"
@@ -16147,7 +16168,7 @@ msgstr "Hitrost tiskanja"
 
 #: src/slic3r/GUI/Tab.cpp:1600
 msgid "Dynamic overhang speed"
-msgstr ""
+msgstr "Dinamična hitrost previsov"
 
 #: src/slic3r/GUI/Tab.cpp:1607
 msgid "Speed for non-print moves"
@@ -16155,7 +16176,7 @@ msgstr "Hitrost premikov"
 
 #: src/slic3r/GUI/Tab.cpp:1611
 msgid "Modifiers"
-msgstr ""
+msgstr "Pripomočki"
 
 #: src/slic3r/GUI/Tab.cpp:1615
 msgid "Acceleration control (advanced)"
@@ -16253,6 +16274,10 @@ msgstr[3] ""
 msgid "Found reserved keywords in"
 msgstr ""
 
+#: src/slic3r/GUI/Tab.cpp:1983
+msgid "Retraction when tool is disabled"
+msgstr "Umiki, to je orodje onemogočeno"
+
 #: src/slic3r/GUI/Tab.cpp:1991
 msgid "Filament Overrides"
 msgstr "Preglasitev filamenta"
@@ -16283,11 +16308,11 @@ msgstr "Hitrost ventilatorja"
 
 #: src/slic3r/GUI/Tab.cpp:2225
 msgid "Dynamic fan speeds"
-msgstr ""
+msgstr "Dinamična hitrost ventilatorja"
 
 #: src/slic3r/GUI/Tab.cpp:2232
 msgid "Cooling thresholds"
-msgstr ""
+msgstr "Prag hlajenja"
 
 #: src/slic3r/GUI/Tab.cpp:2238
 msgid "Filament properties"
@@ -16295,23 +16320,23 @@ msgstr "Lastnosti filamenta"
 
 #: src/slic3r/GUI/Tab.cpp:2245
 msgid "Print speed override"
-msgstr ""
+msgstr "Preglasitev hitrosti tiskanja"
 
 #: src/slic3r/GUI/Tab.cpp:2255
 msgid "Wipe tower parameters"
-msgstr ""
+msgstr "Parametri stolpa za brisanje"
 
 #: src/slic3r/GUI/Tab.cpp:2258
 msgid "Toolchange parameters with single extruder MM printers"
-msgstr ""
+msgstr "Parametri menjave orodja z enojnim ekstruderjem VM tiskalnikov"
 
 #: src/slic3r/GUI/Tab.cpp:2271
 msgid "Ramming settings"
-msgstr ""
+msgstr "Nastavitve"
 
 #: src/slic3r/GUI/Tab.cpp:2290
 msgid "Toolchange parameters with multi extruder MM printers"
-msgstr ""
+msgstr "Parametri menjave orodja z več ekstruderji VM tiskalnikov"
 
 #: src/slic3r/GUI/Tab.cpp:2360
 msgid "Volumetric flow hints not available"
@@ -16402,7 +16427,7 @@ msgstr ""
 
 #: src/slic3r/GUI/Tab.cpp:2950 src/slic3r/GUI/Tab.cpp:5337
 msgid "Corrections"
-msgstr ""
+msgstr "Popravki"
 
 #: src/slic3r/GUI/Tab.cpp:2963 src/slic3r/GUI/Tab.cpp:5333
 msgid "Exposure"
@@ -16422,19 +16447,19 @@ msgstr "Vrednosti v tem stolpcu so za Tihi način"
 
 #: src/slic3r/GUI/Tab.cpp:3094
 msgid "Maximum feedrates"
-msgstr ""
+msgstr "Največje podajalne hitrosti"
 
 #: src/slic3r/GUI/Tab.cpp:3099
 msgid "Maximum accelerations"
-msgstr ""
+msgstr "Največji pospeški"
 
 #: src/slic3r/GUI/Tab.cpp:3108
 msgid "Jerk limits"
-msgstr ""
+msgstr "Največje hitrosti spremembe smeri"
 
 #: src/slic3r/GUI/Tab.cpp:3114
 msgid "Minimum feedrates"
-msgstr ""
+msgstr "Najmanjše podajalne hitrosti"
 
 #: src/slic3r/GUI/Tab.cpp:3156
 msgid ""
@@ -16464,13 +16489,15 @@ msgstr "Višina giba"
 
 #: src/slic3r/GUI/Tab.cpp:3288
 msgid "Only lift"
-msgstr ""
+msgstr "Dvigni samo"
 
 #: src/slic3r/GUI/Tab.cpp:3303
 msgid ""
 "Retraction when tool is disabled (advanced settings for multi-extruder "
 "setups)"
 msgstr ""
+"Umiki, to je orodje onemogočeno (napredne nastavitve za tiskalnike z več "
+"ekstruderji)"
 
 #: src/slic3r/GUI/Tab.cpp:3360 src/slic3r/GUI/Tab.cpp:3369
 msgid "Single extruder MM setup"
@@ -16834,7 +16861,7 @@ msgstr "Obdrži"
 #: src/slic3r/GUI/UnsavedChangesDialog.cpp:894
 #: src/slic3r/GUI/UnsavedChangesDialog.cpp:1574
 msgid "Transfer"
-msgstr ""
+msgstr "Prenesi"
 
 #: src/slic3r/GUI/UnsavedChangesDialog.cpp:901
 msgid "Don't save"

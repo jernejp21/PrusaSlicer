@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PrusaSlicer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-11 08:57+0100\n"
-"PO-Revision-Date: 2024-04-11 08:59+0200\n"
+"PO-Revision-Date: 2024-06-14 11:20+0200\n"
 "Last-Translator: Jernej Pangerc <jernej.pangerc@tuta.com>\n"
 "Language-Team: \n"
 "Language: sl\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100>=3 && "
 "n%100<=4 ? 2 : 3);\n"
-"X-Generator: Poedit 3.4.2\n"
+"X-Generator: Poedit 3.4.4\n"
 
 #: src/libslic3r/ExtrusionRole.cpp:41 src/slic3r/GUI/ConfigSnapshotDialog.cpp:34
 #: src/slic3r/GUI/GUI_ObjectManipulation.cpp:912
@@ -35,17 +35,17 @@ msgstr "Zunanji obod"
 
 #: src/libslic3r/ExtrusionRole.cpp:44 src/libslic3r/ExtrusionRole.cpp:67
 msgid "Overhang perimeter"
-msgstr ""
+msgstr "Previsni obodi"
 
 #: src/libslic3r/ExtrusionRole.cpp:45 src/libslic3r/ExtrusionRole.cpp:69
 msgid "Internal infill"
-msgstr ""
+msgstr "Notranje polnilo"
 
 #: src/libslic3r/ExtrusionRole.cpp:46 src/libslic3r/ExtrusionRole.cpp:71
 #: src/libslic3r/PrintConfig.cpp:1557 src/libslic3r/PrintConfig.cpp:2607
 #: src/libslic3r/PrintConfig.cpp:2619
 msgid "Solid infill"
-msgstr "Polnega polnila"
+msgstr "Polno polnilo"
 
 #: src/libslic3r/ExtrusionRole.cpp:47 src/libslic3r/ExtrusionRole.cpp:73
 #: src/libslic3r/PrintConfig.cpp:1566 src/libslic3r/PrintConfig.cpp:3196
@@ -63,7 +63,7 @@ msgstr "Likanje"
 
 #: src/libslic3r/ExtrusionRole.cpp:49 src/libslic3r/ExtrusionRole.cpp:77
 msgid "Bridge infill"
-msgstr ""
+msgstr "Most"
 
 #: src/libslic3r/ExtrusionRole.cpp:50 src/libslic3r/ExtrusionRole.cpp:79
 #: src/libslic3r/PrintConfig.cpp:1478
@@ -102,7 +102,7 @@ msgstr "Podporni material"
 #: src/libslic3r/ExtrusionRole.cpp:53 src/libslic3r/ExtrusionRole.cpp:85
 #: src/libslic3r/PrintConfig.cpp:2956
 msgid "Support material interface"
-msgstr "Vmesnik za podporni material"
+msgstr "Vmesne plasti za podporni material"
 
 #: src/libslic3r/ExtrusionRole.cpp:54 src/libslic3r/ExtrusionRole.cpp:87
 #: src/libslic3r/PrintConfig.cpp:1575 src/slic3r/GUI/Tab.cpp:1649
@@ -130,6 +130,9 @@ msgid ""
 "\n"
 "\"%1%\""
 msgstr ""
+"3MF datoteka ne vsebuje veljavne mreže.\n"
+"\n"
+"\"%1%\""
 
 #: src/libslic3r/Format/3mf.cpp:2086
 #, boost-format
@@ -173,6 +176,13 @@ msgid ""
 "Please adjust the post-processing script to change the G-code in place and consult "
 "the manual on how to optionally rename the post-processed G-code file.\n"
 msgstr ""
+"Skripta za naknadno obdelavo %1% je spodletela.\n"
+"\n"
+"Skripta za naknadno obdelavo naj bi spremenila datoteko g-kode %2%, vendar je bila "
+"datoteka g-kode izbrisana in verjetno shranjena pod novim imenom.\n"
+"Prilagodite skripto za naknadno obdelavo, da bo spremenila g-kodo na mestu, in si v "
+"priročniku preberite, kako po želji preimenovati datoteko g-kode, ki je bila "
+"naknadno obdelana.\n"
 
 #: src/libslic3r/GCode.cpp:356
 msgid "There is an object with no extrusions in the first layer."
@@ -186,7 +196,7 @@ msgstr "Ime objekta"
 #: src/libslic3r/GCode.cpp:387
 #, boost-format
 msgid "Empty layer between %1% and %2%."
-msgstr ""
+msgstr "Prazne plasti med %1% in %2%."
 
 #: src/libslic3r/GCode.cpp:390
 msgid "(Some lines not shown)"
@@ -250,11 +260,11 @@ msgstr "G-koda za predlogo po meri"
 
 #: src/libslic3r/GCode.cpp:535
 msgid "Filament Start G-code"
-msgstr ""
+msgstr "G-koda na začetku filamenta"
 
 #: src/libslic3r/GCode.cpp:542
 msgid "Filament End G-code"
-msgstr ""
+msgstr "G-koda na koncu filamenta"
 
 #: src/libslic3r/GCode.cpp:550 src/libslic3r/PrintConfig.cpp:2727
 #: src/slic3r/GUI/Tab.cpp:2310 src/slic3r/GUI/Tab.cpp:2808 src/slic3r/GUI/Tab.cpp:5010
@@ -284,23 +294,23 @@ msgstr ""
 
 #: src/libslic3r/miniz_extension.cpp:93
 msgid "too many files"
-msgstr ""
+msgstr "preveč datotek"
 
 #: src/libslic3r/miniz_extension.cpp:95
 msgid "file too large"
-msgstr ""
+msgstr "datoteka je prevelika"
 
 #: src/libslic3r/miniz_extension.cpp:97
 msgid "unsupported method"
-msgstr ""
+msgstr "nepodprta metoda"
 
 #: src/libslic3r/miniz_extension.cpp:99
 msgid "unsupported encryption"
-msgstr ""
+msgstr "nepodprto šifriranje"
 
 #: src/libslic3r/miniz_extension.cpp:101
 msgid "unsupported feature"
-msgstr ""
+msgstr "nepodprta funkcionalnost"
 
 #: src/libslic3r/miniz_extension.cpp:103
 msgid "failed finding central directory"
@@ -412,13 +422,13 @@ msgstr "filament"
 
 #: src/libslic3r/Preset.cpp:1554 src/slic3r/GUI/ConfigSnapshotDialog.cpp:72
 msgid "SLA print"
-msgstr ""
+msgstr "SLA tisk"
 
 #: src/libslic3r/Preset.cpp:1555 src/slic3r/GUI/ConfigSnapshotDialog.cpp:73
 #: src/slic3r/GUI/ConfigWizard.cpp:863 src/slic3r/GUI/GUI.cpp:342
 #: src/slic3r/GUI/Plater.cpp:911
 msgid "SLA material"
-msgstr ""
+msgstr "SLA material"
 
 #: src/libslic3r/Preset.cpp:1556 src/slic3r/GUI/ConfigSnapshotDialog.cpp:75
 msgid "printer"
@@ -461,6 +471,8 @@ msgid ""
 "Machine limits cannot be emitted to G-Code when Klipper firmware flavor is used. "
 "Change the value of machine_limits_usage."
 msgstr ""
+"Omejitev stroja ni mogoče poslati v kodo G, ko se uporablja Klipper privdih g-kode. "
+"Spremenite vrednost machine_limits_usage."
 
 #: src/libslic3r/Print.cpp:588
 #, boost-format
@@ -729,7 +741,7 @@ msgstr "Oblika postelje po meri"
 
 #: src/libslic3r/PrintConfig.cpp:308
 msgid "Elephant foot compensation"
-msgstr ""
+msgstr "Kompenzacija slonove noge"
 
 #: src/libslic3r/PrintConfig.cpp:309 src/libslic3r/PrintConfig.cpp:559
 #: src/libslic3r/PrintConfig.cpp:1605 src/libslic3r/PrintConfig.cpp:1687
@@ -811,7 +823,7 @@ msgstr "mm"
 
 #: src/libslic3r/PrintConfig.cpp:318
 msgid "G-code thumbnails"
-msgstr ""
+msgstr "Format sličic g-kode"
 
 #: src/libslic3r/PrintConfig.cpp:319
 msgid ""
@@ -822,13 +834,15 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:326
 msgid "Format of G-code thumbnails"
-msgstr ""
+msgstr "Format sličic g-kode"
 
 #: src/libslic3r/PrintConfig.cpp:327
 msgid ""
 "Format of G-code thumbnails: PNG for best quality, JPG for smallest size, QOI for "
 "low memory firmware"
 msgstr ""
+"Format sličic g-kode: PNG za dobro kvaliteto, JPG za majhno velikost, QOI za "
+"naprave z malo spomina"
 
 #: src/libslic3r/PrintConfig.cpp:333 src/slic3r/GUI/ConfigManipulation.cpp:55
 #: src/slic3r/GUI/GUI_ObjectLayers.cpp:33 src/slic3r/GUI/Tab.cpp:1441
@@ -946,7 +960,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:438
 msgid "Arc fitting"
-msgstr ""
+msgstr "Prilagajanje loka"
 
 #: src/libslic3r/PrintConfig.cpp:439
 msgid ""
@@ -956,7 +970,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:451
 msgid "Avoid crossing curled overhangs (Experimental)"
-msgstr ""
+msgstr "Izogibaj se prečkanju upognjeni previsov (poskusno)"
 
 #. TRN PrintSettings: "Avoid crossing curled overhangs (Experimental)"
 #: src/libslic3r/PrintConfig.cpp:453
@@ -992,7 +1006,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:473
 msgid "mm or % (zero to disable)"
-msgstr ""
+msgstr "mm ali % (nič za onemogočiti)"
 
 #: src/libslic3r/PrintConfig.cpp:480 src/libslic3r/PrintConfig.cpp:3158
 msgid "Other layers"
@@ -1079,11 +1093,11 @@ msgstr ""
 #: src/libslic3r/PrintConfig.cpp:1960 src/libslic3r/PrintConfig.cpp:2161
 #: src/libslic3r/PrintConfig.cpp:2169
 msgid "mm/s²"
-msgstr ""
+msgstr "mm/s²"
 
 #: src/libslic3r/PrintConfig.cpp:538
 msgid "Bridging angle"
-msgstr ""
+msgstr "Premostitveni kot"
 
 #: src/libslic3r/PrintConfig.cpp:539 src/libslic3r/PrintConfig.cpp:858
 #: src/libslic3r/PrintConfig.cpp:878 src/libslic3r/PrintConfig.cpp:1283
@@ -1139,7 +1153,7 @@ msgstr "%"
 
 #: src/libslic3r/PrintConfig.cpp:558
 msgid "Bridge flow ratio"
-msgstr ""
+msgstr "Koeficient pretoka mostu"
 
 #: src/libslic3r/PrintConfig.cpp:560
 msgid ""
@@ -1184,7 +1198,7 @@ msgstr "mm/s"
 
 #: src/libslic3r/PrintConfig.cpp:580
 msgid "Enable dynamic overhang speeds"
-msgstr ""
+msgstr "Omogoči dinamične hitrosti previsov"
 
 #: src/libslic3r/PrintConfig.cpp:582
 msgid "This setting enables dynamic speed control on overhangs."
@@ -1212,7 +1226,7 @@ msgstr "hitrost za 0% prekrivanja (most)"
 #: src/libslic3r/PrintConfig.cpp:2624 src/libslic3r/PrintConfig.cpp:2960
 #: src/libslic3r/PrintConfig.cpp:3216
 msgid "mm/s or %"
-msgstr ""
+msgstr "mm/s ali %"
 
 #: src/libslic3r/PrintConfig.cpp:603 src/libslic3r/PrintConfig.cpp:650
 msgid "speed for 25% overlap"
@@ -1335,7 +1349,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:754
 msgid "Complete individual objects"
-msgstr ""
+msgstr "Dokončaj posamezne objekte"
 
 #: src/libslic3r/PrintConfig.cpp:755
 msgid ""
@@ -1513,7 +1527,7 @@ msgstr ""
 #: src/libslic3r/PrintConfig.cpp:886 src/libslic3r/PrintConfig.cpp:898
 #: src/libslic3r/PrintConfig.cpp:2166
 msgid "External perimeters"
-msgstr "Zunanjih obodov"
+msgstr "Zunanji obodi"
 
 #: src/libslic3r/PrintConfig.cpp:887 src/libslic3r/PrintConfig.cpp:1000
 #: src/libslic3r/PrintConfig.cpp:1374 src/libslic3r/PrintConfig.cpp:1659
@@ -2083,7 +2097,7 @@ msgstr "Strela"
 #: src/libslic3r/PrintConfig.cpp:1373 src/libslic3r/PrintConfig.cpp:1418
 #: src/slic3r/GUI/GCodeViewer.cpp:4191
 msgid "First layer"
-msgstr "Začetne plasti"
+msgstr "Začetna plast"
 
 #: src/libslic3r/PrintConfig.cpp:1346
 msgid ""
@@ -2093,7 +2107,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:1354
 msgid "First object layer over raft interface"
-msgstr ""
+msgstr "Začetna plast objekta na splavu"
 
 #: src/libslic3r/PrintConfig.cpp:1355
 msgid ""
@@ -2143,7 +2157,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:1408
 msgid "Speed of object first layer over raft interface"
-msgstr ""
+msgstr "Hitrost začetne plasti objekta na splavu"
 
 #: src/libslic3r/PrintConfig.cpp:1409
 msgid ""
@@ -2192,7 +2206,7 @@ msgstr "Slog puhaste kože."
 #: src/slic3r/GUI/Gizmos/GLGizmoMeasure.cpp:1999 src/slic3r/GUI/Plater.cpp:467
 #: src/slic3r/GUI/Plater.cpp:625 src/slic3r/GUI/Preferences.cpp:592
 msgid "None"
-msgstr "Brez"
+msgstr "Nič"
 
 #: src/libslic3r/PrintConfig.cpp:1444
 msgid "Outside walls"
@@ -2241,7 +2255,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:1488
 msgid "Verbose G-code"
-msgstr ""
+msgstr "Obogatena g-koda"
 
 #: src/libslic3r/PrintConfig.cpp:1489
 msgid ""
@@ -2264,7 +2278,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:1513
 msgid "No extrusion"
-msgstr ""
+msgstr "Brez iztiska"
 
 #: src/libslic3r/PrintConfig.cpp:1519
 msgid "Label objects"
@@ -2295,7 +2309,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:1534
 msgid "G-code substitutions"
-msgstr ""
+msgstr "Zamenjava g-kode"
 
 #: src/libslic3r/PrintConfig.cpp:1535
 msgid "Find / replace patterns in G-code lines and substitute them."
@@ -2363,7 +2377,7 @@ msgstr "Združi polnilo vsakih n plasti"
 
 #: src/libslic3r/PrintConfig.cpp:1604
 msgid "Length of the infill anchor"
-msgstr ""
+msgstr "Dolžina sidra notranjega polnila"
 
 #: src/libslic3r/PrintConfig.cpp:1606
 msgid ""
@@ -2379,7 +2393,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:1616
 msgid "0 (no open anchors)"
-msgstr ""
+msgstr "0 (brez odprtih sider)"
 
 #: src/libslic3r/PrintConfig.cpp:1617 src/libslic3r/PrintConfig.cpp:1640
 msgid "1 mm"
@@ -2403,7 +2417,7 @@ msgstr "1000 (neomejeno)"
 
 #: src/libslic3r/PrintConfig.cpp:1627
 msgid "Maximum length of the infill anchor"
-msgstr ""
+msgstr "Maks. dolžina sidra notranjega polnila"
 
 #: src/libslic3r/PrintConfig.cpp:1629
 msgid ""
@@ -2418,11 +2432,11 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:1639
 msgid "0 (not anchored)"
-msgstr ""
+msgstr "0 (ni sidrano)"
 
 #: src/libslic3r/PrintConfig.cpp:1650
 msgid "Infill extruder"
-msgstr ""
+msgstr "Ekstruder za polnilo"
 
 #: src/libslic3r/PrintConfig.cpp:1652
 msgid "The extruder to use when printing infill."
@@ -2473,7 +2487,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:1721
 msgid "Interface shells"
-msgstr ""
+msgstr "Lupina vmesne plasti"
 
 #: src/libslic3r/PrintConfig.cpp:1722
 msgid ""
@@ -2483,7 +2497,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:1730
 msgid "Maximum width of a segmented region"
-msgstr ""
+msgstr "Največja širina razčlenjenega območja"
 
 #: src/libslic3r/PrintConfig.cpp:1731
 msgid "Maximum width of a segmented region. Zero disables this feature."
@@ -2496,7 +2510,7 @@ msgstr "mm (nič za onemogočiti)"
 
 #: src/libslic3r/PrintConfig.cpp:1739
 msgid "Interlocking depth of a segmented region"
-msgstr ""
+msgstr "Globina prepletanja razčlenjenega območja"
 
 #: src/libslic3r/PrintConfig.cpp:1740
 msgid ""
@@ -2520,15 +2534,15 @@ msgstr "Tip likanja"
 
 #: src/libslic3r/PrintConfig.cpp:1761
 msgid "All top surfaces"
-msgstr ""
+msgstr "Vse vrhnje površine"
 
 #: src/libslic3r/PrintConfig.cpp:1762
 msgid "Topmost surface only"
-msgstr ""
+msgstr "Samo najvišja površina"
 
 #: src/libslic3r/PrintConfig.cpp:1763
 msgid "All solid surfaces"
-msgstr ""
+msgstr "Vse polne površine"
 
 #: src/libslic3r/PrintConfig.cpp:1769
 msgid "Flow rate"
@@ -2555,7 +2569,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:1809
 msgid "Supports remaining times"
-msgstr ""
+msgstr "Podpira preostali čas"
 
 #: src/libslic3r/PrintConfig.cpp:1810
 msgid ""
@@ -2567,7 +2581,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:1818
 msgid "Supports stealth mode"
-msgstr ""
+msgstr "Podpira tih način"
 
 #: src/libslic3r/PrintConfig.cpp:1819
 msgid "The firmware supports stealth mode"
@@ -2575,7 +2589,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:1824
 msgid "Supports binary G-code"
-msgstr ""
+msgstr "Podpira binarno g-kodo"
 
 #: src/libslic3r/PrintConfig.cpp:1825
 msgid ""
@@ -2770,7 +2784,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:1986
 msgid "Max print speed"
-msgstr ""
+msgstr "Maks. hitrost tiskanja"
 
 #: src/libslic3r/PrintConfig.cpp:1987
 msgid ""
@@ -2787,7 +2801,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2005
 msgid "Max volumetric slope positive"
-msgstr ""
+msgstr "Maks. negativni naklon pretoka"
 
 #: src/libslic3r/PrintConfig.cpp:2006
 msgid ""
@@ -2804,7 +2818,7 @@ msgstr "mm³/s²"
 
 #: src/libslic3r/PrintConfig.cpp:2017
 msgid "Max volumetric slope negative"
-msgstr ""
+msgstr "Maks. pozitivni naklon pretoka"
 
 #: src/libslic3r/PrintConfig.cpp:2018
 msgid ""
@@ -2839,7 +2853,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2055
 msgid "Minimal filament extrusion length"
-msgstr ""
+msgstr "Min. dolžina iztiska filamenta"
 
 #: src/libslic3r/PrintConfig.cpp:2056
 msgid ""
@@ -2879,7 +2893,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2100
 msgid "Only retract when crossing perimeters"
-msgstr ""
+msgstr "Umik samo ob prečkanju obodov"
 
 #: src/libslic3r/PrintConfig.cpp:2101
 msgid ""
@@ -2900,7 +2914,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2114
 msgid "Output filename format"
-msgstr ""
+msgstr "Format datoteke za izvoz"
 
 #: src/libslic3r/PrintConfig.cpp:2115
 msgid ""
@@ -2912,7 +2926,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2124
 msgid "Detect bridging perimeters"
-msgstr ""
+msgstr "Zaznava obodov za most"
 
 #: src/libslic3r/PrintConfig.cpp:2126
 msgid ""
@@ -2971,7 +2985,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2174
 msgid "Perimeter extruder"
-msgstr ""
+msgstr "Ekstruder za obod"
 
 #: src/libslic3r/PrintConfig.cpp:2176
 msgid "The extruder to use when printing perimeters and brim. First extruder is 1."
@@ -3004,7 +3018,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2220 src/slic3r/GUI/Tab.cpp:1731
 msgid "Post-processing scripts"
-msgstr ""
+msgstr "Skripte za naknadno obdelavo"
 
 #: src/libslic3r/PrintConfig.cpp:2221
 msgid ""
@@ -3050,7 +3064,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2272
 msgid "Raft contact Z distance"
-msgstr ""
+msgstr "Z razdalja do splava"
 
 #: src/libslic3r/PrintConfig.cpp:2274
 msgid "The vertical distance between object and raft. Ignored for soluble interface."
@@ -3314,7 +3328,7 @@ msgstr "Zadaj"
 
 #: src/libslic3r/PrintConfig.cpp:2489
 msgid "Staggered inner seams"
-msgstr ""
+msgstr "Razporejeni notranji šivi"
 
 #. TRN PrintSettings: "Staggered inner seams"
 #: src/libslic3r/PrintConfig.cpp:2491
@@ -3412,7 +3426,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2566
 msgid "Small perimeters"
-msgstr ""
+msgstr "Majhni obodi"
 
 #: src/libslic3r/PrintConfig.cpp:2568
 msgid ""
@@ -3423,7 +3437,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2578
 msgid "Solid infill threshold area"
-msgstr ""
+msgstr "Prag površine polnega polnila"
 
 #: src/libslic3r/PrintConfig.cpp:2580
 msgid ""
@@ -3436,7 +3450,7 @@ msgstr "mm²"
 
 #: src/libslic3r/PrintConfig.cpp:2587
 msgid "Solid infill extruder"
-msgstr ""
+msgstr "Ekstruder za polno polnilo"
 
 #: src/libslic3r/PrintConfig.cpp:2589
 msgid "The extruder to use when printing solid infill."
@@ -3496,7 +3510,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2655
 msgid "Temperature variation"
-msgstr ""
+msgstr "Sprememba temperature"
 
 #. TRN PrintSettings : "Ooze prevention" > "Temperature variation"
 #: src/libslic3r/PrintConfig.cpp:2657
@@ -3507,7 +3521,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2667
 msgid "Emit temperature commands automatically"
-msgstr ""
+msgstr "Samodejno dodaj ukaze o temperaturi"
 
 #: src/libslic3r/PrintConfig.cpp:2668
 msgid ""
@@ -3560,7 +3574,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2736
 msgid "Single Extruder Multi Material"
-msgstr ""
+msgstr "En ekstruder za več materialov"
 
 #: src/libslic3r/PrintConfig.cpp:2737
 msgid "The printer multiplexes filaments into a single hot end."
@@ -3568,7 +3582,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2742
 msgid "Prime all printing extruders"
-msgstr ""
+msgstr "Očisti vse ekstruderje za tiskanje"
 
 #: src/libslic3r/PrintConfig.cpp:2743
 msgid ""
@@ -3578,7 +3592,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2748
 msgid "No sparse layers (EXPERIMENTAL)"
-msgstr ""
+msgstr "Brez nepotrebnih plasti (POSKUSNO)"
 
 #: src/libslic3r/PrintConfig.cpp:2749
 msgid ""
@@ -3589,7 +3603,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2756
 msgid "Slice gap closing radius"
-msgstr ""
+msgstr "Špranja za razrez polmera zapiranja"
 
 #: src/libslic3r/PrintConfig.cpp:2758
 msgid ""
@@ -3600,7 +3614,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2766
 msgid "Slicing Mode"
-msgstr ""
+msgstr "Način rezanja"
 
 #: src/libslic3r/PrintConfig.cpp:2768
 msgid ""
@@ -3614,7 +3628,7 @@ msgstr "Navadno"
 
 #: src/libslic3r/PrintConfig.cpp:2771
 msgid "Even-odd"
-msgstr ""
+msgstr "Sodo-liho"
 
 #: src/libslic3r/PrintConfig.cpp:2772
 msgid "Close holes"
@@ -3641,13 +3655,15 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2792
 msgid "XY separation between an object and its support"
-msgstr ""
+msgstr "XY razmak med predmetom in njegovo podporo"
 
 #: src/libslic3r/PrintConfig.cpp:2794
 msgid ""
 "XY separation between an object and its support. If expressed as percentage (for "
 "example 50%), it will be calculated over external perimeter width."
 msgstr ""
+"XY razmak med predmetom in njegovo podporo. Če je izraženo kot procent (npr. 50%), "
+"se bo za osnovo vzela širina zunanjega oboda."
 
 #: src/libslic3r/PrintConfig.cpp:2805
 msgid "Pattern angle"
@@ -3670,7 +3686,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2822
 msgid "Top contact Z distance"
-msgstr ""
+msgstr "Z razdalja zgornjega stika"
 
 #: src/libslic3r/PrintConfig.cpp:2824
 msgid ""
@@ -3693,7 +3709,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2838
 msgid "Bottom contact Z distance"
-msgstr ""
+msgstr "Z razdalja spodnjega stika"
 
 #: src/libslic3r/PrintConfig.cpp:2840
 msgid ""
@@ -3726,7 +3742,7 @@ msgstr "Izvrši podporo za prvih n plasti"
 
 #: src/libslic3r/PrintConfig.cpp:2867
 msgid "Support material/raft/skirt extruder"
-msgstr ""
+msgstr "Ekstruder za podporni material/splav/oris"
 
 #: src/libslic3r/PrintConfig.cpp:2869
 msgid ""
@@ -3744,7 +3760,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2888
 msgid "Interface loops"
-msgstr ""
+msgstr "Zanke vmesne plasti"
 
 #: src/libslic3r/PrintConfig.cpp:2890
 msgid "Cover the top contact layer of the supports with loops. Disabled by default."
@@ -3752,7 +3768,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2895
 msgid "Support material/raft interface extruder"
-msgstr ""
+msgstr "Ekstruder za vmesno plast podpornega materiala/splava"
 
 #: src/libslic3r/PrintConfig.cpp:2897
 msgid ""
@@ -3762,7 +3778,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2904
 msgid "Top interface layers"
-msgstr ""
+msgstr "Zgornje vmesne plasti"
 
 #: src/libslic3r/PrintConfig.cpp:2906
 msgid ""
@@ -3787,7 +3803,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2919
 msgid "Bottom interface layers"
-msgstr ""
+msgstr "Spodnje vmesne plasti"
 
 #: src/libslic3r/PrintConfig.cpp:2921
 msgid ""
@@ -3797,7 +3813,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2937
 msgid "Closing radius"
-msgstr ""
+msgstr "Polmer zapiranja"
 
 #: src/libslic3r/PrintConfig.cpp:2939
 msgid ""
@@ -3807,7 +3823,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2947
 msgid "Interface pattern spacing"
-msgstr ""
+msgstr "Razmak vmesne plasti"
 
 #: src/libslic3r/PrintConfig.cpp:2949
 msgid "Spacing between interface lines. Set zero to get a solid interface."
@@ -3833,7 +3849,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2979
 msgid "Interface pattern"
-msgstr ""
+msgstr "Vzorec vmesne plasti"
 
 #: src/libslic3r/PrintConfig.cpp:2981
 msgid ""
@@ -3876,7 +3892,7 @@ msgstr "Organsko"
 
 #: src/libslic3r/PrintConfig.cpp:3025
 msgid "Synchronize with object layers"
-msgstr ""
+msgstr "Sinhroniziraj s plastmi objekta"
 
 #. TRN PrintSettings : "Synchronize with object layers"
 #: src/libslic3r/PrintConfig.cpp:3028
@@ -3888,7 +3904,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:3035
 msgid "Overhang threshold"
-msgstr ""
+msgstr "Prag previsa"
 
 #: src/libslic3r/PrintConfig.cpp:3037
 msgid ""
@@ -3900,7 +3916,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:3049
 msgid "With sheath around the support"
-msgstr ""
+msgstr "S plaščem okoli podpore"
 
 #: src/libslic3r/PrintConfig.cpp:3051
 msgid ""
@@ -4091,7 +4107,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:3252
 msgid "Z travel"
-msgstr ""
+msgstr "Z pomik"
 
 #: src/libslic3r/PrintConfig.cpp:3253
 msgid ""
@@ -4101,7 +4117,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:3261
 msgid "Use firmware retraction"
-msgstr ""
+msgstr "Uporabi strojne umike"
 
 #: src/libslic3r/PrintConfig.cpp:3262
 msgid ""
@@ -4111,7 +4127,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:3268
 msgid "Use relative E distances"
-msgstr ""
+msgstr "Uporabi relativne E razdalje"
 
 #: src/libslic3r/PrintConfig.cpp:3269
 msgid ""
@@ -4121,7 +4137,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:3275
 msgid "Use volumetric E"
-msgstr ""
+msgstr "Uporabi E pretok"
 
 #: src/libslic3r/PrintConfig.cpp:3276
 msgid ""
@@ -4134,7 +4150,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:3286
 msgid "Enable variable layer height feature"
-msgstr ""
+msgstr "Uporabi spremenljivo višino plasti"
 
 #: src/libslic3r/PrintConfig.cpp:3287
 msgid ""
@@ -4190,23 +4206,23 @@ msgstr "Širina"
 
 #: src/libslic3r/PrintConfig.cpp:3337
 msgid "Width of a wipe tower"
-msgstr ""
+msgstr "Širina stolpa za brisanje"
 
 #: src/libslic3r/PrintConfig.cpp:3343
 msgid "Wipe tower rotation angle"
-msgstr ""
+msgstr "Kot rotacije stolpa za brisanje"
 
 #: src/libslic3r/PrintConfig.cpp:3344
 msgid "Wipe tower rotation angle with respect to x-axis."
-msgstr ""
+msgstr "Kot rotacije stolpa za brisanje glede na x os."
 
 #: src/libslic3r/PrintConfig.cpp:3350 src/libslic3r/PrintConfig.cpp:3351
 msgid "Wipe tower brim width"
-msgstr ""
+msgstr "Širina obrobe stolpa za brisanje"
 
 #: src/libslic3r/PrintConfig.cpp:3358
 msgid "Stabilization cone apex angle"
-msgstr ""
+msgstr "Kot vrha stožca za stabilizacijo"
 
 #: src/libslic3r/PrintConfig.cpp:3359
 msgid ""
@@ -4216,7 +4232,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:3368
 msgid "Wipe tower purge lines spacing"
-msgstr ""
+msgstr "Razmak med črtami za čiščenje stolpa za brisanje"
 
 #: src/libslic3r/PrintConfig.cpp:3369
 msgid "Spacing of purge lines on the wipe tower."
@@ -4224,7 +4240,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:3377
 msgid "Extra flow for purging"
-msgstr ""
+msgstr "Dodaten tok za čiščenje"
 
 #: src/libslic3r/PrintConfig.cpp:3378
 msgid ""
@@ -4261,7 +4277,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:3403
 msgid "Maximal bridging distance"
-msgstr ""
+msgstr "Maks. premostitvena razdalja"
 
 #: src/libslic3r/PrintConfig.cpp:3404
 msgid "Maximal distance between supports on sparse infill sections."
@@ -4269,7 +4285,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:3410
 msgid "Wipe tower extruder"
-msgstr ""
+msgstr "Ekstruder za stolp za brisanje"
 
 #: src/libslic3r/PrintConfig.cpp:3412
 msgid ""
@@ -4279,7 +4295,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:3431
 msgid "XY Size Compensation"
-msgstr ""
+msgstr "Kompenzacija velikosti XY"
 
 #: src/libslic3r/PrintConfig.cpp:3433
 msgid ""
@@ -4289,7 +4305,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:3441
 msgid "Z offset"
-msgstr ""
+msgstr "Z odmik"
 
 #: src/libslic3r/PrintConfig.cpp:3442
 msgid ""
@@ -4301,7 +4317,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:3451
 msgid "Perimeter generator"
-msgstr ""
+msgstr "Generator obodov"
 
 #: src/libslic3r/PrintConfig.cpp:3453
 msgid ""
@@ -4312,15 +4328,15 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:3458
 msgid "Classic"
-msgstr ""
+msgstr "Klasično"
 
 #: src/libslic3r/PrintConfig.cpp:3459
 msgid "Arachne"
-msgstr ""
+msgstr "Arakne"
 
 #: src/libslic3r/PrintConfig.cpp:3465
 msgid "Perimeter transition length"
-msgstr ""
+msgstr "Dolžina prehoda oboda"
 
 #: src/libslic3r/PrintConfig.cpp:3467
 msgid ""
@@ -4332,7 +4348,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:3476
 msgid "Perimeter transitioning filter margin"
-msgstr ""
+msgstr "Meja filtriranja prehoda oboda"
 
 #: src/libslic3r/PrintConfig.cpp:3478
 msgid ""
@@ -4347,7 +4363,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:3491
 msgid "Perimeter transitioning threshold angle"
-msgstr ""
+msgstr "Mejni kot prehoda oboda"
 
 #: src/libslic3r/PrintConfig.cpp:3493
 msgid ""
@@ -4360,7 +4376,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:3504
 msgid "Perimeter distribution count"
-msgstr ""
+msgstr "Število porazdelitev oboda"
 
 #: src/libslic3r/PrintConfig.cpp:3506
 msgid ""
@@ -4370,7 +4386,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:3513
 msgid "Minimum feature size"
-msgstr ""
+msgstr "Najmanjša velikost elementa"
 
 #: src/libslic3r/PrintConfig.cpp:3515
 msgid ""
@@ -4382,7 +4398,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:3525
 msgid "Minimum perimeter width"
-msgstr ""
+msgstr "Najmanjša širina oboda"
 
 #: src/libslic3r/PrintConfig.cpp:3527
 msgid ""
@@ -5411,7 +5427,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:5162
 msgid "Output File"
-msgstr ""
+msgstr "Datoteka za izvoz"
 
 #: src/libslic3r/PrintConfig.cpp:5163
 msgid ""
@@ -5545,7 +5561,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:5261
 msgid "Has wipe tower"
-msgstr ""
+msgstr "Ima stolp za brisanje"
 
 #: src/libslic3r/PrintConfig.cpp:5262
 msgid "Whether or not wipe tower is being generated in the print."
@@ -5664,7 +5680,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:5323
 msgid "Wipe tower volume"
-msgstr ""
+msgstr "Prostornina stolpa za brisanje"
 
 #: src/libslic3r/PrintConfig.cpp:5324
 msgid "Total filament volume extruded on the wipe tower."
@@ -6034,7 +6050,7 @@ msgstr ""
 
 #: src/libslic3r/SLAPrint.cpp:802
 msgid "Slicing done"
-msgstr ""
+msgstr "Rezanje končano"
 
 #. TRN Status of the SLA print calculation
 #: src/libslic3r/SLAPrintSteps.cpp:59
@@ -6302,7 +6318,7 @@ msgstr ""
 #: src/slic3r/GUI/BackgroundSlicingProcess.cpp:169
 #: src/slic3r/GUI/BackgroundSlicingProcess.cpp:207
 msgid "Slicing complete"
-msgstr ""
+msgstr "Rezanje končano"
 
 #: src/slic3r/GUI/BackgroundSlicingProcess.cpp:202
 #, boost-format
@@ -6421,7 +6437,7 @@ msgstr ""
 
 #: src/slic3r/GUI/BedShapeDialog.cpp:89
 msgid "Rectangular"
-msgstr ""
+msgstr "Pravokotno"
 
 #: src/slic3r/GUI/BedShapeDialog.cpp:90
 msgid "Circular"
@@ -6447,7 +6463,7 @@ msgstr "Nastavitve"
 
 #: src/slic3r/GUI/BedShapeDialog.cpp:290
 msgid "Texture"
-msgstr ""
+msgstr "Tekstura"
 
 #: src/slic3r/GUI/BedShapeDialog.cpp:300 src/slic3r/GUI/BedShapeDialog.cpp:373
 msgid "Load..."
@@ -6648,7 +6664,7 @@ msgstr ""
 
 #: src/slic3r/GUI/ConfigManipulation.cpp:129 src/slic3r/GUI/ConfigManipulation.cpp:147
 msgid "Wipe Tower"
-msgstr ""
+msgstr "Stolp za brisanje"
 
 #: src/slic3r/GUI/ConfigManipulation.cpp:146
 msgid "Shall I adjust those settings in order to enable the Wipe Tower?"
@@ -6807,7 +6823,7 @@ msgstr "Proizvajalec:"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:736
 msgid "Profile:"
-msgstr ""
+msgstr "Profil:"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:826 src/slic3r/GUI/ConfigWizard.cpp:1002
 #: src/slic3r/GUI/ConfigWizard.cpp:1088 src/slic3r/GUI/ConfigWizard.cpp:1227
@@ -7241,7 +7257,7 @@ msgstr "Tiskalnik po meri je bil nameščen in bo aktiviran."
 
 #: src/slic3r/GUI/ConfigWizard.cpp:3340
 msgid "Select all standard printers"
-msgstr ""
+msgstr "Izberi vse standardne tiskalnike"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:3343
 msgid "< &Back"
@@ -10765,7 +10781,7 @@ msgstr ""
 #: src/slic3r/GUI/GUI_App.cpp:1204 src/slic3r/GUI/GUI_App.cpp:3382
 #: src/slic3r/GUI/Plater.cpp:1851 src/slic3r/GUI/UnsavedChangesDialog.cpp:920
 msgid "Remember my choice"
-msgstr ""
+msgstr "Zapomni si izbiro"
 
 #: src/slic3r/GUI/GUI_App.cpp:1246
 msgid "Loading configuration"
@@ -11038,7 +11054,7 @@ msgstr ""
 
 #: src/slic3r/GUI/GUI_App.cpp:2852
 msgid "Project is loading"
-msgstr ""
+msgstr "Projekt se nalaga"
 
 #: src/slic3r/GUI/GUI_App.cpp:2852
 msgid "Opening new project while some presets are unsaved."
@@ -12317,7 +12333,7 @@ msgstr "Izvozi konfiguracijo"
 
 #: src/slic3r/GUI/KBShortcutsDialog.cpp:104 src/slic3r/GUI/Plater.cpp:992
 msgid "Export to SD card / Flash drive"
-msgstr ""
+msgstr "Izvozi na SD kartico / USB pogon"
 
 #: src/slic3r/GUI/KBShortcutsDialog.cpp:105
 msgid "Eject SD card / Flash drive"
@@ -12827,13 +12843,13 @@ msgstr "Pokaži pogovorno okno o programu"
 #: src/slic3r/GUI/MainFrame.cpp:1185
 #, c-format, boost-format
 msgid "%s &Website"
-msgstr ""
+msgstr "%s &Spletna stran"
 
 #: src/slic3r/GUI/MainFrame.cpp:1186 src/slic3r/GUI/MainFrame.cpp:1190
 #: src/slic3r/GUI/MainFrame.cpp:1194
 #, c-format, boost-format
 msgid "Open the %s website in your browser"
-msgstr ""
+msgstr "Odpri spletno stran %s v brskalniku"
 
 #. TRN Item from "Help" menu
 #: src/slic3r/GUI/MainFrame.cpp:1189
@@ -12843,11 +12859,11 @@ msgstr "&Hiter začetek"
 #. TRN Item from "Help" menu
 #: src/slic3r/GUI/MainFrame.cpp:1193
 msgid "Sample &G-codes and Models"
-msgstr ""
+msgstr "Vzorčne g-kode in modeli"
 
 #: src/slic3r/GUI/MainFrame.cpp:1197
 msgid "Prusa 3D &Drivers"
-msgstr ""
+msgstr "Gonilniki za &Prusa 3D"
 
 #: src/slic3r/GUI/MainFrame.cpp:1197
 msgid "Open the Prusa3D drivers download page in your browser"
@@ -12871,7 +12887,7 @@ msgstr ""
 
 #: src/slic3r/GUI/MainFrame.cpp:1211
 msgid "Show &Configuration Folder"
-msgstr ""
+msgstr "Odpri datoteko s &konfiguracijami"
 
 #: src/slic3r/GUI/MainFrame.cpp:1211
 msgid "Show user configuration folder (datadir)"
@@ -12879,7 +12895,7 @@ msgstr ""
 
 #: src/slic3r/GUI/MainFrame.cpp:1213
 msgid "Report an I&ssue"
-msgstr ""
+msgstr "Poročajte &težavo"
 
 #: src/slic3r/GUI/MainFrame.cpp:1213
 #, c-format, boost-format
@@ -13074,15 +13090,15 @@ msgstr ""
 
 #: src/slic3r/GUI/MainFrame.cpp:1363
 msgid "Export G-code to SD Card / Flash Drive"
-msgstr ""
+msgstr "Izvozi g-kodo na SD kartico / USB pogon"
 
 #: src/slic3r/GUI/MainFrame.cpp:1363
 msgid "Export current plate as G-code to SD card / Flash drive"
-msgstr ""
+msgstr "Izvozi trenutno mizo kot g-kodo na SD kartico / USB pogon"
 
 #: src/slic3r/GUI/MainFrame.cpp:1367
 msgid "Export Plate as &STL/OBJ"
-msgstr ""
+msgstr "Izvozi mizo kot &STL/OBJ"
 
 #: src/slic3r/GUI/MainFrame.cpp:1367
 msgid "Export current plate as STL/OBJ"
@@ -13090,7 +13106,7 @@ msgstr ""
 
 #: src/slic3r/GUI/MainFrame.cpp:1370
 msgid "Export Plate as STL/OBJ &Including Supports"
-msgstr ""
+msgstr "Izvozi mizo kot STL/OBJ, vključno s &podporami"
 
 #: src/slic3r/GUI/MainFrame.cpp:1370
 msgid "Export current plate as STL/OBJ including supports"
@@ -13098,11 +13114,11 @@ msgstr ""
 
 #: src/slic3r/GUI/MainFrame.cpp:1378 src/slic3r/GUI/MainFrame.cpp:1653
 msgid "Export &Toolpaths as OBJ"
-msgstr ""
+msgstr "Izvozi &pot orodja kot OBJ"
 
 #: src/slic3r/GUI/MainFrame.cpp:1378 src/slic3r/GUI/MainFrame.cpp:1653
 msgid "Export toolpaths as OBJ"
-msgstr ""
+msgstr "Izvozi pot orodja kot OBJ"
 
 #: src/slic3r/GUI/MainFrame.cpp:1382
 msgid "Export &Config"
@@ -13647,10 +13663,10 @@ msgstr[3] ""
 #, c-format, boost-format
 msgid "%1$d object was loaded with multimaterial painting."
 msgid_plural "%1$d objects were loaded with multimaterial painting."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "Naložen je bil %1$d objekt z več materialnim barvanjem."
+msgstr[1] "Naložena sta bila %1$d objekt z več materialnim barvanjem."
+msgstr[2] "Naloženi do bili %1$d objekti z več materialnim barvanjem."
+msgstr[3] "Naloženih je bilo %1$d objektov z več materialnim barvanjem."
 
 #: src/slic3r/GUI/NotificationManager.cpp:1655
 #, c-format, boost-format
@@ -13681,7 +13697,7 @@ msgstr[3] ""
 
 #: src/slic3r/GUI/NotificationManager.cpp:1770
 msgid "Slicing finished."
-msgstr ""
+msgstr "Rezanje končano."
 
 #: src/slic3r/GUI/NotificationManager.cpp:1770
 msgid "Export G-Code."
@@ -14045,7 +14061,7 @@ msgstr ""
 
 #: src/slic3r/GUI/Plater.cpp:1479 src/slic3r/GUI/Plater.cpp:1530
 msgid "wipe tower"
-msgstr ""
+msgstr "stolp za brisanje"
 
 #: src/slic3r/GUI/Plater.cpp:1489
 msgid "Used Filament (in³)"
@@ -14312,7 +14328,7 @@ msgstr ""
 #: src/slic3r/GUI/Plater.cpp:3520 src/slic3r/GUI/Plater.cpp:7303
 #: src/slic3r/GUI/Tab.cpp:1685 src/slic3r/GUI/Tab.cpp:5689
 msgid "Slicing"
-msgstr ""
+msgstr "Rezanje"
 
 #: src/slic3r/GUI/Plater.cpp:3571
 msgid "Another export job is currently running."
@@ -14399,7 +14415,7 @@ msgstr ""
 
 #: src/slic3r/GUI/Plater.cpp:4443
 msgid "Slicing Cancelled."
-msgstr ""
+msgstr "Rezanje preklicano."
 
 #: src/slic3r/GUI/Plater.cpp:4752
 msgid "3D editor view"
@@ -14705,6 +14721,8 @@ msgid ""
 "The plater is empty.\n"
 "Do you want to save the project?"
 msgstr ""
+"Miza je prazna.\n"
+"Želite shraniti projekt?"
 
 #: src/slic3r/GUI/Plater.cpp:7173
 msgid "Save project"
@@ -15089,7 +15107,7 @@ msgstr ""
 
 #: src/slic3r/GUI/Preferences.cpp:617 src/slic3r/GUI/Tab.cpp:1719
 msgid "Other"
-msgstr ""
+msgstr "Ostalo"
 
 #: src/slic3r/GUI/Preferences.cpp:632
 msgid "Use binary G-code when the printer supports it"
@@ -15980,7 +15998,7 @@ msgstr ""
 
 #: src/slic3r/GUI/Tab.cpp:1474
 msgid "Quality (slower slicing)"
-msgstr ""
+msgstr "Kakovost (počasnejše rezanje)"
 
 #: src/slic3r/GUI/Tab.cpp:1491
 msgid "Fuzzy skin (experimental)"
@@ -15988,7 +16006,7 @@ msgstr "Puhasta koža (poskusno)"
 
 #: src/slic3r/GUI/Tab.cpp:1514
 msgid "Reducing printing time"
-msgstr ""
+msgstr "Zmanjšaj čas tiskanja"
 
 #: src/slic3r/GUI/Tab.cpp:1551
 msgid "Raft"
@@ -15996,7 +16014,7 @@ msgstr "Splav"
 
 #: src/slic3r/GUI/Tab.cpp:1556
 msgid "Options for support material and raft"
-msgstr ""
+msgstr "Nastavitve za podporni material in splav"
 
 #: src/slic3r/GUI/Tab.cpp:1575
 msgid "Organic supports"
@@ -16020,23 +16038,23 @@ msgstr "Pripomočki"
 
 #: src/slic3r/GUI/Tab.cpp:1615
 msgid "Acceleration control (advanced)"
-msgstr ""
+msgstr "Upravljanje pospeškov (napredno)"
 
 #: src/slic3r/GUI/Tab.cpp:1628
 msgid "Autospeed (advanced)"
-msgstr ""
+msgstr "Samodejna hitrost (napredno)"
 
 #: src/slic3r/GUI/Tab.cpp:1632
 msgid "Pressure equalizer (experimental)"
-msgstr ""
+msgstr "Izenačevalnik tlaka (poskusno)"
 
 #: src/slic3r/GUI/Tab.cpp:1636
 msgid "Multiple Extruders"
-msgstr ""
+msgstr "Več ekstruderjev"
 
 #: src/slic3r/GUI/Tab.cpp:1645
 msgid "Ooze prevention"
-msgstr ""
+msgstr "Preprečevanje izcedka"
 
 #: src/slic3r/GUI/Tab.cpp:1669
 msgid "Extrusion width"
@@ -16052,23 +16070,23 @@ msgstr "Pretok"
 
 #: src/slic3r/GUI/Tab.cpp:1694
 msgid "Arachne perimeter generator"
-msgstr ""
+msgstr "Arakne generator obodov"
 
 #: src/slic3r/GUI/Tab.cpp:1702 src/slic3r/GUI/Tab.cpp:5693
 msgid "Output options"
-msgstr ""
+msgstr "Možnosti izvoza"
 
 #: src/slic3r/GUI/Tab.cpp:1703
 msgid "Sequential printing"
-msgstr ""
+msgstr "Zaporedno tiskanje"
 
 #: src/slic3r/GUI/Tab.cpp:1705
 msgid "Extruder clearance"
-msgstr ""
+msgstr "Odmik do ekstruderja"
 
 #: src/slic3r/GUI/Tab.cpp:1710 src/slic3r/GUI/Tab.cpp:5694
 msgid "Output file"
-msgstr ""
+msgstr "Datoteka za izvoz"
 
 #: src/slic3r/GUI/Tab.cpp:1743 src/slic3r/GUI/Tab.cpp:1744 src/slic3r/GUI/Tab.cpp:2333
 #: src/slic3r/GUI/Tab.cpp:2334 src/slic3r/GUI/Tab.cpp:2908 src/slic3r/GUI/Tab.cpp:2909
@@ -16085,11 +16103,11 @@ msgstr "Odvisnosti"
 #: src/slic3r/GUI/Tab.cpp:1751 src/slic3r/GUI/Tab.cpp:2342 src/slic3r/GUI/Tab.cpp:2916
 #: src/slic3r/GUI/Tab.cpp:2994 src/slic3r/GUI/Tab.cpp:5371 src/slic3r/GUI/Tab.cpp:5700
 msgid "Profile dependencies"
-msgstr ""
+msgstr "Odvisnosti profila"
 
 #: src/slic3r/GUI/Tab.cpp:1783
 msgid "Post processing scripts shall modify G-code file in place."
-msgstr ""
+msgstr "Skripte za naknadno obdelavo spremenijo datoteko g-kode na mestu."
 
 #: src/slic3r/GUI/Tab.cpp:1862
 #, c-format, boost-format
@@ -16199,15 +16217,17 @@ msgid ""
 "Emitting machine limits to G-code is not supported with Klipper G-code flavor.\n"
 "The option was switched to \"Use for time estimate\"."
 msgstr ""
+"Dodajanje strojnih omejitev v g-kodo ni podprto s Klipperjevim pridihom g-kode.\n"
+"Možnost je bila spremenjena na \"Uporabi za čas. približek\"."
 
 #: src/slic3r/GUI/Tab.cpp:2623 src/slic3r/GUI/Tab.cpp:2928
 msgid "Size and coordinates"
-msgstr ""
+msgstr "Velikost in koordinate"
 
 #: src/slic3r/GUI/Tab.cpp:2632 src/slic3r/GUI/UnsavedChangesDialog.cpp:1303
 #: src/slic3r/GUI/UnsavedChangesDialog.cpp:1852
 msgid "Capabilities"
-msgstr ""
+msgstr "Zmogljivosti"
 
 #: src/slic3r/GUI/Tab.cpp:2637
 msgid "Number of extruders of the printer."
@@ -16264,7 +16284,7 @@ msgstr ""
 
 #: src/slic3r/GUI/Tab.cpp:2978
 msgid "Output"
-msgstr ""
+msgstr "Izvoz"
 
 #: src/slic3r/GUI/Tab.cpp:3087
 msgid "Values in this column are for Normal mode"
@@ -16306,11 +16326,11 @@ msgstr ""
 
 #: src/slic3r/GUI/Tab.cpp:3282
 msgid "Layer height limits"
-msgstr ""
+msgstr "Omejitev višine plasti"
 
 #: src/slic3r/GUI/Tab.cpp:3286
 msgid "Position (for multi-extruder printers)"
-msgstr ""
+msgstr "Položaj (za tiskalnike z več ekstruderji)"
 
 #: src/slic3r/GUI/Tab.cpp:3289
 msgid "Travel lift"
@@ -16470,7 +16490,7 @@ msgstr ""
 
 #: src/slic3r/GUI/Tab.cpp:5040
 msgid "Machine limits will be emitted to G-code and used to estimate print time."
-msgstr ""
+msgstr "Omejitve stroja se prenesejo v kodo G in se uporabijo za oceno časa tiskanja."
 
 #: src/slic3r/GUI/Tab.cpp:5043
 msgid ""
@@ -16478,11 +16498,14 @@ msgid ""
 "print time, which may therefore not be accurate as the printer may apply a "
 "different set of machine limits."
 msgstr ""
+"Strojne omejitve NE BODO dodane v kodo G, vendar se uporabijo za oceno časa "
+"tiskanja, ki zato morda ne bo točen, saj lahko tiskalnik uporabi drugačen nabor "
+"strojnih omejitev."
 
 #: src/slic3r/GUI/Tab.cpp:5047
 msgid ""
 "Machine limits are not set, therefore the print time estimate may not be accurate."
-msgstr ""
+msgstr "Omejitve stroja niso določene, zato ocena časa tiskanja morda ne bo točna."
 
 #: src/slic3r/GUI/Tab.cpp:5069
 msgid "LOCKED LOCK"
@@ -16654,7 +16677,7 @@ msgstr ""
 
 #: src/slic3r/GUI/UnsavedChangesDialog.cpp:798
 msgid "Unsaved Changes"
-msgstr ""
+msgstr "Neshranjene spremembe"
 
 #: src/slic3r/GUI/UnsavedChangesDialog.cpp:816
 msgid "Switching Presets: Unsaved Changes"
@@ -16662,11 +16685,11 @@ msgstr ""
 
 #: src/slic3r/GUI/UnsavedChangesDialog.cpp:860
 msgid "Original value"
-msgstr ""
+msgstr "Prvotna vrednost"
 
 #: src/slic3r/GUI/UnsavedChangesDialog.cpp:861
 msgid "Modified value"
-msgstr ""
+msgstr "Spremenjena vrednost"
 
 #: src/slic3r/GUI/UnsavedChangesDialog.cpp:863
 msgid "New value"
@@ -16754,10 +16777,10 @@ msgstr ""
 #: src/slic3r/GUI/UnsavedChangesDialog.cpp:1238
 msgid "The following preset was modified"
 msgid_plural "The following presets were modified"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "Sledeča prednastavitev je bila spremenjena"
+msgstr[1] "Sledeči prednastavitevi sta bili spremenjeni"
+msgstr[2] "Sledeče prednastavitve so bile spremenjene"
+msgstr[3] "Sledečih prednastavitev je bilo spremenjenih"
 
 #: src/slic3r/GUI/UnsavedChangesDialog.cpp:1244
 #, boost-format
@@ -17123,7 +17146,7 @@ msgstr ""
 #: src/slic3r/GUI/WifiConfigDialog.cpp:52
 #, boost-format
 msgid "Write this file on the USB flash drive. Its name will be %1%."
-msgstr ""
+msgstr "Zapiši datoteko na USB pogon. Ime datoteke bo %1%."
 
 #. TRN Wifi config dialog explanation line 3.
 #: src/slic3r/GUI/WifiConfigDialog.cpp:54
@@ -18811,7 +18834,7 @@ msgstr "(Pomoč)"
 #: ../src/richtext/richtextliststylepage.cpp:481
 #: ../src/richtext/richtextbulletspage.cpp:273
 msgid "(None)"
-msgstr "(brez)"
+msgstr "(Nič)"
 
 # html/helpfrm.cpp:881
 #: ../src/richtext/richtextsymboldlg.cpp:504
@@ -18838,7 +18861,7 @@ msgstr "(zaznamki)"
 #: ../src/richtext/richtextliststylepage.cpp:460
 #: ../src/richtext/richtextliststylepage.cpp:461
 msgid "(none)"
-msgstr "(brez)"
+msgstr "(nič)"
 
 #: ../src/richtext/richtextliststylepage.cpp:492
 #: ../src/richtext/richtextbulletspage.cpp:284
@@ -19154,7 +19177,7 @@ msgstr "A6 rotirano, 148 x 105 mm"
 #: ../src/generic/fontdlgg.cpp:83 ../src/richtext/richtextformatdlg.cpp:529
 #: ../src/osx/carbon/fontdlg.cpp:153
 msgid "ABCDEFGabcdefg12345"
-msgstr "Ščinkavec želi 12345 češenj."
+msgstr "Ščinkavec želi 12345 češenj"
 
 #: ../src/richtext/richtextsymboldlg.cpp:458 ../src/common/ftp.cpp:403
 msgid "ASCII"

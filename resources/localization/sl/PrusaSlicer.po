@@ -9,15 +9,15 @@ msgstr ""
 "Project-Id-Version: PrusaSlicer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-26 08:02+0200\n"
-"PO-Revision-Date: 2024-06-14 11:31+0200\n"
+"PO-Revision-Date: 2024-07-08 08:23+0200\n"
 "Last-Translator: Jernej Pangerc <jernej.pangerc@tuta.com>\n"
 "Language-Team: \n"
 "Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100>=3 && n"
-"%100<=4 ? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100>=3 && "
+"n%100<=4 ? 2 : 3);\n"
 "X-Generator: Poedit 3.4.4\n"
 
 #. TRN: Following strings are labels in the G-code Viewer legend.
@@ -917,6 +917,8 @@ msgid ""
 "This setting controls the height (and thus the total number) of the slices/"
 "layers. Thinner layers give better accuracy but take more time to print."
 msgstr ""
+"Ta nastavitev določa višino (in s tem skupno število) rezin/plasti. Tanjše "
+"plasti zagotavljajo večjo natančnost, vendar tiskanje traja dlje časa."
 
 #: src/libslic3r/PrintConfig.cpp:386 src/slic3r/GUI/ConfigWizard.cpp:2125
 msgid "Max print height"
@@ -1024,7 +1026,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:496
 msgid "Avoid crossing curled overhangs (Experimental)"
-msgstr "Izogibaj se prečkanju upognjeni previsov (poskusno)"
+msgstr "Izogibaj se prečkanju upognjenih previsov (poskusno)"
 
 #. TRN PrintSettings: "Avoid crossing curled overhangs (Experimental)"
 #: src/libslic3r/PrintConfig.cpp:498
@@ -1071,6 +1073,8 @@ msgid ""
 "Bed temperature for layers after the first one. Set this to zero to disable "
 "bed temperature control commands in the output."
 msgstr ""
+"Temperatura mize za plasti po začetni plasti. Nastavite to vrednost na nič, "
+"če želite onemogočiti ukaze za nadzor temperature posteljice v g-kodi."
 
 #: src/libslic3r/PrintConfig.cpp:528 src/libslic3r/PrintConfig.cpp:540
 #: src/libslic3r/PrintConfig.cpp:553 src/libslic3r/PrintConfig.cpp:1500
@@ -1145,7 +1149,7 @@ msgstr "Spodaj"
 
 #: src/libslic3r/PrintConfig.cpp:583
 msgid "Number of solid layers to generate on bottom surfaces."
-msgstr ""
+msgstr "Število polnih plasti, ki se ustvarijo na spodnjih površinah."
 
 #: src/libslic3r/PrintConfig.cpp:584
 msgid "Bottom solid layers"
@@ -1156,6 +1160,8 @@ msgid ""
 "The number of bottom solid layers is increased above bottom_solid_layers if "
 "necessary to satisfy minimum thickness of bottom shell."
 msgstr ""
+"Število spodnjih polnih plasti se poveča nad bottom_solid_layers, če je to "
+"potrebno, da se doseže najmanjša debelina spodnje lupine."
 
 #: src/libslic3r/PrintConfig.cpp:593
 msgid "Minimum bottom shell thickness"
@@ -1398,6 +1404,9 @@ msgid ""
 "the first layer. When raft is used, no brim is generated (use "
 "raft_first_layer_expansion)."
 msgstr ""
+"Vodoravna širina obrobe, ki bo natisnjena okoli vsakega predmeta na začetni "
+"plasti. Če je uporabljen splav, se rob ne ustvari (uporabite "
+"raft_first_layer_expansion)."
 
 #: src/libslic3r/PrintConfig.cpp:777
 msgid "Brim type"
@@ -1408,6 +1417,7 @@ msgid ""
 "The places where the brim will be printed around each object on the first "
 "layer."
 msgstr ""
+"Mesta, kjer bo obroba natisnjena okoli vsakega predmeta na začetni plasti."
 
 #: src/libslic3r/PrintConfig.cpp:781
 msgid "No brim"
@@ -1494,6 +1504,8 @@ msgid ""
 "This flag enables the automatic cooling logic that adjusts print speed and "
 "fan speed according to layer printing time."
 msgstr ""
+"Ta zastavica omogoča logiko samodejnega hlajenja, ki prilagodi hitrost "
+"tiskanja in hitrost ventilatorja glede na čas tiskanja plasti."
 
 #: src/libslic3r/PrintConfig.cpp:858
 msgid "Cooling tube position"
@@ -1609,11 +1621,13 @@ msgid ""
 "Fill pattern for top infill. This only affects the top visible layer, and "
 "not its adjacent solid shells."
 msgstr ""
+"Vzorec zgornjega polnila. To vpliva samo na zgornjo vidno plast in ne na "
+"sosednje polne lupine."
 
 #: src/libslic3r/PrintConfig.cpp:951 src/libslic3r/PrintConfig.cpp:1457
 #: src/libslic3r/PrintConfig.cpp:3105 src/libslic3r/PrintConfig.cpp:3120
 msgid "Rectilinear"
-msgstr ""
+msgstr "Premočrtno"
 
 #: src/libslic3r/PrintConfig.cpp:952
 msgid "Monotonic"
@@ -1625,7 +1639,7 @@ msgstr "Monotone črte"
 
 #: src/libslic3r/PrintConfig.cpp:954 src/libslic3r/PrintConfig.cpp:1458
 msgid "Aligned Rectilinear"
-msgstr ""
+msgstr "Poravnano premočrtno"
 
 #: src/libslic3r/PrintConfig.cpp:955 src/libslic3r/PrintConfig.cpp:1464
 #: src/libslic3r/PrintConfig.cpp:3121
@@ -1642,7 +1656,7 @@ msgstr "Arhimedovi akordi"
 
 #: src/libslic3r/PrintConfig.cpp:958 src/libslic3r/PrintConfig.cpp:1470
 msgid "Octagram Spiral"
-msgstr ""
+msgstr "Oktagramska krivulja"
 
 #: src/libslic3r/PrintConfig.cpp:966
 msgid "Bottom fill pattern"
@@ -1653,6 +1667,8 @@ msgid ""
 "Fill pattern for bottom infill. This only affects the bottom external "
 "visible layer, and not its adjacent solid shells."
 msgstr ""
+"Vzorec spodnjega polnila. To vpliva samo na spodnjo zunanjo, vidno plast in "
+"ne na sosednje polne lupine."
 
 #: src/libslic3r/PrintConfig.cpp:975 src/libslic3r/PrintConfig.cpp:987
 #: src/libslic3r/PrintConfig.cpp:2299
@@ -1791,7 +1807,7 @@ msgstr "Barva ekstruderja"
 #: src/libslic3r/PrintConfig.cpp:1056 src/libslic3r/PrintConfig.cpp:1119
 #: src/libslic3r/PrintConfig.cpp:4092
 msgid "This is only used in the Slic3r interface as a visual help."
-msgstr ""
+msgstr "To se uporablja le v vmesniku PrusaSlicer za vizualno pomoč."
 
 #: src/libslic3r/PrintConfig.cpp:1062
 msgid "Extruder offset"
@@ -1849,6 +1865,8 @@ msgid ""
 "If this is enabled, fan will never be disabled and will be kept running at "
 "least at its minimum speed. Useful for PLA, harmful for ABS."
 msgstr ""
+"Če je ta možnost omogočena, ventilator ne bo nikoli onemogočen in bo deloval "
+"vsaj z najmanjšo hitrostjo. Uporabno za PLA, škodljivo za ABS."
 
 #: src/libslic3r/PrintConfig.cpp:1108
 msgid "Enable fan if layer print time is below"
@@ -2118,6 +2136,9 @@ msgid ""
 "caliper and do multiple measurements along the filament, then compute the "
 "average."
 msgstr ""
+"Tukaj vnesite premer filamenta. Potrebna je dobra natančnost, zato uporabite "
+"kljunasto merilo in opravite več meritev vzdolž žice, nato pa izračunajte "
+"povprečje."
 
 #: src/libslic3r/PrintConfig.cpp:1324 src/libslic3r/PrintConfig.cpp:4135
 #: src/libslic3r/PrintConfig.cpp:4136
@@ -2131,6 +2152,10 @@ msgid ""
 "the length to volume. Better is to calculate the volume directly through "
 "displacement."
 msgstr ""
+"Tukaj vnesite gostoto filamenta. To je samo za statistične podatke. Primeren "
+"način je, da stehtate znano dolžino filamenta in izračunate razmerje med "
+"dolžino in prostornino. Bolje je, če prostornino izračunate neposredno z "
+"izpodrivom."
 
 #: src/libslic3r/PrintConfig.cpp:1328
 msgid "g/cm³"
@@ -2162,6 +2187,7 @@ msgid ""
 "Enter your filament cost per kg here. This is only for statistical "
 "information."
 msgstr ""
+"Tukaj vnesite ceno filamenta na kilogram. To je samo za statistične podatke."
 
 #: src/libslic3r/PrintConfig.cpp:1370
 msgid "money/kg"
@@ -2178,6 +2204,10 @@ msgid ""
 "the calculated weight of the filament with the spool to find out whether the "
 "amount of filament on the spool is sufficient to finish the print."
 msgstr ""
+"Vnesite težo praznega koluta filamenta. Pred tiskanjem lahko delno porabljen "
+"kolut filamenta stehtamo in izmerjeno težo primerjamo z izračunano težo "
+"filamenta na kolutu, da ugotovimo ali je količina filamenta na kolutu "
+"zadostna za dokončanje tiska."
 
 #: src/libslic3r/PrintConfig.cpp:1380 src/slic3r/GUI/GCodeViewer.cpp:1978
 msgid "g"
@@ -2226,7 +2256,7 @@ msgstr "Gostota polnila"
 
 #: src/libslic3r/PrintConfig.cpp:1430
 msgid "Density of internal infill, expressed in the range 0% - 100%."
-msgstr ""
+msgstr "Gostota notranjega polnila, izražena v območju od 0% do 100%."
 
 #: src/libslic3r/PrintConfig.cpp:1453
 msgid "Fill pattern"
@@ -2234,7 +2264,7 @@ msgstr "Vzorec polnila"
 
 #: src/libslic3r/PrintConfig.cpp:1455
 msgid "Fill pattern for general low-density infill."
-msgstr ""
+msgstr "Vzorec polnila za splošno zapolnitev z nizko gostoto."
 
 #: src/libslic3r/PrintConfig.cpp:1459 src/libslic3r/PrintConfig.cpp:3151
 msgid "Grid"
@@ -2277,7 +2307,7 @@ msgstr "Prilagodljiva kocka"
 
 #: src/libslic3r/PrintConfig.cpp:1472
 msgid "Support Cubic"
-msgstr ""
+msgstr "Podporna kocka"
 
 #: src/libslic3r/PrintConfig.cpp:1473
 msgid "Lightning"
@@ -2315,6 +2345,8 @@ msgid ""
 "Heated build plate temperature for the first layer. Set this to zero to "
 "disable bed temperature control commands in the output."
 msgstr ""
+"Temperatura ogrevane mize za začetno plast. Nastavite to vrednost na nič, če "
+"želite onemogočiti ukaze za nadzor temperature mize v g-kodi."
 
 #: src/libslic3r/PrintConfig.cpp:1508
 msgid ""
@@ -2334,6 +2366,8 @@ msgid ""
 "thicker bottom layer to improve adhesion and tolerance for non perfect build "
 "plates."
 msgstr ""
+"Pri tiskanju z zelo nizkimi višinami plasti boste morda vseeno želeli "
+"natisniti debelejšo začetno plast, da izboljšate oprijem in toleranco mize."
 
 #: src/libslic3r/PrintConfig.cpp:1530
 msgid "First layer speed"
@@ -2368,6 +2402,9 @@ msgid ""
 "manually during print, set this to zero to disable temperature control "
 "commands in the output G-code."
 msgstr ""
+"Temperatura šobe za začetno plast. Če želite temperaturo med tiskanjem "
+"nadzorovati ročno, nastavite to vrednost na nič, da onemogočite ukaze za "
+"nadzor temperature v g-kodi."
 
 #: src/libslic3r/PrintConfig.cpp:1561
 msgid "Full fan speed at layer"
@@ -3071,7 +3108,7 @@ msgstr "Premer šobe"
 #: src/libslic3r/PrintConfig.cpp:2209
 msgid ""
 "This is the diameter of your extruder nozzle (for example: 0.5, 0.35 etc.)"
-msgstr ""
+msgstr "To je premer šobe ekstruderja (npr. 0,4 mm, 0,6 mm)"
 
 #: src/libslic3r/PrintConfig.cpp:2214
 msgid "Host Type"
@@ -3207,6 +3244,10 @@ msgid ""
 "surfaces which benefit from a higher number of perimeters if the Extra "
 "Perimeters option is enabled."
 msgstr ""
+"Ta možnost določa število obodov, ki se ustvarijo za vsako plast. "
+"Upoštevajte, da lahko PrusaSlicer samodejno poveča to število, ko zazna "
+"nagnjene površine, ki jim koristi večje število obodov, če je omogočena "
+"možnost Dodatni obodi."
 
 #: src/libslic3r/PrintConfig.cpp:2346
 msgid "(minimum)"
@@ -3372,6 +3413,8 @@ msgid ""
 "amount (the length is measured on raw filament, before it enters the "
 "extruder)."
 msgstr ""
+"Ko se sproži umik, je filament povlečen nazaj za določeno dolžino (dolžina "
+"se meri na žici pred vstopom v ekstruder)."
 
 #: src/libslic3r/PrintConfig.cpp:2504
 #: src/slic3r/GUI/Gizmos/GLGizmoMeasure.cpp:2031
@@ -3435,7 +3478,7 @@ msgstr "Višina dviga"
 
 #: src/libslic3r/PrintConfig.cpp:2549
 msgid "Lift height applied before travel."
-msgstr ""
+msgstr "Višina dviga pred pomikom."
 
 #: src/libslic3r/PrintConfig.cpp:2557
 msgid "Above Z"
@@ -3514,7 +3557,7 @@ msgstr "Položaj šivov"
 
 #: src/libslic3r/PrintConfig.cpp:2611
 msgid "Position of perimeters starting points."
-msgstr ""
+msgstr "Lokacija začetne točke oboda."
 
 #: src/libslic3r/PrintConfig.cpp:2613
 #: src/slic3r/GUI/ArrangeSettingsDialogImgui.cpp:91
@@ -3576,6 +3619,8 @@ msgstr "Razdalja od obrobe/objekta"
 msgid ""
 "Distance between skirt and brim (when draft shield is not used) or objects."
 msgstr ""
+"Razdalja med orisom ali obrobo (kadar zaščita pred prepihom ni uporabljena) "
+"ter objekti."
 
 #: src/libslic3r/PrintConfig.cpp:2658
 msgid "Skirt height"
@@ -3699,6 +3744,7 @@ msgstr "Polne plasti"
 #: src/libslic3r/PrintConfig.cpp:2766
 msgid "Number of solid layers to generate on top and bottom surfaces."
 msgstr ""
+"Število polnih plasti, ki se ustvarijo na zgornjih in spodnjih površinah."
 
 #: src/libslic3r/PrintConfig.cpp:2772 src/libslic3r/PrintConfig.cpp:2773
 msgid "Minimum thickness of a top / bottom shell"
@@ -3716,6 +3762,11 @@ msgid ""
 "any number of bottom solid layers as well as skirt/brim loops. It won't work "
 "when printing more than one single object."
 msgstr ""
+"Ta funkcija med tiskanjem eno-stenskega predmeta postopoma dviguje Z, da se "
+"odstranijo vidni šivi. Ta možnost zahteva en sam obod, brez polnila, brez "
+"zgornjih polnih plasti in brez podpornega materiala. Še vedno lahko "
+"nastavite poljubno število spodnjih polnih plasti ter zank orisa/obrobe. Ta "
+"možnost ne bo delovala pri tiskanju več kot enega samega predmeta."
 
 #: src/libslic3r/PrintConfig.cpp:2788
 msgid "Temperature variation"
@@ -3853,7 +3904,7 @@ msgstr "Ustvari podporni material"
 
 #: src/libslic3r/PrintConfig.cpp:2914
 msgid "Enable support material generation."
-msgstr ""
+msgstr "Omogoči ustvarjanje podpornega materiala."
 
 #: src/libslic3r/PrintConfig.cpp:2918
 msgid "Auto generated supports"
@@ -3865,6 +3916,9 @@ msgid ""
 "threshold value. If unchecked, supports will be generated inside the "
 "\"Support Enforcer\" volumes only."
 msgstr ""
+"Če je omogočeno, se podpore samodejno ustvarijo na podlagi mejne vrednosti "
+"previsa. Če ni omogočeno, se podpore ustvarijo samo znotraj teles "
+"\"Uveljavitev podpor\"."
 
 #: src/libslic3r/PrintConfig.cpp:2926
 msgid "XY separation between an object and its support"
@@ -3897,7 +3951,7 @@ msgstr "Podpore samo na mizi"
 msgid ""
 "Only create support if it lies on a build plate. Don't create support on a "
 "print."
-msgstr ""
+msgstr "Podporo ustvari le, če leži na mizi. Ne ustvarjaj podpore na tisku."
 
 #: src/libslic3r/PrintConfig.cpp:2956
 msgid "Top contact Z distance"
@@ -4063,7 +4117,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:3106
 msgid "Rectilinear grid"
-msgstr ""
+msgstr "Premočrtna mreža"
 
 #: src/libslic3r/PrintConfig.cpp:3113
 msgid "Interface pattern"
@@ -4245,6 +4299,8 @@ msgid ""
 "Nozzle temperature for layers after the first one. Set this to zero to "
 "disable temperature control commands in the output G-code."
 msgstr ""
+"Temperatura šobe za plasti po začetni plasti. Nastavite to vrednost na nič, "
+"da onemogočite ukaze za nadzor temperature v g-kodi."
 
 #: src/libslic3r/PrintConfig.cpp:3296
 msgid "Nozzle temperature"
@@ -4307,7 +4363,7 @@ msgstr "Zgoraj"
 
 #: src/libslic3r/PrintConfig.cpp:3360
 msgid "Number of solid layers to generate on top surfaces."
-msgstr ""
+msgstr "Število polnih plasti, ki se ustvarijo na zgornjih površinah."
 
 #: src/libslic3r/PrintConfig.cpp:3361
 msgid "Top solid layers"
@@ -4319,6 +4375,9 @@ msgid ""
 "necessary to satisfy minimum thickness of top shell. This is useful to "
 "prevent pillowing effect when printing with variable layer height."
 msgstr ""
+"Število zgornjih polnih plasti se poveča nad top_solid_layers, če je to "
+"potrebno, da se doseže najmanjša debelina zgornje lupine. To je koristno za "
+"preprečevanje učinka vzglavnika pri tiskanju s spremenljivo višino plasti."
 
 #: src/libslic3r/PrintConfig.cpp:3371
 msgid "Minimum top shell thickness"
@@ -5033,6 +5092,9 @@ msgid ""
 "Nozzle temperature when the tool is currently not used in multi-tool setups."
 "This is only used when 'Ooze prevention' is active in Print Settings."
 msgstr ""
+"Temperatura šobe, ko orodje ni v uporabi v napravah z več orodji.To se "
+"uporablja samo, če je v nastavitvah tiskanja aktivna funkcija "
+"\"Preprečevanje izcedka\"."
 
 #: src/libslic3r/PrintConfig.cpp:4121 src/libslic3r/PrintConfig.cpp:4122
 msgid "Bottle volume"
@@ -7326,10 +7388,10 @@ msgstr ""
 #. TRN PrusaSlicer-Medical ConfigWizard: Materials"
 #: src/slic3r/GUI/ConfigWizard.cpp:1018
 msgid ""
-"The list of validated workflows for Medical One can be found in this <a href="
-"\"prusa.io/m1-validation\">article</a>. Profiles for other materials are not "
-"verified by the material manufacturer and therefore may not correspond to "
-"the current version of the material."
+"The list of validated workflows for Medical One can be found in this <a "
+"href=\"prusa.io/m1-validation\">article</a>. Profiles for other materials "
+"are not verified by the material manufacturer and therefore may not "
+"correspond to the current version of the material."
 msgstr ""
 
 #. TRN ConfigWizard: Materials : "%1%" = "Filaments"/"SLA materials"
@@ -10098,7 +10160,7 @@ msgstr ""
 #: src/slic3r/GUI/Gizmos/GLGizmoFdmSupports.cpp:236
 #: src/slic3r/GUI/Gizmos/GLGizmoMmuSegmentation.cpp:375
 msgid "Paints facets according to the chosen painting brush."
-msgstr ""
+msgstr "Pobarva ploskve glede na izbran čopič."
 
 #: src/slic3r/GUI/Gizmos/GLGizmoFdmSupports.cpp:244
 #: src/slic3r/GUI/Gizmos/GLGizmoMmuSegmentation.cpp:388
@@ -10115,13 +10177,13 @@ msgstr ""
 #: src/slic3r/GUI/Gizmos/GLGizmoMmuSegmentation.cpp:416
 #: src/slic3r/GUI/Gizmos/GLGizmoSeam.cpp:145
 msgid "Paints all facets inside, regardless of their orientation."
-msgstr ""
+msgstr "Pobarva vse ploskve znotraj, ne glede na orientacijo."
 
 #: src/slic3r/GUI/Gizmos/GLGizmoFdmSupports.cpp:272
 #: src/slic3r/GUI/Gizmos/GLGizmoMmuSegmentation.cpp:425
 #: src/slic3r/GUI/Gizmos/GLGizmoSeam.cpp:153
 msgid "Ignores facets facing away from the camera."
-msgstr ""
+msgstr "Ignorira ploskve, ki so obrnjene stran od kamere."
 
 #: src/slic3r/GUI/Gizmos/GLGizmoFdmSupports.cpp:281
 #: src/slic3r/GUI/Gizmos/GLGizmoMmuSegmentation.cpp:434
@@ -12310,19 +12372,19 @@ msgstr[3] ""
 #, c-format, boost-format
 msgid "%1$d facet removed"
 msgid_plural "%1$d facets removed"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "Izbrisana %1$d ploskev"
+msgstr[1] "Izbrisani %1$d ploskvi"
+msgstr[2] "Izbrisane %1$d ploskve"
+msgstr[3] "Izbrisanih %1$d ploskev"
 
 #: src/slic3r/GUI/GUI_ObjectList.cpp:471
 #, c-format, boost-format
 msgid "%1$d facet reversed"
 msgid_plural "%1$d facets reversed"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "Obnovljena %1$d ploskev"
+msgstr[1] "Obnovljeni %1$d ploskvi"
+msgstr[2] "Obnovljene %1$d ploskve"
+msgstr[3] "Obnovljenih %1$d ploskev"
 
 #: src/slic3r/GUI/GUI_ObjectList.cpp:473
 #, c-format, boost-format
@@ -16707,7 +16769,7 @@ msgstr "Prostornina"
 
 #: src/slic3r/GUI/Sidebar.cpp:123
 msgid "Facets"
-msgstr ""
+msgstr "Ploskve"
 
 #: src/slic3r/GUI/Sidebar.cpp:181
 msgid "Sliced Info"
@@ -16952,7 +17014,7 @@ msgstr "Vodoravne lupine"
 
 #: src/slic3r/GUI/Tab.cpp:1437
 msgid "Minimum shell thickness"
-msgstr ""
+msgstr "Najmanjša debelina lupin"
 
 #: src/slic3r/GUI/Tab.cpp:1448
 msgid "Quality (slower slicing)"
@@ -17288,11 +17350,11 @@ msgstr ""
 
 #: src/slic3r/GUI/Tab.cpp:3201
 msgid "Reset to Filament Color"
-msgstr ""
+msgstr "Ponastavi na barvo filamenta"
 
 #: src/slic3r/GUI/Tab.cpp:3237
 msgid "Apply below setting to other extruders"
-msgstr ""
+msgstr "Uporabi spodnje nastavitve na ostalih ekstruderjih"
 
 #: src/slic3r/GUI/Tab.cpp:3282
 msgid "Layer height limits"
@@ -17701,7 +17763,7 @@ msgstr "Meni"
 
 #: src/slic3r/GUI/TopBarMenus.cpp:33
 msgid "Beginner mode"
-msgstr ""
+msgstr "Začetniški način"
 
 #: src/slic3r/GUI/TopBarMenus.cpp:89
 msgid "Hide \"Log in\" button"
@@ -18806,8 +18868,9 @@ msgstr ""
 #: resources/data/hints.ini: [hint:Hiding sidebar]
 msgid ""
 "Hiding sidebar\n"
-"Did you know that you can hide the right sidebar using the shortcut <b>Shift"
-"+Tab</b>? You can also enable the icon for this from the<a>Preferences</a>."
+"Did you know that you can hide the right sidebar using the shortcut "
+"<b>Shift+Tab</b>? You can also enable the icon for this from "
+"the<a>Preferences</a>."
 msgstr ""
 
 #: resources/data/hints.ini: [hint:Perspective camera]
@@ -18915,8 +18978,8 @@ msgid ""
 msgstr ""
 "Preklop za tiskanje\n"
 "Ali ste vedeli, da lahko onemogočite ustvarjanje g-kode za izbrane model, ne "
-"da bi ga premaknili ali izbrisali? Preklopite lastnost modela \"Za tiskanje"
-"\" iz menija, dostopnega z desnim klikom na model."
+"da bi ga premaknili ali izbrisali? Preklopite lastnost modela \"Za "
+"tiskanje\" iz menija, dostopnega z desnim klikom na model."
 
 #: resources/data/hints.ini: [hint:Mirror]
 msgid ""
@@ -25395,8 +25458,8 @@ msgstr "Izpis"
 msgid ""
 "Processing debug report has failed, leaving the files in \"%s\" directory."
 msgstr ""
-"Obdelava poročila o razhroščevanju ni uspela, datoteke so ostale v mapi \"%s"
-"\"."
+"Obdelava poročila o razhroščevanju ni uspela, datoteke so ostale v mapi "
+"\"%s\"."
 
 # html/helpfrm.cpp:512
 #: ../src/common/stockitem.cpp:184
@@ -26664,8 +26727,8 @@ msgid ""
 "This program was compiled with a too old version of GTK+, please rebuild "
 "with GTK+ 2.12 or newer."
 msgstr ""
-"Program je bil preveden z zastarelo različico GTK+, ponovno ga zgradite z GTK"
-"+ 2.12 ali novejšim."
+"Program je bil preveden z zastarelo različico GTK+, ponovno ga zgradite z "
+"GTK+ 2.12 ali novejšim."
 
 # msw/thread.cpp:1083
 #: ../src/msw/thread.cpp:1240

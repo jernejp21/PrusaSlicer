@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PrusaSlicer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-26 08:02+0200\n"
-"PO-Revision-Date: 2026-04-01 15:13+0200\n"
+"PO-Revision-Date: 2026-04-02 09:55+0200\n"
 "Last-Translator: Jernej Pangerc <jernejp21@tuta.com>\n"
 "Language-Team: Jernej Pangerc <jernejp21@tuta.com>\n"
 "Language: sl\n"
@@ -909,6 +909,8 @@ msgid ""
 "This setting controls the height (and thus the total number) of the slices/"
 "layers. Thinner layers give better accuracy but take more time to print."
 msgstr ""
+"Ta nastavitev določa višino (in s tem skupno število) rezin/plasti. Tanjše "
+"plasti zagotavljajo večjo natančnost, vendar pa tiskanje traja dlje časa."
 
 #: src/libslic3r/PrintConfig.cpp:416 src/slic3r/GUI/ConfigWizard.cpp:2109
 msgid "Max print height"
@@ -1244,6 +1246,8 @@ msgid ""
 "The number of bottom solid layers is increased above bottom_solid_layers if "
 "necessary to satisfy minimum thickness of bottom shell."
 msgstr ""
+"Število polnih plasti dna se po potrebi poveča nad vrednost "
+"bottom_solid_layers, da se zagotovi minimalna debelina dna."
 
 #: src/libslic3r/PrintConfig.cpp:672
 msgid "Minimum bottom shell thickness"
@@ -1591,7 +1595,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:948
 msgid "Cooling slowdown logic"
-msgstr ""
+msgstr "Logika za upočasnitev hlajenja"
 
 #: src/libslic3r/PrintConfig.cpp:949
 msgid ""
@@ -1602,18 +1606,24 @@ msgid ""
 "'Uniform cooling' slows down all print features, including the first two "
 "perimeters."
 msgstr ""
+"Določa, kako tiskalnik upočasni tiskanje plasti, če minimalen čas tiskanja "
+"plasti ni dosežen. Pri nastavitvi 'Enotna površina', se najprej poskuša "
+"ohraniti hitrost tiskanja prvih dveh obodov z upočasnitvijo vseh drugih "
+"elementov. Šele če to ni dovolj, se upočasnita tudi prva dva oboda. Pri "
+"nastavitvi 'Enakomerno hlajenje', se upočasnijo vsi elementi tiskanja, "
+"vključno s prvima dvema obodoma."
 
 #: src/libslic3r/PrintConfig.cpp:954
 msgid "Uniform cooling"
-msgstr ""
+msgstr "Enakomerno hlajenje"
 
 #: src/libslic3r/PrintConfig.cpp:955
 msgid "Consistent surface"
-msgstr ""
+msgstr "Enotna površina"
 
 #: src/libslic3r/PrintConfig.cpp:960
 msgid "Perimeter transition distance"
-msgstr ""
+msgstr "Prehodna razdalja oboda"
 
 #: src/libslic3r/PrintConfig.cpp:961
 msgid ""
@@ -1621,6 +1631,10 @@ msgid ""
 "unslowed print speed is restored. This reduces print quality issues when "
 "transitioning from heavily slowed feature to fast perimeter printing."
 msgstr ""
+"Razdalja v milimetrih pred nezmanjšanimi obodnimi potmi, kjer se ponovno "
+"vzpostavi prvotna, nezmanjšana hitrost tiskanja. To zmanjša težave s "
+"kakovostjo tiskanja pri prehodu iz močno upočasnjenega tiskanja elementov na "
+"hitro tiskanje obodnih poti."
 
 #: src/libslic3r/PrintConfig.cpp:968
 msgid "Cooling tube position"
@@ -2505,6 +2519,9 @@ msgid ""
 "thicker bottom layer to improve adhesion and tolerance for non perfect build "
 "plates."
 msgstr ""
+"Pri tiskanju z zelo nizkimi višinami plasti je morda smiselno natisniti "
+"debelejšo spodnjo plast, da se izboljša oprijem in prilagodljivost v primeru "
+"nepopolnih tiskalnih plošč."
 
 #: src/libslic3r/PrintConfig.cpp:1661
 msgid "First layer speed"
@@ -3490,6 +3507,10 @@ msgid ""
 "surfaces which benefit from a higher number of perimeters if the Extra "
 "Perimeters option is enabled."
 msgstr ""
+"Ta možnost določa število obodov, ki se ustvarijo za vsako plast. "
+"Upoštevajte, da lahko PrusaSlicer to število samodejno poveča, če zazna "
+"nagnjene površine, za katere je večje število obodov koristno, če je "
+"omogočena možnost Dodatni obodi."
 
 #: src/libslic3r/PrintConfig.cpp:2574
 msgid "(minimum)"
@@ -3992,7 +4013,7 @@ msgstr "Najmanjše št. zank"
 
 #: src/libslic3r/PrintConfig.cpp:2988
 msgid "Skirt Loops"
-msgstr "Šr. krogov orisa"
+msgstr "Št. zank orisa"
 
 #: src/libslic3r/PrintConfig.cpp:2989
 msgid ""
@@ -4095,6 +4116,11 @@ msgid ""
 "any number of bottom solid layers as well as skirt/brim loops. It won't work "
 "when printing more than one single object."
 msgstr ""
+"Ta funkcija bo med tiskanjem objekta z enojno steno postopoma dvigovala Z-"
+"os, da se odstranijo morebitni vidni spoji. Za to možnost je potreben le en "
+"obod, brez zapolnitve, brez zgornjih polnih plasti in brez podpor. Še vedno "
+"lahko nastavite poljubno število spodnjih polnih plasti ter zank za obrobo/"
+"rob. Funkcija ne deluje pri tiskanju več kot enega objekta."
 
 #: src/libslic3r/PrintConfig.cpp:3096
 msgid "Temperature variation"
@@ -4712,6 +4738,10 @@ msgid ""
 "necessary to satisfy minimum thickness of top shell. This is useful to "
 "prevent pillowing effect when printing with variable layer height."
 msgstr ""
+"Število zgornjih polnih plasti se po potrebi poveča nad vrednost "
+"top_solid_layers, da se zagotovi minimalna debelina zgornje lupine. To je "
+"koristno za preprečevanje pojava \"blazinjenja\" pri tiskanju s spremenljivo "
+"višino plasti."
 
 #: src/libslic3r/PrintConfig.cpp:3697
 msgid "Minimum top shell thickness"
@@ -16959,7 +16989,7 @@ msgstr ""
 #: src/slic3r/GUI/PresetHints.cpp:62
 #, boost-format
 msgid "During the other layers, fan will always run at %1%%%"
-msgstr ""
+msgstr "Ventilator bo deloval na %1%%% pri ostalih plasteh."
 
 #: src/slic3r/GUI/PresetHints.cpp:62
 #, boost-format
@@ -16977,7 +17007,7 @@ msgstr ""
 
 #: src/slic3r/GUI/PresetHints.cpp:69
 msgid "During the other layers, fan will be turned off."
-msgstr ""
+msgstr "Ventilator bo izklopljen pri ostalih plasteh."
 
 #: src/slic3r/GUI/PresetHints.cpp:69
 msgid "Fan will be turned off."
@@ -17648,6 +17678,8 @@ msgid ""
 "Hover the cursor over buttons to find more information \n"
 "or click this button."
 msgstr ""
+"Premaknite kazalec nad gumbe, da si ogledate več informacij, \n"
+"ali kliknite ta gumb."
 
 #: src/slic3r/GUI/Tab.cpp:1272
 msgid "Detach from system preset"
@@ -18316,7 +18348,7 @@ msgstr ""
 
 #: src/slic3r/GUI/Tab.cpp:5206
 msgid "LOCKED LOCK"
-msgstr ""
+msgstr "ZAKLENJENA KLJUČAVNICA"
 
 #. TRN Description for "LOCKED LOCK"
 #: src/slic3r/GUI/Tab.cpp:5208
@@ -18327,7 +18359,7 @@ msgstr ""
 
 #: src/slic3r/GUI/Tab.cpp:5210
 msgid "UNLOCKED LOCK"
-msgstr ""
+msgstr "ODKLENJENA KLJUČAVNICA"
 
 #. TRN Description for "UNLOCKED LOCK"
 #: src/slic3r/GUI/Tab.cpp:5212
@@ -18376,6 +18408,8 @@ msgid ""
 "LOCKED LOCK icon indicates that the settings are the same as the system (or "
 "default) values for the current option group"
 msgstr ""
+"Ikona ZAKLENJENA KLJUČAVNICA kaže, da so nastavitve enake sistemskim (ali "
+"privzetim) vrednostim za trenutno skupino možnosti"
 
 #: src/slic3r/GUI/Tab.cpp:5240
 msgid ""
@@ -18384,6 +18418,11 @@ msgid ""
 "Click to reset all settings for current option group to the system (or "
 "default) values."
 msgstr ""
+"Ikona ODKLENJENA KLJUČAVNICA kaže, da so bile nekatere nastavitve "
+"spremenjene in se ne ujemajo s sistemskimi (ali privzetimi) vrednostmi za "
+"trenutno skupino možnosti.\n"
+"Kliknite, da ponastavite vse nastavitve za trenutno skupino možnosti na "
+"sistemske (ali privzete) vrednosti."
 
 #: src/slic3r/GUI/Tab.cpp:5243
 msgid "WHITE BULLET icon indicates a non system (or non default) preset."
@@ -18405,12 +18444,18 @@ msgid ""
 "Click to reset all settings for the current option group to the last saved "
 "preset."
 msgstr ""
+"Ikona PUŠČICA NAZAJ kaže, da so bile nastavitve spremenjene in se ne ujemajo "
+"z zadnjo shranjeno prednastavitvijo za trenutno skupino možnosti.\n"
+"Kliknite, da ponastavite vse nastavitve za trenutno skupino možnosti na "
+"zadnjo shranjeno prednastavitev."
 
 #: src/slic3r/GUI/Tab.cpp:5254
 msgid ""
 "LOCKED LOCK icon indicates that the value is the same as the system (or "
 "default) value."
 msgstr ""
+"Ikona ZAKLENJENA KLJUČAVNICA kaže, da so nastavitve enake sistemskim (ali "
+"privzetim) vrednostim."
 
 #: src/slic3r/GUI/Tab.cpp:5255
 msgid ""
@@ -18418,6 +18463,10 @@ msgid ""
 "the system (or default) value.\n"
 "Click to reset current value to the system (or default) value."
 msgstr ""
+"Ikona ODKLENJENA KLJUČAVNICA kaže, da je bila vrednost spremenjena in ni "
+"enaka sistemski (ali privzeti) vrednosti.\n"
+"Kliknite, da trenutno vrednost ponastavite na sistemsko (ali privzeto) "
+"vrednost."
 
 #: src/slic3r/GUI/Tab.cpp:5261
 msgid ""
@@ -18433,6 +18482,10 @@ msgid ""
 "last saved preset.\n"
 "Click to reset current value to the last saved preset."
 msgstr ""
+"Ikona PUŠČICA NAZAJ označuje, da so bile nastavitve spremenjene in se ne "
+"ujemajo z zadnjo shranjeno prednastavitvijo.\n"
+"Kliknite, da ponastavite trenutno vrednost na zadnjo shranjeno "
+"prednastavitev."
 
 #: src/slic3r/GUI/Tab.cpp:5433 src/slic3r/GUI/Tab.cpp:5435
 msgid "Material"

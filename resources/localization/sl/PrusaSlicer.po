@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PrusaSlicer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-26 08:02+0200\n"
-"PO-Revision-Date: 2026-03-30 14:33+0200\n"
+"PO-Revision-Date: 2026-04-01 15:13+0200\n"
 "Last-Translator: Jernej Pangerc <jernejp21@tuta.com>\n"
 "Language-Team: Jernej Pangerc <jernejp21@tuta.com>\n"
 "Language: sl\n"
@@ -7650,15 +7650,15 @@ msgstr ""
 msgid ""
 "Perform desktop integration (Sets this binary to be searchable by the "
 "system)."
-msgstr "Izvedi integracijo namizja (Izvede, da sistem najde ta program)."
+msgstr "Izvedi integracijo namizja (Nastavi, da sistem najde ta program)."
 
 #: src/slic3r/GUI/ConfigWizard.cpp:630
 msgid "Configuration sources"
-msgstr ""
+msgstr "Viri konfiguracije"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:630
 msgid "Configuration Sources"
-msgstr ""
+msgstr "Viri konfiguracije"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:638
 msgid "WARNING: Select at least one source."
@@ -7723,6 +7723,8 @@ msgid ""
 "%1% marked with <b>*</b> are <b>not</b> compatible with some installed "
 "printers."
 msgstr ""
+"%1% označeni z <b>*</b>, <b>niso</b> združljivi z nekaterimi nameščenimi "
+"tiskalniki."
 
 #. TRN ConfigWizard: Materials : "%1%" = "filament"/"SLA material"
 #: src/slic3r/GUI/ConfigWizard.cpp:1004
@@ -7771,7 +7773,7 @@ msgstr "Tiskalnik po meri"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:1480
 msgid "Define a custom printer profile"
-msgstr ""
+msgstr "Nastavite profil tiskalnika po meri"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:1481
 msgid "Custom profile name:"
@@ -7797,6 +7799,10 @@ msgid ""
 "application startup (never during program usage). This is only a "
 "notification mechanisms, no automatic installation is done."
 msgstr ""
+"Če je ta možnost omogočena, %s prek spleta preveri, ali so na voljo nove "
+"različice programa. Ko je nova različica na voljo, se ob naslednjem zagonu "
+"programa prikaže obvestilo (nikoli med uporabo programa). Gre zgolj za "
+"mehanizem obveščanja, samodejna namestitev pa se ne izvede."
 
 #: src/slic3r/GUI/ConfigWizard.cpp:1515 src/slic3r/GUI/Preferences.cpp:344
 msgid "Update built-in Presets automatically"
@@ -7810,18 +7816,26 @@ msgid ""
 "location.When a new preset version becomes available it is offered at "
 "application startup."
 msgstr ""
+"Če je ta možnost omogočena, %s v ozadju prenese posodobitve vgrajenih "
+"sistemskih prednastavitev. Te posodobitve se prenesejo v ločeno začasno "
+"mapo. Ko je na voljo nova različica prednastavitve, se ta ponudi ob zagonu "
+"programa."
 
 #: src/slic3r/GUI/ConfigWizard.cpp:1522
 msgid ""
 "Updates are never applied without user's consent and never overwrite user's "
 "customized settings."
 msgstr ""
+"Posodobitve se nikoli ne namestijo brez soglasja uporabnika in nikoli ne "
+"nadomestijo uporabnikovih prilagojenih nastavitev."
 
 #: src/slic3r/GUI/ConfigWizard.cpp:1527
 msgid ""
 "Additionally a backup snapshot of the whole configuration is created before "
 "an update is applied."
 msgstr ""
+"Poleg tega, se pred izvedbo posodobitve ustvari varnostna kopija celotne "
+"konfiguracije."
 
 #: src/slic3r/GUI/ConfigWizard.cpp:1576 src/slic3r/GUI/Preferences.cpp:1167
 msgid "Download path"
@@ -7847,7 +7861,7 @@ msgstr "Prenosi"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:1633
 msgid "Allow built-in downloader"
-msgstr ""
+msgstr "Omogoči vgrajeni program za prenašanje datotek"
 
 #. TRN ConfigWizard : "link" is a word from phrase
 #. "For a list of supported websites, follow this link"
@@ -7862,12 +7876,17 @@ msgid ""
 "Enable this option to open models from supported websites (e.g. %1%) with a "
 "single click. For a list of supported websites, follow this %2%."
 msgstr ""
+"Omogoči to možnost za odpiranje modelov s podprtih spletnih strani (npr. "
+"%1%) z enim samim klikom. Seznam podprtih spletnih strani najdete na tej "
+"povezavi %2%."
 
 #: src/slic3r/GUI/ConfigWizard.cpp:1681
 msgid ""
 "On Linux systems the process of registration also creates desktop "
 "integration files for this version of application."
 msgstr ""
+"V sistemih Linux se med postopkom registracije ustvarijo tudi datoteke za "
+"integracijo v namizje za to različico aplikacije."
 
 #: src/slic3r/GUI/ConfigWizard.cpp:1710
 msgid "Chosen directory for downloads does not exist."
@@ -7881,7 +7900,7 @@ msgstr "Ponovno naloži iz diska"
 #: src/slic3r/GUI/ConfigWizard.cpp:1804
 msgid ""
 "Export full pathnames of models and parts sources into 3mf and amf files"
-msgstr ""
+msgstr "Izvozi polne poti do modelov in virov kosov v datoteke 3MF in AMF"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:1808
 msgid ""
@@ -7890,6 +7909,10 @@ msgid ""
 "If not enabled, the Reload from disk command will ask to select each file "
 "using an open file dialog."
 msgstr ""
+"Če je ta možnost omogočena, lahko ukaz »Ponovno naloži z diska« ob zagonu "
+"samodejno poišče in naloži datoteke.\n"
+"Če ta možnost ni omogočena, vas bo ukaz »Ponovno naloži z diska« pozval, da "
+"izberete vsako datoteko v pogovornem oknu za odpiranje datotek."
 
 #: src/slic3r/GUI/ConfigWizard.cpp:1817
 msgid "Files association"
@@ -7915,6 +7938,12 @@ msgid ""
 "regular 3D printing. The other two offer progressively more sophisticated "
 "fine-tuning, they are suitable for advanced and expert users, respectively."
 msgstr ""
+"Uporabniški vmesnik programa PrusaSlicer je na voljo v treh različicah:\n"
+"Preprost, Napreden in Strokovni.\n"
+"V preprostem načinu so prikazane le najpogosteje uporabljane nastavitve, "
+"pomembne za običajno 3D tiskanje. Drugi dve različici omogočata postopno "
+"bolj natančno nastavljanje in sta primerni za napredne oziroma strokovne "
+"uporabnike."
 
 #: src/slic3r/GUI/ConfigWizard.cpp:1837
 msgid "Simple mode"
@@ -8072,7 +8101,7 @@ msgstr "Tiskalniki s tehnologijo FFF"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:2854
 msgid "SLA Technology Printers"
-msgstr ""
+msgstr "Tiskalniki s tehnologijo SLA"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:3046
 #, boost-format
@@ -8251,11 +8280,11 @@ msgstr "&Čarovnik za konfiguracijo"
 #. TRN Config wizard page headline.
 #: src/slic3r/GUI/ConfigWizardWebViewPage.cpp:22
 msgid "Log in with Your Prusa Account (optional)"
-msgstr ""
+msgstr "Prijavite se s svojim računom Prusa (neobvezno)"
 
 #: src/slic3r/GUI/ConfigWizardWebViewPage.cpp:22
 msgid "Log in (optional)"
-msgstr ""
+msgstr "Prijava (neobvezno)"
 
 #. TRN Config wizard page with a log in page.
 #: src/slic3r/GUI/ConfigWizardWebViewPage.cpp:33
@@ -8276,6 +8305,8 @@ msgid ""
 "Log in to control your printers remotely through the built-in Connect in "
 "PrusaSlicer."
 msgstr ""
+"Prijavite se, da lahko tiskalnike upravljate na daljavo prek vgrajene "
+"funkcije Povezava v programu PrusaSlicer."
 
 #: src/slic3r/GUI/DesktopIntegrationDialog.cpp:256
 msgid ""
@@ -16328,6 +16359,8 @@ msgid ""
 "If enabled, allows the Reload from disk command to automatically find and "
 "load the files when invoked."
 msgstr ""
+"Če je ta možnost omogočena, lahko ukaz »Ponovno naloži z diska« ob zagonu "
+"samodejno poišče in naloži datoteke."
 
 #: src/slic3r/GUI/Preferences.cpp:331
 msgid "If enabled, sets PrusaSlicer as default application to open .3mf files."
@@ -16344,6 +16377,10 @@ msgid ""
 "When a new preset version becomes available it is offered at application "
 "startup."
 msgstr ""
+"Če je ta možnost omogočena, PrusaSlicer v ozadju prenese posodobitve "
+"vgrajenih sistemskih prednastavitev. Te posodobitve se prenesejo v ločeno "
+"začasno mapo. Ko je na voljo nova različica prednastavitve, se ta ponudi ob "
+"zagonu programa."
 
 #: src/slic3r/GUI/Preferences.cpp:350
 msgid "Suppress \" - default - \" presets"
@@ -18486,7 +18523,7 @@ msgstr ""
 #: src/slic3r/GUI/TopBar.cpp:214 src/slic3r/GUI/TopBar.cpp:461
 #: src/slic3r/GUI/TopBarMenus.cpp:101
 msgid "Log in"
-msgstr ""
+msgstr "Prijava"
 
 #: src/slic3r/GUI/TopBar.cpp:274
 #, boost-format
@@ -18989,15 +19026,15 @@ msgstr ""
 
 #: src/slic3r/GUI/UpdatesUIManager.cpp:30
 msgid "Online sources"
-msgstr ""
+msgstr "Spletni viri"
 
 #: src/slic3r/GUI/UpdatesUIManager.cpp:35
 msgid "Please, select online sources you want to update profiles from"
-msgstr ""
+msgstr "Izberite spletne vire, iz katerih želite posodobiti profile"
 
 #: src/slic3r/GUI/UpdatesUIManager.cpp:49
 msgid "Local sources"
-msgstr ""
+msgstr "Lokalni viri"
 
 #: src/slic3r/GUI/UpdatesUIManager.cpp:68
 #, boost-format
@@ -19007,11 +19044,15 @@ msgid ""
 "computers that are not connected to the internet. Files containing the "
 "configuration updates can be downloaded from <a href=%1%>our website</a>."
 msgstr ""
+"Kot alternativa spletnim virom, je mogoče profile posodobiti tudi z ročnim "
+"nalaganjem datotek, ki vsebujejo posodobitve. To je še posebej koristno na "
+"računalnikih, ki niso povezani z internetom. Datoteke s posodobitvami "
+"nastavitev lahko prenesete z <a href=%1%>naše spletne strani</a>."
 
 #: src/slic3r/GUI/UpdatesUIManager.cpp:143
 #: src/slic3r/GUI/UpdatesUIManager.cpp:198
 msgid "Description"
-msgstr ""
+msgstr "Opis"
 
 #. TRN tooltip in Configuration Wizard - Configuration Sources
 #: src/slic3r/GUI/UpdatesUIManager.cpp:169

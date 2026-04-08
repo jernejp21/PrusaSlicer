@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PrusaSlicer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-26 08:02+0200\n"
-"PO-Revision-Date: 2026-04-07 12:58+0200\n"
+"PO-Revision-Date: 2026-04-08 11:50+0200\n"
 "Last-Translator: Jernej Pangerc <jernejp21@tuta.com>\n"
 "Language-Team: Jernej Pangerc <jernejp21@tuta.com>\n"
 "Language: sl\n"
@@ -916,7 +916,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:416 src/slic3r/GUI/ConfigWizard.cpp:2109
 msgid "Max print height"
-msgstr ""
+msgstr "Največja višina tiskanja"
 
 #: src/libslic3r/PrintConfig.cpp:417
 msgid ""
@@ -1089,7 +1089,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:554
 msgid "Automatic infill combination - Max layer height"
-msgstr "Samodejna združitev polnila - max. višina plasti"
+msgstr "Samodejna združitev polnila - maks. višina plasti"
 
 #: src/libslic3r/PrintConfig.cpp:556
 msgid ""
@@ -2006,6 +2006,10 @@ msgid ""
 "of each extruder with respect to the first one. It expects positive "
 "coordinates (they will be subtracted from the XY coordinate)."
 msgstr ""
+"Če vaša programska oprema ne upošteva odmika ekstruderja, morate to "
+"upoštevati v G-kodi. Ta možnost vam omogoča, da določite odmik vsakega "
+"ekstruderja glede na prvega. Pričakuje pozitivne koordinate (te se bodo "
+"odštele od koordinat XY)."
 
 #: src/libslic3r/PrintConfig.cpp:1196
 msgid "Extrusion axis"
@@ -2028,6 +2032,11 @@ msgid ""
 "Usual values are between 0.9 and 1.1. If you think you need to change this "
 "more, check filament diameter and your firmware E steps."
 msgstr ""
+"Ta faktor sorazmerno spreminja količino pretoka. Morda boste morali to "
+"nastavitev prilagoditi, da boste dosegli lepo površinsko obdelavo in "
+"pravilne širine posameznih sten. Običajne vrednosti so med 0,9 in 1,1. Če "
+"menite, da je potrebna večja sprememba, preverite premer filamenta in "
+"vrednosti E-korakov v vaši programski opremi."
 
 #: src/libslic3r/PrintConfig.cpp:1212
 msgid "Default extrusion width"
@@ -2084,7 +2093,7 @@ msgstr "Zapiski filamenta"
 
 #: src/libslic3r/PrintConfig.cpp:1249
 msgid "You can put your notes regarding the filament here."
-msgstr ""
+msgstr "Tukaj lahko vnesete svoje opombe o filamentu."
 
 #: src/libslic3r/PrintConfig.cpp:1257 src/libslic3r/PrintConfig.cpp:2341
 msgid "Max volumetric speed"
@@ -2096,6 +2105,9 @@ msgid ""
 "volumetric speed of a print to the minimum of print and filament volumetric "
 "speed. Set to zero for no limit."
 msgstr ""
+"Največji dovoljen pretok za ta filament. Omeji največji pretok tiskanja na "
+"manjšo vrednost: nastavitev pri tiskanju ali nastavitev pri filamentu. "
+"Nastavite na nič, če ne želite omejitve."
 
 #: src/libslic3r/PrintConfig.cpp:1261 src/libslic3r/PrintConfig.cpp:1434
 #: src/libslic3r/PrintConfig.cpp:2344 src/slic3r/GUI/GCodeViewer.cpp:525
@@ -2105,23 +2117,27 @@ msgstr "mm³/s"
 
 #: src/libslic3r/PrintConfig.cpp:1267
 msgid "Max non-crossing infill speed"
-msgstr ""
+msgstr "Največja hitrost ne prečkajočega polnila"
 
 #: src/libslic3r/PrintConfig.cpp:1268
 msgid ""
 "Maximum speed allowed for this filament while printing infill without any "
 "self intersections in a single layer. Set to zero for no limit."
 msgstr ""
+"Največja dovoljena hitrost za ta filament pri tiskanju zapolnitve brez "
+"notranji presečišč v eni plasti. Nastavite na nič, če ne želite omejitve."
 
 #: src/libslic3r/PrintConfig.cpp:1277
 msgid "Max crossing infill speed"
-msgstr ""
+msgstr "Največja hitrost prečkajočega polnila"
 
 #: src/libslic3r/PrintConfig.cpp:1278
 msgid ""
 "Maximum speed allowed for this filament while printing infill with self "
 "intersections in a single layer. Set to zero for no limit."
 msgstr ""
+"Največja dovoljena hitrost za ta filament pri tiskanju polnitve z notranjimi "
+"presečišči v eni plasti. Nastavite na nič, če ne želite omejitve."
 
 #: src/libslic3r/PrintConfig.cpp:1287
 msgid "Loading speed"
@@ -2358,7 +2374,7 @@ msgstr "Tip filamenta"
 
 #: src/libslic3r/PrintConfig.cpp:1458
 msgid "The filament material type for use in custom G-codes."
-msgstr ""
+msgstr "Vrsta materiala filamenta za uporabo v G-kodah po meri."
 
 #: src/libslic3r/PrintConfig.cpp:1486
 msgid "Soluble material"
@@ -2366,7 +2382,7 @@ msgstr "Topen material"
 
 #: src/libslic3r/PrintConfig.cpp:1487
 msgid "Soluble material is most likely used for a soluble support."
-msgstr ""
+msgstr "Topen material se najverjetneje uporablja za topne podpore."
 
 #: src/libslic3r/PrintConfig.cpp:1492
 msgid "Abrasive material"
@@ -2422,7 +2438,7 @@ msgstr "(Neznano)"
 
 #: src/libslic3r/PrintConfig.cpp:1523
 msgid "Shrinkage compensation XY"
-msgstr ""
+msgstr "Izravnava krčenja XY"
 
 #: src/libslic3r/PrintConfig.cpp:1524
 msgid ""
@@ -2430,10 +2446,13 @@ msgid ""
 "scaling of the object to compensate for shrinkage in the X and Y axes. For "
 "example, if you measured 99mm instead of 100mm, enter 1%."
 msgstr ""
+"Tukaj vnesite odstotke krčenja filamenta za osi X in Y, da se objekt "
+"ustrezno prilagodi in se tako izravna krčenje v oseh X in Y. Če ste na "
+"primer namesto 100 mm izmerili 99 mm, vnesite 1 %."
 
 #: src/libslic3r/PrintConfig.cpp:1534
 msgid "Shrinkage compensation Z"
-msgstr ""
+msgstr "Izravnava krčenja Z"
 
 #: src/libslic3r/PrintConfig.cpp:1535
 msgid ""
@@ -2441,6 +2460,9 @@ msgid ""
 "scaling of the object to compensate for shrinkage in the Z axis. For "
 "example, if you measured 99mm instead of 100mm, enter 1%."
 msgstr ""
+"Tukaj vnesite odstotke krčenja filamenta za Z os, da se objekt ustrezno "
+"prilagodi in se tako izravna krčenje v Z osi. Če ste na primer namesto 100 "
+"mm izmerili 99 mm, vnesite 1 %."
 
 #: src/libslic3r/PrintConfig.cpp:1545
 msgid "Fill angle"
@@ -3313,7 +3335,7 @@ msgstr "Največja hitrost spremembe smeri osi E"
 
 #: src/libslic3r/PrintConfig.cpp:2249
 msgid "Maximum junction deviation"
-msgstr ""
+msgstr "Največje odstopanje spoja"
 
 #: src/libslic3r/PrintConfig.cpp:2251
 msgid ""
@@ -3321,6 +3343,10 @@ msgid ""
 "When enabled, PrusaSlicer uses it for time estimates and G-code Viewer "
 "speeds instead of Jerk."
 msgstr ""
+"Največje odstopanje spoja (M205 J; velja le, če je JD > 0 v Marlinu).\n"
+"Ko je ta možnost omogočena, jo PrusaSlicer uporablja za ocene časa in "
+"hitrosti v pregledovalniku G-kode, namesto parametra največje hitrosti "
+"spremembe smeri."
 
 #: src/libslic3r/PrintConfig.cpp:2260
 msgid "Minimum feedrate when extruding"
@@ -3379,6 +3405,11 @@ msgid ""
 "layer height is 75% of the extrusion width to achieve reasonable inter-layer "
 "adhesion. If set to 0, layer height is limited to 75% of the nozzle diameter."
 msgstr ""
+"To je največja višina plasti, ki jo je mogoče natisniti s tem ekstruderjem; "
+"uporablja se za omejitev spremenljive višine plasti in višine podporne "
+"plasti. Največja priporočena višina plasti znaša 75 % širine iztiska, da se "
+"plasti ustrezno sprimejo med seboj. Če je vrednost nastavljena na 0, je "
+"višina sloja omejena na 75 % premera šobe."
 
 #: src/libslic3r/PrintConfig.cpp:2331
 msgid "Max print speed"
@@ -3441,6 +3472,9 @@ msgid ""
 "resolution for variable layer height. Typical values are between 0.05 mm and "
 "0.1 mm."
 msgstr ""
+"To je najmanjša višina plasti, ki jo je mogoče natisniti s tem ekstruderjem, "
+"in omejuje ločljivost pri spremenljivi višini plasti. Običajne vrednosti so "
+"med 0,05 mm in 0,1 mm."
 
 #: src/libslic3r/PrintConfig.cpp:2392
 msgid "Min print speed"
@@ -3677,7 +3711,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2601
 msgid "You can put your notes regarding the printer here."
-msgstr ""
+msgstr "Tukaj lahko vnesete svoje opombe o tiskalniku."
 
 #: src/libslic3r/PrintConfig.cpp:2609
 msgid "Printer vendor"
@@ -3780,7 +3814,7 @@ msgstr "Najmanjši pomik po umiku"
 #: src/libslic3r/PrintConfig.cpp:2704
 msgid ""
 "Retraction is not triggered when travel moves are shorter than this length."
-msgstr ""
+msgstr "Umik se ne sproži, če so premiki krajši od te dolžine."
 
 #: src/libslic3r/PrintConfig.cpp:2710
 msgid "Retract amount before wipe"
@@ -3791,6 +3825,8 @@ msgid ""
 "With bowden extruders, it may be wise to do some amount of quick retract "
 "before doing the wipe movement."
 msgstr ""
+"Pri ekstruderjih z bovdnom je priporočljivo, da pred brisanjem najprej "
+"izvedete nekaj hitrih umikov."
 
 #: src/libslic3r/PrintConfig.cpp:2718
 msgid "Retract on layer change"
@@ -3798,7 +3834,7 @@ msgstr "Umakni ob spremembi plasti"
 
 #: src/libslic3r/PrintConfig.cpp:2719
 msgid "This flag enforces a retraction whenever a Z move is done."
-msgstr ""
+msgstr "Ta zastavica sproži umik vsakič, ko se izvede gib Z."
 
 #: src/libslic3r/PrintConfig.cpp:2724
 msgid "Retraction length"
@@ -3845,7 +3881,7 @@ msgstr "Naklon klančine v začetni fazi premika."
 
 #: src/libslic3r/PrintConfig.cpp:2751
 msgid "Use ramping lift"
-msgstr "Uporabi naraščajoč dvig"
+msgstr "Uporabi postopen dvig"
 
 #: src/libslic3r/PrintConfig.cpp:2752
 msgid ""
@@ -3853,16 +3889,21 @@ msgid ""
 "The travel is split into two phases: the ramp and the standard horizontal "
 "travel. This option helps reduce stringing."
 msgstr ""
+"Namesto da bi ekstruder dvignil neposredno navzgor, uporabimo postopno "
+"dviganje. Gibanje je razdeljeno na dve fazi: postopno dviganje in običajno "
+"vodoravno gibanje. Ta možnost pomaga zmanjšati nastajanje niti."
 
 #: src/libslic3r/PrintConfig.cpp:2759
 msgid "Maximum ramping lift"
-msgstr "Največji naraščajoč dvig"
+msgstr "Največji postopen dvig"
 
 #: src/libslic3r/PrintConfig.cpp:2760
 msgid ""
 "Maximum lift height of the ramping lift. It may not be reached if the next "
 "position is close to the old one."
 msgstr ""
+"Največja višina dviga postopnega dviga. Te višine morda ne bo mogoče doseči, "
+"če je naslednji položaj blizu prejšnjega."
 
 #: src/libslic3r/PrintConfig.cpp:2769
 msgid "Steeper ramp before obstacles"
@@ -3905,6 +3946,9 @@ msgid ""
 "specified absolute Z. You can tune this setting for skipping lift on the "
 "first layers."
 msgstr ""
+"Če nastavite pozitivno vrednost, se dvig po osi Z izvede šele pod določeno "
+"absolutno vrednostjo osi Z. To nastavitev lahko prilagodite, da se dvig na "
+"prvih plasteh preskoči."
 
 #: src/libslic3r/PrintConfig.cpp:2800
 msgid "Below Z"
@@ -3920,6 +3964,9 @@ msgid ""
 "specified absolute Z. You can tune this setting for limiting lift to the "
 "first layers."
 msgstr ""
+"Če nastavite pozitivno vrednost, se dvig po osi Z izvede šele pod določeno "
+"absolutno vrednostjo osi Z. To nastavitev lahko prilagodite, da se dvig na "
+"prvih plasteh omeji."
 
 #: src/libslic3r/PrintConfig.cpp:2810
 msgid "Deretraction extra length"
@@ -3930,6 +3977,8 @@ msgid ""
 "When the retraction is compensated after the travel move, the extruder will "
 "push this additional amount of filament. This setting is rarely needed."
 msgstr ""
+"Ko se po premiku izravna umik, bo ekstruder potisnil to dodatno količino "
+"filamenta. Ta nastavitev je redko potrebna."
 
 #: src/libslic3r/PrintConfig.cpp:2818
 msgid "Extra length on restart"
@@ -3949,7 +3998,7 @@ msgstr "Hitrost umika"
 
 #: src/libslic3r/PrintConfig.cpp:2828
 msgid "The speed for retractions (it only applies to the extruder motor)."
-msgstr ""
+msgstr "Hitrost umika (velja samo za motor ekstruderja)."
 
 #: src/libslic3r/PrintConfig.cpp:2834 src/libslic3r/PrintConfig.cpp:2835
 msgid "Deretraction Speed"
@@ -3961,6 +4010,8 @@ msgid ""
 "applies to the extruder motor). If left to zero, the retraction speed is "
 "used."
 msgstr ""
+"Hitrost vstavljanja filamenta v ekstruder po umiku (velja samo za motor "
+"ekstruderja). Če je vrednost nastavljena na nič, se uporabi hitrost umika."
 
 #: src/libslic3r/PrintConfig.cpp:2843
 msgid "Seam gap distance"
@@ -5085,6 +5136,8 @@ msgid ""
 "This flag will move the nozzle while retracting to minimize the possible "
 "blob on leaky extruders."
 msgstr ""
+"Ta nastavitev bo med umikanjem premikala šobo, da se zmanjša možnost "
+"nastanka kapljic pri ekstruderjih, ki puščajo."
 
 #: src/libslic3r/PrintConfig.cpp:3767
 msgid ""
@@ -17266,7 +17319,7 @@ msgstr ""
 #: src/slic3r/GUI/PresetHints.cpp:62
 #, boost-format
 msgid "During the other layers, fan will always run at %1%%%"
-msgstr "Ventilator bo deloval na %1%%% pri ostalih plasteh."
+msgstr "Ventilator bo deloval na %1%%% pri ostalih plasteh,"
 
 #: src/slic3r/GUI/PresetHints.cpp:62
 #, boost-format
@@ -17276,11 +17329,11 @@ msgstr ""
 #: src/slic3r/GUI/PresetHints.cpp:64
 #, boost-format
 msgid "except for the first %1% layers."
-msgstr ""
+msgstr "izjema je prvih %1% plasti."
 
 #: src/slic3r/GUI/PresetHints.cpp:66
 msgid "except for the first layer."
-msgstr ""
+msgstr "izjema je prva plast."
 
 #: src/slic3r/GUI/PresetHints.cpp:69
 msgid "During the other layers, fan will be turned off."
@@ -18258,7 +18311,7 @@ msgstr "Preglasitev hitrosti tiskanja"
 
 #: src/slic3r/GUI/Tab.cpp:2308
 msgid "Shrinkage compensation"
-msgstr ""
+msgstr "Izravnava krčenja"
 
 #: src/slic3r/GUI/Tab.cpp:2312
 msgid "Wipe tower parameters"

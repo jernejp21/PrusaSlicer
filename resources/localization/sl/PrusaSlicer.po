@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PrusaSlicer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-26 08:02+0200\n"
-"PO-Revision-Date: 2026-04-08 11:50+0200\n"
+"PO-Revision-Date: 2026-04-10 13:50+0200\n"
 "Last-Translator: Jernej Pangerc <jernejp21@tuta.com>\n"
 "Language-Team: Jernej Pangerc <jernejp21@tuta.com>\n"
 "Language: sl\n"
@@ -260,7 +260,7 @@ msgstr "G-koda ob menjavi orodja"
 
 #: src/libslic3r/GCode.cpp:532 src/slic3r/GUI/Tab.cpp:2943
 msgid "Between objects G-code (for sequential printing)"
-msgstr ""
+msgstr "G-koda med objekti (za zaporedno tiskanje)"
 
 #: src/libslic3r/GCode.cpp:533 src/slic3r/GUI/Tab.cpp:2954
 msgid "Color Change G-code"
@@ -870,6 +870,9 @@ msgid ""
 "in the following format: \"XxY/EXT, XxY/EXT, ...\"\n"
 "Currently supported extensions are PNG, QOI and JPG."
 msgstr ""
+"Velikosti slik, ki se shranijo v datoteke .gcode / .bgcode in .sl1 / .sl1s, "
+"morajo biti v naslednjem formatu: »XxY/EXT, XxY/EXT, ...«\n"
+"Trenutno podprte končnice so PNG, QOI in JPG."
 
 #: src/libslic3r/PrintConfig.cpp:400
 msgid "Format of G-code thumbnails"
@@ -1172,22 +1175,25 @@ msgstr "Temperatura postelje"
 #. TRN: Label of a configuration parameter: Nominal chamber temperature.
 #: src/libslic3r/PrintConfig.cpp:605
 msgid "Nominal"
-msgstr ""
+msgstr "Nazivna"
 
 #: src/libslic3r/PrintConfig.cpp:606
 msgid "Chamber temperature"
-msgstr ""
+msgstr "Temperature komore"
 
 #: src/libslic3r/PrintConfig.cpp:607
 msgid ""
 "Required chamber temperature for the print.\n"
 "When set to zero, the nominal chamber temperature is not set in the G-code."
 msgstr ""
+"Zahtevana temperatura komore za tiskanje.\n"
+"Če je vrednost nastavljena na nič, se nazivna temperatura komore v G-kodi ne "
+"določi."
 
 #. TRN: Label of a configuration parameter: Minimal chamber temperature
 #: src/libslic3r/PrintConfig.cpp:617
 msgid "Minimal"
-msgstr ""
+msgstr "Najnižja"
 
 #: src/libslic3r/PrintConfig.cpp:618
 msgid "Chamber minimal temperature"
@@ -1200,6 +1206,11 @@ msgid ""
 "temperature is reached.\n"
 "When set to zero, the minimal chamber temperature is not set in the G-code."
 msgstr ""
+"Najnižja temperatura komore, na katero tiskalnik počaka, preden se začne "
+"tiskanje. To omogoča začetek tiskanja, še preden je dosežena nazivna "
+"temperatura komore.\n"
+"Če je vrednost nastavljena na nič, se najnižja temperatura komore ne vključi "
+"v G-kodo."
 
 #: src/libslic3r/PrintConfig.cpp:629
 msgid "Bed temperature by extruder"
@@ -1230,6 +1241,9 @@ msgid ""
 "Note that you can use placeholder variables for all Slic3r settings as well "
 "as [layer_num] and [layer_z]."
 msgstr ""
+"Ta prilagojena koda se vstavi ob vsaki menjavi plasti, tik pred premikom po "
+"Z osi. Za vse nastavitve programa PrusaSlicer lahko uporabite spremenljivke "
+"za nadomestne vrednosti, kot tudi [layer_num] in [layer_z]."
 
 #: src/libslic3r/PrintConfig.cpp:650
 msgid "Between objects G-code"
@@ -1244,6 +1258,12 @@ msgid ""
 "variables for all Slic3r settings, so you can put a \"M109 "
 "S[first_layer_temperature]\" command wherever you want."
 msgstr ""
+"Ta koda je vstavljena med posamezne objekte pri zaporednem tiskanju. "
+"Privzeto se temperatura ekstruderja in mize ponastavi z ukazom brez čakanja; "
+"če je v tej prilagojeni kodi zazno M104, M109, M140 ali M190, PrusaSlucer ne "
+"bo dodal ukazov za nastavitev temperature. Za vse nastavitvePrusaSlicer "
+"lahko uporabite spremenljivke za nadomestne znake, tako da lahko ukaz »M109 "
+"S[first_layer_temperature]« vstavite kjerkoli želite."
 
 #. TRN Print Settings: "Bottom solid layers"
 #: src/libslic3r/PrintConfig.cpp:660 src/libslic3r/PrintConfig.cpp:668
@@ -1325,7 +1345,7 @@ msgstr "Hitrost ventilatorja na mostovih"
 
 #: src/libslic3r/PrintConfig.cpp:699
 msgid "This fan speed is enforced during all bridges and overhangs."
-msgstr ""
+msgstr "Ta hitrost ventilatorja velja na vseh mostovih in previsih."
 
 #: src/libslic3r/PrintConfig.cpp:700 src/libslic3r/PrintConfig.cpp:822
 #: src/libslic3r/PrintConfig.cpp:831 src/libslic3r/PrintConfig.cpp:840
@@ -1493,6 +1513,7 @@ msgstr "Omogoči dinamično hitrost ventilatorja"
 #: src/libslic3r/PrintConfig.cpp:810
 msgid "This setting enables dynamic fan speed control on overhangs."
 msgstr ""
+"Ta nastavitev omogoča dinamično krmiljenje hitrosti ventilatorja na previsih."
 
 #. TRN FilamentSettings : "Dynamic fan speeds"
 #: src/libslic3r/PrintConfig.cpp:815
@@ -1502,6 +1523,10 @@ msgid ""
 "represents full overhang (floating extrusion, bridge). Fan speeds for "
 "overhang sizes in between are calculated via linear interpolation."
 msgstr ""
+"Velikost previsa se izraža kot odstotek prekrivanja iztiskanega materiala s "
+"prejšnjo plastjo: 100 % pomeni popolno prekrivanje (brez previsa), medtem ko "
+"0 % pomeni popoln previs (lebdeče iztiskanje, most). Hitrosti ventilatorjev "
+"za vmesne vrednosti velikosti previsa se izračunajo z linearno interpolacijo."
 
 #: src/libslic3r/PrintConfig.cpp:856
 msgid "Brim width"
@@ -1672,19 +1697,19 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:968
 msgid "Cooling tube position"
-msgstr ""
+msgstr "Položaj hladilne cevi"
 
 #: src/libslic3r/PrintConfig.cpp:969
 msgid "Distance of the center-point of the cooling tube from the extruder tip."
-msgstr ""
+msgstr "Razdalja med središčem hladilne cevi in konico ekstruderja."
 
 #: src/libslic3r/PrintConfig.cpp:976
 msgid "Cooling tube length"
-msgstr ""
+msgstr "Dolžina hladilne cevi"
 
 #: src/libslic3r/PrintConfig.cpp:977
 msgid "Length of the cooling tube to limit space for cooling moves inside it."
-msgstr ""
+msgstr "Dolžina hladilne cevi za omejevanje prostora za gibanje znotraj nje."
 
 #: src/libslic3r/PrintConfig.cpp:984 src/libslic3r/PrintConfig.cpp:3445
 #: src/libslic3r/PrintConfig.cpp:4622 src/slic3r/GUI/GUI_Factories.cpp:958
@@ -1732,6 +1757,8 @@ msgid ""
 "You can set this to a positive value to disable fan at all during the first "
 "layers, so that it does not make adhesion worse."
 msgstr ""
+"Nastavite na pozitivno vrednost, da ventilator med tiskanjem prvih plasti ne "
+"deluje, da se oprijem ne poslabša."
 
 #: src/libslic3r/PrintConfig.cpp:1011 src/libslic3r/PrintConfig.cpp:1881
 #: src/libslic3r/PrintConfig.cpp:2674 src/libslic3r/PrintConfig.cpp:2968
@@ -1767,6 +1794,9 @@ msgid ""
 "This end procedure is inserted at the end of the output file. Note that you "
 "can use placeholder variables for all PrusaSlicer settings."
 msgstr ""
+"Ta zaključni postopek se vstavi na konec izhodne datoteke. Upoštevajte, da "
+"lahko za vse nastavitve programa PrusaSlicer uporabite spremenljivke za "
+"nadomestne vrednosti."
 
 #: src/libslic3r/PrintConfig.cpp:1045
 msgid ""
@@ -1776,6 +1806,11 @@ msgid ""
 "PrusaSlicer settings. If you have multiple extruders, the gcode is processed "
 "in extruder order."
 msgstr ""
+"Ta zaključni postopek se vstavi na konec izhodne datoteke, pred »G-kodo na "
+"koncu« za tiskalnik (in pred morebitno menjavo orodja za ta filament v "
+"primeru več materialnih tiskalnikov). Za vse nastavitve programa PrusaSlicer "
+"lahko uporabite spremenljivke za nadomestne vrednosti. Če imate več "
+"ekstruderjev, se G-koda obdeluje v vrstnem redu ekstruderjev."
 
 #: src/libslic3r/PrintConfig.cpp:1056
 msgid "Ensure vertical shell thickness"
@@ -1971,6 +2006,13 @@ msgid ""
 "The value is ignored for most Prusa printers, which come with more detailed "
 "extruder model."
 msgstr ""
+"Uporablja se le, če je omogočena možnost »Nastavitve tiskanja -> Možnost "
+"izvoza -> Dokončaj posamezne objekte«. Nastavite to vrednost na navpično "
+"razdaljo med konico šobe in (ponavadi) vodili X-osnega vozička. Uporablja se "
+"za preverjanje morebitnih trkov s prej natisnjenimi objekti in za njihovo "
+"preprečevanje pri razporeditvi.\n"
+"Ta vrednost se pri večini tiskalnikov Prusa, ki imajo vgrajen podrobnejši "
+"model ekstruderja, ne upošteva."
 
 #: src/libslic3r/PrintConfig.cpp:1168 src/slic3r/GUI/GLCanvas3D.cpp:363
 msgid "Radius"
@@ -1985,6 +2027,13 @@ msgid ""
 "The value is ignored for most Prusa printers, which come with more detailed "
 "extruder model."
 msgstr ""
+"Uporablja se le, če je omogočena možnost »Nastavitve tiskanja -> Možnost "
+"izvoza -> Dokončaj posamezne objekte«. Nastavite polmer valja, katerega "
+"središče je v šobi, tako da je dovolj velik, da zajame celoten ekstruder. "
+"Uporablja se za preverjanje morebitnih trkov s prej natisnjenimi objekti in "
+"za njihovo preprečevanje pri razporeditvi.\n"
+"Ta vrednost se pri večini tiskalnikov Prusa, ki imajo vgrajen podrobnejši "
+"model ekstruderja, ne upošteva."
 
 #: src/libslic3r/PrintConfig.cpp:1179
 msgid "Extruder Color"
@@ -2078,6 +2127,9 @@ msgid ""
 "enabled and its speed will be calculated by interpolating the minimum and "
 "maximum speeds."
 msgstr ""
+"Če je predviden čas tiskanja plasti krajši od tega števila sekund, se vklopi "
+"ventilator, njegova hitrost pa se izračuna z interpolacijo med najnižjo in "
+"najvišjo hitrostjo."
 
 #: src/libslic3r/PrintConfig.cpp:1235 src/libslic3r/PrintConfig.cpp:3000
 msgid "approximate seconds"
@@ -2145,7 +2197,7 @@ msgstr "Hitrost polnjenja"
 
 #: src/libslic3r/PrintConfig.cpp:1288
 msgid "Speed used for loading the filament on the wipe tower."
-msgstr ""
+msgstr "Hitrost, ki se uporablja za nalaganje filamenta na stolp za brisanje."
 
 #: src/libslic3r/PrintConfig.cpp:1295
 msgid "Loading speed at the start"
@@ -2153,7 +2205,7 @@ msgstr "Hitrost polnjenja na začetku"
 
 #: src/libslic3r/PrintConfig.cpp:1296
 msgid "Speed used at the very beginning of loading phase."
-msgstr ""
+msgstr "Hitrost, ki se uporablja na samem začetku faze nalaganja."
 
 #: src/libslic3r/PrintConfig.cpp:1303
 msgid "Unloading speed"
@@ -2164,6 +2216,8 @@ msgid ""
 "Speed used for unloading the filament on the wipe tower (does not affect  "
 "initial part of unloading just after ramming)."
 msgstr ""
+"Hitrost, ki se uporablja za izpraznitev filamenta na stolpu za brisanje (ne "
+"vpliva na začetni del praznjenja takoj po teptanju)."
 
 #: src/libslic3r/PrintConfig.cpp:1312
 msgid "Unloading speed at the start"
@@ -2173,6 +2227,7 @@ msgstr "Hitrost praznjenja na začetku"
 msgid ""
 "Speed used for unloading the tip of the filament immediately after ramming."
 msgstr ""
+"Hitrost, ki se uporablja za razbremenitev konice filamenta takoj po teptanju."
 
 #: src/libslic3r/PrintConfig.cpp:1320
 msgid "Delay after unloading"
@@ -2184,6 +2239,9 @@ msgid ""
 "toolchanges with flexible materials that may need more time to shrink to "
 "original dimensions."
 msgstr ""
+"Čas, ki je treba počakati po odstranitvi filamenta. To lahko pripomore k "
+"zanesljivi menjavi orodja pri prožnih materialih, ki morda potrebujejo več "
+"časa, da se skrčijo na prvotno dimenzijo."
 
 #: src/libslic3r/PrintConfig.cpp:1324 src/libslic3r/PrintConfig.cpp:1395
 #: src/libslic3r/PrintConfig.cpp:1410 src/libslic3r/PrintConfig.cpp:4327
@@ -2200,15 +2258,15 @@ msgstr "s"
 
 #: src/libslic3r/PrintConfig.cpp:1330
 msgid "Stamping loading speed"
-msgstr ""
+msgstr "Hitrost nalaganja pri štancanju"
 
 #: src/libslic3r/PrintConfig.cpp:1331
 msgid "Speed used for stamping."
-msgstr ""
+msgstr "Hitrost, ki se uporablja pri štancanju."
 
 #: src/libslic3r/PrintConfig.cpp:1338
 msgid "Stamping distance measured from the center of the cooling tube"
-msgstr ""
+msgstr "Razdalja štancanja, merjena od središča hladilne cevi"
 
 #: src/libslic3r/PrintConfig.cpp:1339
 msgid ""
@@ -2216,16 +2274,21 @@ msgid ""
 "individual cooling moves (\"stamping\"). This option configures how long "
 "this movement should be before the filament is retracted again."
 msgstr ""
+"Če je nastavljena na vrednost, različno od nič, se filament med posameznimi "
+"hlajenji (»štancanjem«) pomika proti šobi. Ta možnost določa, kako dolgo naj "
+"traja ta premik, preden se filament ponovno umakne."
 
 #: src/libslic3r/PrintConfig.cpp:1347
 msgid "Number of cooling moves"
-msgstr "Število premikov ohlajanja"
+msgstr "Število premikov hlajenja"
 
 #: src/libslic3r/PrintConfig.cpp:1348
 msgid ""
 "Filament is cooled by being moved back and forth in the cooling tubes. "
 "Specify desired number of these moves."
 msgstr ""
+"Filement se ohlaja z gibanjem naprej in nazaj v hladilnih ceveh. Določite "
+"želeno število teh gibov."
 
 #: src/libslic3r/PrintConfig.cpp:1356
 msgid "Speed of the first cooling move"
@@ -2233,7 +2296,7 @@ msgstr "Hitrost prvega pomika za hlajenje"
 
 #: src/libslic3r/PrintConfig.cpp:1357
 msgid "Cooling moves are gradually accelerating beginning at this speed."
-msgstr ""
+msgstr "Hladilni pomiki se pri tej hitrosti postopoma pospešujejo."
 
 #: src/libslic3r/PrintConfig.cpp:1364
 msgid "Minimal purge on wipe tower"
@@ -2247,6 +2310,12 @@ msgid ""
 "object, Slic3r will always prime this amount of material into the wipe tower "
 "to produce successive infill or sacrificial object extrusions reliably."
 msgstr ""
+"Po menjavi orodja natančen položaj novo vstavljenega filamenta v šobi morda "
+"ni znan, prav tako pa je verjetno, da tlak filamenta še ni stabilen. Preden "
+"se tiskalna glava očisti z iztiskanjem v polnilni material ali pomožni "
+"predmet, bo PrusaSlicer vedno vbrizgal to količino materiala v stolp za "
+"brisanje, da se zagotovi zanesljivo iztiskanje naslednjih plasti polnila ali "
+"pomožnega predmeta."
 
 #: src/libslic3r/PrintConfig.cpp:1369 src/libslic3r/PrintConfig.cpp:1426
 #: src/libslic3r/PrintConfig.cpp:2514
@@ -2259,7 +2328,7 @@ msgstr "Hitrost zadnjega pomika za hlajenje"
 
 #: src/libslic3r/PrintConfig.cpp:1376
 msgid "Cooling moves are gradually accelerating towards this speed."
-msgstr ""
+msgstr "Hladilni pomiki se postopoma pospešujejo priti tej hitrosti."
 
 #: src/libslic3r/PrintConfig.cpp:1383
 msgid "Purge volume multiplier"
@@ -2271,6 +2340,10 @@ msgid ""
 "Printer Settings. This option allows to modify the volume on filament level. "
 "Note that the project can override this by setting project-specific values."
 msgstr ""
+"Prostornina čiščenja na stolpu za brisanje se določi z nastavitvijo "
+"»multimaterial_purging« v nastavitvah tiskalnika. Ta možnost omogoča "
+"spreminjanje obsega na ravni filamenta. Upoštevajte, da lahko projekt to "
+"nastavitev prepiše z določeno vrednostjo, specifično za projekt."
 
 #: src/libslic3r/PrintConfig.cpp:1393
 msgid "Filament load time"
@@ -2282,16 +2355,21 @@ msgid ""
 "filament during a tool change (when executing the T code). This time is "
 "added to the total print time by the G-code time estimator."
 msgstr ""
+"Čas, ki ga potrebuje programska oprema tiskalnika (ali enota Multi Material "
+"Unit 2.0) za vstavitev novega filamenta med menjavo orodja (med izvajanjem T "
+"kode). Ta čas se prišteje k skupnemu času tiskanja s pomočjo ocenjevalnika "
+"časa G-kode."
 
 #: src/libslic3r/PrintConfig.cpp:1401
 msgid "Ramming parameters"
-msgstr "Parametri hitrega iztiska"
+msgstr "Parametri teptanja"
 
 #: src/libslic3r/PrintConfig.cpp:1402
 msgid ""
 "This string is edited by RammingDialog and contains ramming specific "
 "parameters."
 msgstr ""
+"Ta niz ureja Dialog za teptanje in vsebuje parametre, specifične za teptanje."
 
 #: src/libslic3r/PrintConfig.cpp:1408
 msgid "Filament unload time"
@@ -2303,10 +2381,14 @@ msgid ""
 "filament during a tool change (when executing the T code). This time is "
 "added to the total print time by the G-code time estimator."
 msgstr ""
+"Čas, ki ga potrebuje programska oprema tiskalnika (ali enota Multi Material "
+"Unit 2.0) za odstranitev filamenta med menjavo orodja (med izvajanjem T "
+"kode). Ta čas se prišteje k skupnemu času tiskanja s pomočjo ocenjevalnika "
+"časa G-kode."
 
 #: src/libslic3r/PrintConfig.cpp:1416
 msgid "Enable ramming for multitool setups"
-msgstr "Omogoči hiter iztisk"
+msgstr "Omogoči teptanje za konfiguracije z več orodji"
 
 #: src/libslic3r/PrintConfig.cpp:1417
 msgid ""
@@ -2315,22 +2397,27 @@ msgid ""
 "amount of filament is rapidly extruded on the wipe tower just before the "
 "toolchange. This option is only used when the wipe tower is enabled."
 msgstr ""
+"Izvedi teptanje pri uporabi več orodnega tiskalnika (tj. kadar v nastavitvah "
+"tiskalnika ni označena možnost »En ekstruder za več materialov«). Če je ta "
+"možnost označena, se tik pred menjavo orodja na stolpu za brisanje hitro "
+"iztisne majhna količina filamenta. Ta možnost se uporablja le, če je stolp "
+"za brisanje omogočen."
 
 #: src/libslic3r/PrintConfig.cpp:1424
 msgid "Multitool ramming volume"
-msgstr "Prostornina več-orodnega hitrega iztiska"
+msgstr "Prostornina več orodnega teptanja"
 
 #: src/libslic3r/PrintConfig.cpp:1425
 msgid "The volume to be rammed before the toolchange."
-msgstr ""
+msgstr "Prostornina, ki jo je treba steptati pred menjavo orodja."
 
 #: src/libslic3r/PrintConfig.cpp:1432
 msgid "Multitool ramming flow"
-msgstr "Pretok več-orodnega hitrega iztiska"
+msgstr "Pretok več orodnega teptanja"
 
 #: src/libslic3r/PrintConfig.cpp:1433
 msgid "Flow used for ramming the filament before the toolchange."
-msgstr ""
+msgstr "Pretok, ki se uporablja za teptanje filamenta pred menjavo orodja."
 
 #: src/libslic3r/PrintConfig.cpp:1440 src/slic3r/GUI/BedShapeDialog.cpp:44
 #: src/slic3r/GUI/Gizmos/GLGizmoMeasure.cpp:2028
@@ -2386,13 +2473,15 @@ msgstr "Topen material se najverjetneje uporablja za topne podpore."
 
 #: src/libslic3r/PrintConfig.cpp:1492
 msgid "Abrasive material"
-msgstr ""
+msgstr "Abraziven material"
 
 #: src/libslic3r/PrintConfig.cpp:1493
 msgid ""
 "This flag means that the material is abrasive and requires a hardened "
 "nozzle. The value is used by the printer to check it."
 msgstr ""
+"Ta zastavica označuje, da je material abraziven in zahteva trdo šobo. "
+"Tiskalnik to vrednost uporabi za preverjanje."
 
 #: src/libslic3r/PrintConfig.cpp:1498 src/libslic3r/PrintConfig.cpp:4485
 #: src/libslic3r/PrintConfig.cpp:4486 src/slic3r/GUI/GLCanvas3D.cpp:1822
@@ -2681,6 +2770,11 @@ msgid ""
 "\"disable_fan_first_layers\", in which case the fan will be running at "
 "maximum allowed speed at layer \"disable_fan_first_layers\" + 1."
 msgstr ""
+"Hitrost ventilatorja se bo linearno povečevala od nič na stopnji "
+"»disable_fan_first_layers« do največje vrednosti na stopnji "
+"»full_fan_speed_layer«. Stopnja »full_fan_speed_layer« bo prezrta, če je "
+"nižja od »disable_fan_first_layers«; v tem primeru bo ventilator deloval z "
+"največjo dovoljeno hitrostjo na stopnji »disable_fan_first_layers« + 1."
 
 #: src/libslic3r/PrintConfig.cpp:1715 src/libslic3r/PrintConfig.cpp:1716
 #: src/libslic3r/PrintConfig.cpp:1728 src/libslic3r/PrintConfig.cpp:1738
@@ -2781,6 +2875,10 @@ msgid ""
 "output. The \"No extrusion\" flavor prevents PrusaSlicer from exporting any "
 "extrusion value at all."
 msgstr ""
+"Nekateri ukazi G/M-kode, med drugim tudi ukazi za nadzor temperature, niso "
+"univerzalni. To možnost nastavite v programski opremi vašega tiskalnika, da "
+"dobte združljiv izpis. Z izbiro možnosti »Brez iztiskanja« preprečite, da bi "
+"program PrusaSlicer izvozil kakršnokoli vrednost iztiskanja."
 
 #: src/libslic3r/PrintConfig.cpp:1789
 msgid "No extrusion"
@@ -2827,7 +2925,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:1816
 msgid "High extruder current on filament swap"
-msgstr ""
+msgstr "Visok tok ekstruderja med menjavo filamenta"
 
 #: src/libslic3r/PrintConfig.cpp:1817
 msgid ""
@@ -2835,6 +2933,9 @@ msgid ""
 "filament exchange sequence to allow for rapid ramming feed rates and to "
 "overcome resistance when loading a filament with an ugly shaped tip."
 msgstr ""
+"Med postopkom zamenjave filamenta je lahko koristno povečati tok motorja "
+"ekstruderja, da se omogočijo visoke hitrosti teptanja in premagajo upori pri "
+"vstavljanju filamenta z nepravilno oblikovanim koncem."
 
 #: src/libslic3r/PrintConfig.cpp:1825
 msgid ""
@@ -3172,6 +3273,10 @@ msgid ""
 "use placeholder variables for all Slic3r settings as well as [layer_num] and "
 "[layer_z]."
 msgstr ""
+"Ta prilagojena koda se vstavi ob vsaki menjavi plasti, takoj po premiku po Z "
+"osi in preden se ekstruder premakne na prvo točko sloja. Za vse nastavitve "
+"programa PrusaSlicer lahko uporabite spremenljivke za nadomestne vrednosti, "
+"kot tudi [layer_num] in [layer_z]."
 
 #: src/libslic3r/PrintConfig.cpp:2143
 msgid "Supports remaining times"
@@ -3184,6 +3289,11 @@ msgid ""
 "As of now only the Prusa i3 MK3 firmware recognizes M73. Also the i3 MK3 "
 "firmware supports M73 Qxx Sxx for the silent mode."
 msgstr ""
+"V G-kodo vstavi ukaz M73 P[odstotek natisnjenega] R[preostali čas v minutah] "
+"v enominutnih intervalih, da bo programska opremo prikazovala natančen "
+"preostali čas. Trenutno ukaz M73 prepoznava le programska oprema za Prusa i3 "
+"MK3. Poleg tega, podpira programska oprema za i3 MK3 tudi ukaz M73 Qxx Sxx "
+"za tiho delovanje."
 
 #: src/libslic3r/PrintConfig.cpp:2152
 msgid "Supports stealth mode"
@@ -3191,7 +3301,7 @@ msgstr "Podpira tih način"
 
 #: src/libslic3r/PrintConfig.cpp:2153
 msgid "The firmware supports stealth mode"
-msgstr ""
+msgstr "Programska oprema podpira tih način"
 
 #: src/libslic3r/PrintConfig.cpp:2158
 msgid "Supports binary G-code"
@@ -3203,6 +3313,9 @@ msgid ""
 "generate .bgcode files, make sure you have binary G-code enabled in "
 "Configuration->Preferences->Other."
 msgstr ""
+"To možnost vklopite, če programska oprema podpira binarni format G-kode "
+"(bgcode). Za ustvarjanje datotek .bgcode se prepričajte, da imate binarno G-"
+"kodo vklopljeno v meniju Konfiguracija -> Nastavitve -> Ostalo."
 
 #: src/libslic3r/PrintConfig.cpp:2165
 msgid "How to apply limits"
@@ -3396,7 +3509,7 @@ msgstr "Maks"
 
 #: src/libslic3r/PrintConfig.cpp:2312
 msgid "This setting represents the maximum speed of your fan."
-msgstr ""
+msgstr "Ta nastavitev določa največjo hitrost ventilatorja."
 
 #: src/libslic3r/PrintConfig.cpp:2321
 msgid ""
@@ -3465,6 +3578,8 @@ msgstr "Min"
 #: src/libslic3r/PrintConfig.cpp:2375
 msgid "This setting represents the minimum PWM your fan needs to work."
 msgstr ""
+"Ta nastavitev določa najnižjo vrednost PWM, ki jo ventilator potrebuje za "
+"delovanje."
 
 #: src/libslic3r/PrintConfig.cpp:2384
 msgid ""
@@ -3482,7 +3597,7 @@ msgstr "Najmanjša hitrost tiskanja"
 
 #: src/libslic3r/PrintConfig.cpp:2393
 msgid "Slic3r will not scale speed down below this speed."
-msgstr ""
+msgstr "PrusaSlicer hitrosti ne bo znižal pod to vrednost."
 
 #: src/libslic3r/PrintConfig.cpp:2400
 msgid "Minimal filament extrusion length"
@@ -3522,6 +3637,13 @@ msgid ""
 "The JSON must be single level (no arrays and objects). All value types are "
 "allowed, but nulls will be rejected by the parser."
 msgstr ""
+"Niz, kodiran v formatu JSON, ki opredeljuje dodatne parametre, ki jih je "
+"mogoče kasneje razširiti v makro jeziku G-kode po meri. Pred vsakim "
+"parametrom se pred prehodom v razčlenjevalnik doda predpona %1%. Na primer, "
+"opredelitev ‚{„my_key“: „my_value“}‘ omogoča uporabo ‚%1%_my_key‘.\n"
+"\n"
+"JSON mora biti enostopenjski (brez zbirk in objektov). Vsi tipi vrednosti so "
+"dovoljeni, vendar bo razčlenjevalnik zavrnil vrednosti null."
 
 #: src/libslic3r/PrintConfig.cpp:2436 src/slic3r/GUI/Tab.cpp:3261
 msgid "Nozzle diameter"
@@ -3590,17 +3712,20 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2493
 msgid "Filament parking position"
-msgstr ""
+msgstr "Parkirni položaj filamenta"
 
 #: src/libslic3r/PrintConfig.cpp:2494
 msgid ""
 "Distance of the extruder tip from the position where the filament is parked "
 "when unloaded. This should match the value in printer firmware."
 msgstr ""
+"Razdalja med konico ekstruderja in položajem, v katerem je filament "
+"shranjen, ko ni v uporabi. Ta vrednost mora ustrezati vrednosti v programski "
+"opremi tiskalnika."
 
 #: src/libslic3r/PrintConfig.cpp:2502
 msgid "Extra loading distance"
-msgstr ""
+msgstr "Dodatna razdalja za nalaganje"
 
 #: src/libslic3r/PrintConfig.cpp:2503
 msgid ""
@@ -3609,10 +3734,15 @@ msgid ""
 "positive, it is loaded further,  if negative, the loading move is shorter "
 "than unloading."
 msgstr ""
+"Če je vrednost nastavljena na nič, je razdalja, za katero se filament med "
+"nalaganjem premakne iz parkirnega položaja, točno enaka razdalji, za katero "
+"se je premaknil nazaj med odstranjevanjem. Če je vrednost pozitivna, se "
+"filament naloži dlje; če je negativna, je premik pri nalaganju krajši od "
+"premika pri odstranjevanju."
 
 #: src/libslic3r/PrintConfig.cpp:2511
 msgid "Purging volume"
-msgstr ""
+msgstr "Prostornina čiščenja"
 
 #: src/libslic3r/PrintConfig.cpp:2512
 msgid ""
@@ -3620,6 +3750,9 @@ msgid ""
 "Filament Settings ('filament_purge_multiplier') or overridden using project-"
 "specific settings."
 msgstr ""
+"Določa količino čiščenja na stolpu za brisanje. To je mogoče spremeniti v "
+"nastavitvah filamenta (»filament_purge_multiplier«) ali prepisati z "
+"nastavitvami, specifičnimi za posamezen projekt."
 
 #: src/libslic3r/PrintConfig.cpp:2519 src/libslic3r/PrintConfig.cpp:2544
 #: src/libslic3r/PrintConfig.cpp:2558 src/libslic3r/PrintConfig.cpp:2568
@@ -3915,14 +4048,17 @@ msgid ""
 "the slope steeper in case an obstacle might be hit during the initial phase "
 "of the travel."
 msgstr ""
+"Če je ta možnost omogočena, PrusaSlicer zazna ovire vzdolž poti gibanja in "
+"poveča naklon, če obstaja nevarnost, da bi se v začetni fazi gibanja "
+"zaleteli v oviro."
 
 #: src/libslic3r/PrintConfig.cpp:2776
 msgid "High flow nozzle"
-msgstr ""
+msgstr "Šoba z visokim pretokom"
 
 #: src/libslic3r/PrintConfig.cpp:2777
 msgid "High flow nozzles allow higher print speeds."
-msgstr ""
+msgstr "Šobe z visokim pretokom omogočajo višje hitrosti tiskanja."
 
 #: src/libslic3r/PrintConfig.cpp:2782
 msgid "Lift height"
@@ -4238,6 +4374,9 @@ msgid ""
 "If layer print time is estimated below this number of seconds, print moves "
 "speed will be scaled down to extend duration to this value."
 msgstr ""
+"Če je predviden čas tiskanja plasti krajši od te vrednosti v sekundah, se "
+"hitrost premikanja med tiskanjem zmanjša, da se trajanje podaljša na to "
+"vrednost."
 
 #: src/libslic3r/PrintConfig.cpp:3007
 msgid "Small perimeters"
@@ -4372,20 +4511,38 @@ msgid ""
 "When disabled, PrusaSlicer will NOT emit commands to heat up extruder, bed "
 "or chamber, leaving all to Custom Start G-Code."
 msgstr ""
+"Če je ta možnost omogočena, bo PrusaSlicer preveril, ali vaša prilagojena G-"
+"koda na začetku vsebuje G-kode za nastavitev temperature ekstruderja, plošče "
+"ali komore (M104, M109, M140, M190, M141 in M191). Če vsebuje, se "
+"temperature ne bodo samodejno zapisale, tako da lahko prosto prilagodite "
+"vrstni red ukazov za ogrevanje in drugih prilagojenih dejanj. Za vse "
+"nastavitve PrusaSlicer lahko uporabite spremenljivke za nadomestne znake, "
+"tako da lahko ukaz »M109 S[first_layer_temperature]« vstavite kjerkoli "
+"želite.\n"
+"Če vaša prilagojena G-koda na začetku NE vsebuje teh G-kod, bo PrusaSlicer "
+"izvedel začetno G-kodo, ko se bo nastavila temperatura za ogrevano komoro, "
+"bo miza dosegla svojo ciljno temperaturo in bo ekstruder ravno začel z "
+"ogrevanjem.\n"
+"\n"
+"Ko je onemogočeno, PrusaSlicer NE bo izvajal ukazov za ogrevanje "
+"ekstruderja, mize ali komore, temveč bo vse prepustil prilagojeni G-kodi na "
+"začetku."
 
 #: src/libslic3r/PrintConfig.cpp:3124
 msgid "Custom printer parameters"
-msgstr ""
+msgstr "Parametri tiskalnika po meri"
 
 #: src/libslic3r/PrintConfig.cpp:3134
 msgid ""
 "This start procedure is inserted at the beginning, possibly prepended by "
 "temperature-changing commands. See 'autoemit_temperature_commands'."
 msgstr ""
+"Ta postopek zagona se vstavi na začetek, po možnosti pa mu dodajo ukazi za "
+"spreminjanje temperature. Glej »autoemit_temperature_commands«."
 
 #: src/libslic3r/PrintConfig.cpp:3143
 msgid "Custom filament parameters"
-msgstr ""
+msgstr "Parametri filamenta po meri"
 
 #: src/libslic3r/PrintConfig.cpp:3153
 msgid ""
@@ -4399,6 +4556,16 @@ msgid ""
 "S[first_layer_temperature]\" command wherever you want. If you have multiple "
 "extruders, the gcode is processed in extruder order."
 msgstr ""
+"Ta postopek zagona se vstavi na začetek, za morebitno »G-kodo na začetku« za "
+"tiskalnik (in za morebitno menjavo orodja za ta filament v primeru več "
+"materialnih tiskalnikov). Uporablja se za prepis nastavitev za določen "
+"filament. Če PrusaSlicer v vaših lastnih kodah zazna M104, M109, M140 ali "
+"M190, se takšni ukazi ne bodo samodejno dodali na začetek, tako da lahko "
+"prosto prilagodite vrstni red ukazov za segrevanje in drugih lastnih dejanj. "
+"Za vse nastavitve PrusaSlicer lahko uporabite spremenljivke za nadomestne "
+"znake, tako da lahko ukaz »M109 S[first_layer_temperature]« vstavite "
+"kjerkoli želite. Če imate več ekstruderjev, se G-kode obdeluje v vrstnem "
+"redu ekstruderjev."
 
 #: src/libslic3r/PrintConfig.cpp:3169
 msgid "Color change G-code"
@@ -4406,15 +4573,15 @@ msgstr "G-koda ob spremembi barve"
 
 #: src/libslic3r/PrintConfig.cpp:3170
 msgid "This G-code will be used as a code for the color change"
-msgstr ""
+msgstr "Ta G-koda se bo uporabljala kot koda ob menjavi barve"
 
 #: src/libslic3r/PrintConfig.cpp:3179
 msgid "This G-code will be used as a code for the pause print"
-msgstr ""
+msgstr "Ta G-koda se bo uporabljala kot koda za začasno prekinitev tiskanja"
 
 #: src/libslic3r/PrintConfig.cpp:3188
 msgid "This G-code will be used as a custom code"
-msgstr ""
+msgstr "Ta G-koda se bo uporabljala kot koda za predlogo"
 
 #: src/libslic3r/PrintConfig.cpp:3196
 msgid "Single Extruder Multi Material"
@@ -4422,7 +4589,7 @@ msgstr "En ekstruder za več materialov"
 
 #: src/libslic3r/PrintConfig.cpp:3197
 msgid "The printer multiplexes filaments into a single hot end."
-msgstr ""
+msgstr "Tiskalnik združuje filamente v en sam grelec."
 
 #: src/libslic3r/PrintConfig.cpp:3202
 msgid "Prime all printing extruders"
@@ -4996,6 +5163,13 @@ msgid ""
 "will emit no other such command. It is therefore possible to script custom "
 "behaviour both before and after the toolchange."
 msgstr ""
+"Ta prilagojena koda se vstavi pred vsako menjavo orodja. Uporabite lahko "
+"spremenljivke za vse nastavitve programa PrusaSlicer ter spremenljivke "
+"{toolchange_z}, {previous_extruder} in {next_extruder}. Ko je vključen ukaz "
+"za menjavo orodja, ki preklopi na pravi ekstruder (kot npr. "
+"T{next_extruder}), PrusaSlicer ne bo izvedel nobenega drugega takšnega "
+"ukaza. Zato je mogoče napisati skripto za prilagojeno delovanje tako pred "
+"kot po menjavi orodja."
 
 #: src/libslic3r/PrintConfig.cpp:3658
 msgid ""
@@ -5082,6 +5256,8 @@ msgid ""
 "This setting uses G10 and G11 commands to have the firmware handle the "
 "retraction. Note that this has to be supported by firmware."
 msgstr ""
+"Ta nastavitev uporablja ukaze G10 in G11, da umik izvede programska oprema. "
+"Upoštevajte, da mora to podpirati programska oprema."
 
 #: src/libslic3r/PrintConfig.cpp:3728
 msgid "Use relative E distances"
@@ -5092,6 +5268,9 @@ msgid ""
 "If your firmware requires relative E values, check this, otherwise leave it "
 "unchecked. Most firmwares use absolute values."
 msgstr ""
+"Če vaša programska oprema zahteva relativne vrednosti E, označite to "
+"možnost, sicer jo pustite neoznačeno. Večina programskih oprem uporablja "
+"absolutne vrednosti."
 
 #: src/libslic3r/PrintConfig.cpp:3735
 msgid "Use volumetric E"
@@ -5106,6 +5285,12 @@ msgid ""
 "filament diameter associated to the filament selected in Slic3r. This is "
 "only supported in recent Marlin."
 msgstr ""
+"Ta poskusna nastavitev izpisuje vrednosti E v kubičnih milimetrih, namesto v "
+"linearnih milimetrih. Če vaša programska oprema še ne pozna premera "
+"filamenta, lahko v G-kodo na začetku vnesete ukaze, kot npr. »M200 "
+"D[filament_diameter_0] T0«, da vklopite način pretoka in uporabite premer "
+"filamenta, povezan z izbranim filamentom v programu PrusaSlicer. To je "
+"podprto le v novejših različicah Marlina."
 
 #: src/libslic3r/PrintConfig.cpp:3746
 msgid "Enable variable layer height feature"
@@ -5116,16 +5301,20 @@ msgid ""
 "Some printers or printer setups may have difficulties printing with a "
 "variable layer height. Enabled by default."
 msgstr ""
+"Pri nekaterih tiskalnikih ali nastavitvah tiskalnika lahko pride do težav "
+"pri tiskanju s spremenljivo višino plasti. Privzeto je omogočeno."
 
 #: src/libslic3r/PrintConfig.cpp:3753
 msgid "Prefer clockwise movements"
-msgstr ""
+msgstr "Izvajaj gibe v smeri urinega kazalca"
 
 #: src/libslic3r/PrintConfig.cpp:3754
 msgid ""
 "This setting makes the printer print loops clockwise instead of "
 "counterclockwise."
 msgstr ""
+"S to nastavitvijo tiskalnik tiska zanke v smeri urinega kazalca, namesto v "
+"nasprotni smeri."
 
 #: src/libslic3r/PrintConfig.cpp:3759
 msgid "Wipe while retracting"
@@ -6850,7 +7039,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:6182
 msgid "Total volume"
-msgstr ""
+msgstr "Skupna prostornina"
 
 #: src/libslic3r/PrintConfig.cpp:6183
 msgid "Total volume of filament used during the entire print."
@@ -6989,7 +7178,7 @@ msgstr "Sekunda"
 
 #: src/libslic3r/PrintConfig.cpp:6290
 msgid "Number of extruders"
-msgstr ""
+msgstr "Število ekstruderjev"
 
 #: src/libslic3r/PrintConfig.cpp:6291
 msgid ""
@@ -8397,7 +8586,7 @@ msgstr ""
 
 #: src/slic3r/GUI/ConfigWizard.cpp:2142
 msgid "Enter the diameter of your printer's hot end nozzle."
-msgstr ""
+msgstr "Vnesite premer šobe grelca vašega tiskalnika."
 
 #: src/slic3r/GUI/ConfigWizard.cpp:2145
 msgid "Nozzle Diameter"
@@ -16537,7 +16726,7 @@ msgstr ""
 
 #: src/slic3r/GUI/Plater.cpp:5563
 msgid "Copies of the selected object"
-msgstr ""
+msgstr "Število kopije izbranega objekta"
 
 #: src/slic3r/GUI/Plater.cpp:5566
 #, c-format, boost-format
@@ -17561,7 +17750,7 @@ msgstr ""
 
 #: src/slic3r/GUI/RammingChart.cpp:33
 msgid "NO RAMMING AT ALL"
-msgstr ""
+msgstr "NI TEPTANJA"
 
 #: src/slic3r/GUI/RammingChart.cpp:99
 msgid "Volumetric speed"
@@ -18199,7 +18388,7 @@ msgstr "Arakne generator obodov"
 #: src/slic3r/GUI/Tab.cpp:1721 src/slic3r/GUI/Tab.cpp:2386
 #: src/slic3r/GUI/Tab.cpp:2984
 msgid "Custom parameters"
-msgstr ""
+msgstr "Parametri po meri"
 
 #: src/slic3r/GUI/Tab.cpp:1729 src/slic3r/GUI/Tab.cpp:6035
 msgid "Output options"
@@ -18283,7 +18472,7 @@ msgstr "Miza"
 
 #: src/slic3r/GUI/Tab.cpp:2243
 msgid "Chamber"
-msgstr ""
+msgstr "Komora"
 
 #: src/slic3r/GUI/Tab.cpp:2248
 msgid "Cooling"
@@ -18323,7 +18512,7 @@ msgstr "Parametri menjave orodja z enojnim ekstruderjem VM tiskalnikov"
 
 #: src/slic3r/GUI/Tab.cpp:2331
 msgid "Ramming settings"
-msgstr "Nastavitve"
+msgstr "Nastavitve teptanja"
 
 #: src/slic3r/GUI/Tab.cpp:2350
 msgid "Toolchange parameters with multi extruder MM printers"
@@ -18376,7 +18565,7 @@ msgstr "Zmogljivosti"
 
 #: src/slic3r/GUI/Tab.cpp:2704
 msgid "Number of extruders of the printer."
-msgstr ""
+msgstr "Število ekstruderjev tiskalnika."
 
 #: src/slic3r/GUI/Tab.cpp:2738
 msgid ""
@@ -18409,7 +18598,7 @@ msgstr ""
 
 #: src/slic3r/GUI/Tab.cpp:2878
 msgid "Sequential printing limits"
-msgstr ""
+msgstr "Omejitve zaporednega tiskanja"
 
 #: src/slic3r/GUI/Tab.cpp:2896
 msgid "Start G-Code options"
@@ -18509,11 +18698,11 @@ msgstr ""
 
 #: src/slic3r/GUI/Tab.cpp:3493 src/slic3r/GUI/Tab.cpp:3502
 msgid "Single extruder MM setup"
-msgstr ""
+msgstr "VM z enim ekstruderjem"
 
 #: src/slic3r/GUI/Tab.cpp:3503
 msgid "Single extruder multimaterial parameters"
-msgstr ""
+msgstr "Parametri za več materialno tiskanje z enim ekstruderjem"
 
 #: src/slic3r/GUI/Tab.cpp:3677
 msgid ""
@@ -19585,7 +19774,7 @@ msgstr ""
 
 #: src/slic3r/GUI/WipeTowerDialog.cpp:30
 msgid "Ramming customization"
-msgstr ""
+msgstr "Prilagajanje teptanja"
 
 #: src/slic3r/GUI/WipeTowerDialog.cpp:66
 msgid ""
@@ -19599,28 +19788,37 @@ msgid ""
 "This is an expert-level setting, incorrect adjustment will likely lead to "
 "jams, extruder wheel grinding into filament etc."
 msgstr ""
+"Teptanje označuje hitro iztiskanje tik pred menjavo orodja pri VM-tiskalniku "
+"z enim ekstruderjem. Njegov namen je ustrezno oblikovati konec izpraznjenega "
+"filamenta, da ne ovira vstavljanja novega filamenta in da ga je mogoče "
+"kasneje ponovno vstaviti. Ta faza je pomembna, različni materiali pa lahko "
+"zahtevajo različne hitrosti iztiskanja, da se doseže ustrezna oblika. Zaradi "
+"tega je mogoče hitrosti iztiskanja med teptanjem nastavljati.\n"
+"\n"
+"To je nastavitev za izkušene uporabnike, napačna nastavitev pa bo verjetno "
+"povzročila zastoje, drgnjenje kolesa ekstruderja ob filament itd."
 
 #: src/slic3r/GUI/WipeTowerDialog.cpp:125
 msgid "Total ramming time"
-msgstr ""
+msgstr "Skupen čas teptanja"
 
 #: src/slic3r/GUI/WipeTowerDialog.cpp:127
 msgid "Total rammed volume"
-msgstr ""
+msgstr "Skupna prostornina teptanja"
 
 #: src/slic3r/GUI/WipeTowerDialog.cpp:131
 msgid "Ramming line width"
-msgstr ""
+msgstr "Širina linije teptanja"
 
 #: src/slic3r/GUI/WipeTowerDialog.cpp:133
 msgid "Ramming line spacing"
-msgstr ""
+msgstr "Razmik med linijami teptanja"
 
 #. TRN: The placeholder expands to Ctrl or Cmd (on macOS).
 #: src/slic3r/GUI/WipeTowerDialog.cpp:142
 #, boost-format
 msgid "For constant flow rate, hold %1% while dragging."
-msgstr ""
+msgstr "Za konstanten pretok držite tipko %1% med vlečenjem ."
 
 #: src/slic3r/GUI/WipeTowerDialog.cpp:194
 msgid "Wipe tower - Purging volume adjustment"

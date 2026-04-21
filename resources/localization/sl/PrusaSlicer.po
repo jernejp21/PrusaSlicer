@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PrusaSlicer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-26 08:02+0200\n"
-"PO-Revision-Date: 2026-04-12 20:55+0200\n"
+"PO-Revision-Date: 2026-04-21 10:15+0200\n"
 "Last-Translator: Jernej Pangerc <jernejp21@tuta.com>\n"
 "Language-Team: Jernej Pangerc <jernejp21@tuta.com>\n"
 "Language: sl\n"
@@ -671,15 +671,15 @@ msgstr ""
 
 #: src/libslic3r/Print.cpp:944
 msgid "Generating skirt and brim"
-msgstr "Ustvarjam oris in obrobo"
+msgstr "Ustvarjanje orisa in obrobe"
 
 #: src/libslic3r/Print.cpp:1007
 msgid "Exporting G-code"
-msgstr "Izvažam g-kodo"
+msgstr "Izvažanje g-kodo"
 
 #: src/libslic3r/Print.cpp:1011
 msgid "Generating G-code"
-msgstr "Ustvarjam G-kodo"
+msgstr "Ustvarjanje G-kode"
 
 #: src/libslic3r/Print.cpp:1240
 msgid "Alert if supports needed"
@@ -1627,6 +1627,9 @@ msgid ""
 "profile. If this expression evaluates to true, this profile is considered "
 "compatible with the active printer profile."
 msgstr ""
+"Boolov izraz, ki uporablja nastavitvene vrednosti aktivnega profila "
+"tiskalnika. Če je izid tega izraza »res«, se ta profil šteje za združljivega "
+"z aktivnim profilom tiskalnika."
 
 #: src/libslic3r/PrintConfig.cpp:909 src/slic3r/GUI/Tab.cpp:107
 msgid "Compatible print profiles"
@@ -3594,7 +3597,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2331
 msgid "Max print speed"
-msgstr "Maks. hitrost tiskanja"
+msgstr "Največja hitrost tiskanja"
 
 #: src/libslic3r/PrintConfig.cpp:2332
 msgid ""
@@ -5743,7 +5746,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:4085
 msgid "Pinhead front diameter"
-msgstr ""
+msgstr "Premer sprednjega dela igle"
 
 #: src/libslic3r/PrintConfig.cpp:4086 src/libslic3r/PrintConfig.cpp:4095
 #: src/libslic3r/PrintConfig.cpp:4104 src/libslic3r/PrintConfig.cpp:4114
@@ -5762,55 +5765,59 @@ msgstr "Podpore"
 
 #: src/libslic3r/PrintConfig.cpp:4087
 msgid "Diameter of the pointing side of the head"
-msgstr ""
+msgstr "Premer konice glave"
 
 #: src/libslic3r/PrintConfig.cpp:4094
 msgid "Head penetration"
-msgstr ""
+msgstr "Prodiranje glave"
 
 #: src/libslic3r/PrintConfig.cpp:4096
 msgid "How much the pinhead has to penetrate the model surface"
-msgstr ""
+msgstr "Za koliko mora igla prodreti v površino modela"
 
 #: src/libslic3r/PrintConfig.cpp:4103
 msgid "Pinhead width"
-msgstr ""
+msgstr "Širina igle"
 
 #: src/libslic3r/PrintConfig.cpp:4105
 msgid "Width from the back sphere center to the front sphere center"
-msgstr ""
+msgstr "Širina od središča zadnje krogle do središča sprednje krogle"
 
 #: src/libslic3r/PrintConfig.cpp:4113
 msgid "Pillar diameter"
-msgstr ""
+msgstr "Premer stebra"
 
 #: src/libslic3r/PrintConfig.cpp:4115
 msgid "Diameter in mm of the support pillars"
-msgstr ""
+msgstr "Premer nosilnih stebrov v mm"
 
 #: src/libslic3r/PrintConfig.cpp:4123
 msgid "Small pillar diameter percent"
-msgstr ""
+msgstr "Odstotek majhnega premera stebra"
 
 #: src/libslic3r/PrintConfig.cpp:4125
 msgid ""
 "The percentage of smaller pillars compared to the normal pillar diameter "
 "which are used in problematic areas where a normal pilla cannot fit."
 msgstr ""
+"Odstotek manjših stebrov v primerjavi s premerom običajnih stebrov, ki se "
+"uporabljajo na težavnih mestih, kjer običajni stebri ne morejo biti narejeni."
 
 #: src/libslic3r/PrintConfig.cpp:4134
 msgid "Max bridges on a pillar"
-msgstr ""
+msgstr "Največje število mostov na enem stebru"
 
 #: src/libslic3r/PrintConfig.cpp:4136
 msgid ""
 "Maximum number of bridges that can be placed on a pillar. Bridges hold "
 "support point pinheads and connect to pillars as small branches."
 msgstr ""
+"Največje število mostov, ki jih je mogoče namestiti na steber. Mostovi "
+"držijo konice igel in se kot majhne veje povezujejo s stebri."
 
 #: src/libslic3r/PrintConfig.cpp:4144
 msgid "Max weight on model"
-msgstr ""
+msgstr "Največja obremenitev na model"
 
 #: src/libslic3r/PrintConfig.cpp:4147
 msgid ""
@@ -5818,10 +5825,12 @@ msgid ""
 "bed. The weight is the sum of the lenghts of all branches emanating from the "
 "endpoint."
 msgstr ""
+"Največja teža poddreves, ki se končajo na modelu namesto na tiskalni plošči. "
+"Teža je vsota dolžin vseh vej, ki izhajajo iz končne točke."
 
 #: src/libslic3r/PrintConfig.cpp:4155
 msgid "Pillar connection mode"
-msgstr ""
+msgstr "Način povezave stebrov"
 
 #: src/libslic3r/PrintConfig.cpp:4156
 msgid ""
@@ -5829,6 +5838,9 @@ msgid ""
 "cross (double zig-zag) or dynamic which will automatically switch between "
 "the first two depending on the distance of the two pillars."
 msgstr ""
+"Določa vrsto mosta med dvema sosednjima stebroma. Lahko je križ kraž, križni "
+"(dvojni križ kraž) ali dinamičen, pri čemer se bo samodejno preklapljal med "
+"prvima dvema, odvisno od razdalje med stebroma."
 
 #: src/libslic3r/PrintConfig.cpp:4162
 msgid "Zig-Zag"
@@ -5844,7 +5856,7 @@ msgstr "Dinamično"
 
 #: src/libslic3r/PrintConfig.cpp:4174
 msgid "Pillar widening factor"
-msgstr ""
+msgstr "Koeficient razširitve stebra"
 
 #: src/libslic3r/PrintConfig.cpp:4178
 msgid ""
@@ -5852,26 +5864,30 @@ msgid ""
 "Zero means no increase, one means full increase. The exact amount of "
 "increase is unspecified and can change in the future."
 msgstr ""
+"Združevanje mostov ali stebrov z drugimi stebri lahko poveča polmer. "
+"Vrednost nič pomeni, da se polmer ne poveča, vrednost ena pa pomeni, da se "
+"polmer poveča v celoti. Natančna vrednost povečanja ni določena in se lahko "
+"v prihodnosti spremeni."
 
 #: src/libslic3r/PrintConfig.cpp:4189
 msgid "Support base diameter"
-msgstr ""
+msgstr "Premer podstavka"
 
 #: src/libslic3r/PrintConfig.cpp:4191
 msgid "Diameter in mm of the pillar base"
-msgstr ""
+msgstr "Premer podstavka stebra v mm"
 
 #: src/libslic3r/PrintConfig.cpp:4199
 msgid "Support base height"
-msgstr ""
+msgstr "Višina podstavka"
 
 #: src/libslic3r/PrintConfig.cpp:4201
 msgid "The height of the pillar base cone"
-msgstr ""
+msgstr "Višina stožca podstavka stebra"
 
 #: src/libslic3r/PrintConfig.cpp:4208
 msgid "Support base safety distance"
-msgstr ""
+msgstr "Varnostna razdalja podstavka"
 
 #: src/libslic3r/PrintConfig.cpp:4211
 msgid ""
@@ -5879,6 +5895,9 @@ msgid ""
 "zero elevation mode where a gap according to this parameter is inserted "
 "between the model and the pad."
 msgstr ""
+"Najmanjša razdalja med podstavkom stebra in modelom v mm. To je pomembno v "
+"načinu brez višine, kjer se med modelom in podstavkom vstavi razmak v skladu "
+"s tem parametrom."
 
 #: src/libslic3r/PrintConfig.cpp:4221
 msgid "Critical angle"
@@ -5886,35 +5905,39 @@ msgstr "Kritični kot"
 
 #: src/libslic3r/PrintConfig.cpp:4223
 msgid "The default angle for connecting support sticks and junctions."
-msgstr ""
+msgstr "Privzet kot za povezovanje podpornih palic in spojev."
 
 #: src/libslic3r/PrintConfig.cpp:4231
 msgid "Max bridge length"
-msgstr ""
+msgstr "Največja dolžina mostu"
 
 #: src/libslic3r/PrintConfig.cpp:4233
 msgid "The max length of a bridge"
-msgstr ""
+msgstr "Največja dolžina mostu"
 
 #: src/libslic3r/PrintConfig.cpp:4245
 msgid "Max pillar linking distance"
-msgstr ""
+msgstr "Največja razdalja med stebri"
 
 #: src/libslic3r/PrintConfig.cpp:4247
 msgid ""
 "The max distance of two pillars to get linked with each other. A zero value "
 "will prohibit pillar cascading."
 msgstr ""
+"Največja razdalja med dvema stebroma, ki se lahko med seboj povežeta. "
+"Vrednost nič prepreči kaskadno povezovanje stebrov."
 
 #: src/libslic3r/PrintConfig.cpp:4255 src/slic3r/GUI/Tab.cpp:6071
 msgid "Object elevation"
-msgstr ""
+msgstr "Višina objekta"
 
 #: src/libslic3r/PrintConfig.cpp:4257
 msgid ""
 "How much the supports should lift up the supported object. If \"Pad around "
 "object\" is enabled, this value is ignored."
 msgstr ""
+"Za koliko naj nosilci dvignejo podprt predmet. Če je omogočena možnost "
+"»Podloga okoli predmeta«, se ta vrednost ne upošteva."
 
 #: src/libslic3r/PrintConfig.cpp:4273
 msgid "Display width"
@@ -5922,7 +5945,7 @@ msgstr "Prikaži širino"
 
 #: src/libslic3r/PrintConfig.cpp:4274
 msgid "Width of the display"
-msgstr ""
+msgstr "Širina zaslona"
 
 #: src/libslic3r/PrintConfig.cpp:4279
 msgid "Display height"
@@ -5930,19 +5953,19 @@ msgstr "Prikaži višino"
 
 #: src/libslic3r/PrintConfig.cpp:4280
 msgid "Height of the display"
-msgstr ""
+msgstr "Višina zaslona"
 
 #: src/libslic3r/PrintConfig.cpp:4285
 msgid "Number of pixels in"
-msgstr ""
+msgstr "Število slikovnih točk v"
 
 #: src/libslic3r/PrintConfig.cpp:4287
 msgid "Number of pixels in X"
-msgstr ""
+msgstr "Število slikovnih točk v X"
 
 #: src/libslic3r/PrintConfig.cpp:4293
 msgid "Number of pixels in Y"
-msgstr ""
+msgstr "Število slikovnih točk v Y"
 
 #: src/libslic3r/PrintConfig.cpp:4298
 msgid "Display horizontal mirroring"
@@ -5954,7 +5977,7 @@ msgstr "Zrcali vodoravno"
 
 #: src/libslic3r/PrintConfig.cpp:4300
 msgid "Enable horizontal mirroring of output images"
-msgstr ""
+msgstr "Omogoči vodoravno zrcaljenje izhodnih slik"
 
 #: src/libslic3r/PrintConfig.cpp:4305
 msgid "Display vertical mirroring"
@@ -5966,7 +5989,7 @@ msgstr "Zrcali navpično"
 
 #: src/libslic3r/PrintConfig.cpp:4307
 msgid "Enable vertical mirroring of output images"
-msgstr ""
+msgstr "Omogoči navpično zrcaljenje izhodnih slik"
 
 #: src/libslic3r/PrintConfig.cpp:4312
 msgid "Display orientation"
@@ -5978,6 +6001,9 @@ msgid ""
 "will flip the meaning of display width and height parameters and the output "
 "images will be rotated by 90 degrees."
 msgstr ""
+"Nastavi dejansko usmeritev LCD zaslona v SLA tiskalniku. Pri pokončnem "
+"načinu se pomen parametrov širine in višine zaslona obrne, izhodne slike pa "
+"se zavrtijo za 90 stopinj."
 
 #: src/libslic3r/PrintConfig.cpp:4317
 msgid "Landscape"
@@ -5996,11 +6022,11 @@ msgstr "Hitro"
 
 #: src/libslic3r/PrintConfig.cpp:4325
 msgid "Fast tilt"
-msgstr ""
+msgstr "Hiter nagib"
 
 #: src/libslic3r/PrintConfig.cpp:4326
 msgid "Time of the fast tilt"
-msgstr ""
+msgstr "Čas hitrega nagiba"
 
 #: src/libslic3r/PrintConfig.cpp:4333 src/libslic3r/PrintConfig.cpp:4822
 #: src/slic3r/GUI/Tab.cpp:5618
@@ -6009,11 +6035,11 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:4334
 msgid "Slow tilt"
-msgstr ""
+msgstr "Počasen nagib"
 
 #: src/libslic3r/PrintConfig.cpp:4335
 msgid "Time of the slow tilt"
-msgstr ""
+msgstr "Čas počasnega nagiba"
 
 #: src/libslic3r/PrintConfig.cpp:4342 src/libslic3r/PrintConfig.cpp:4824
 #: src/slic3r/GUI/Tab.cpp:5619
@@ -6022,15 +6048,15 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:4343
 msgid "Tilt for high viscosity resin"
-msgstr ""
+msgstr "Nagib za smolo z visoko viskoznostjo"
 
 #: src/libslic3r/PrintConfig.cpp:4344
 msgid "Time of the super slow tilt"
-msgstr ""
+msgstr "Čas zelo počasnega nagiba"
 
 #: src/libslic3r/PrintConfig.cpp:4351
 msgid "Area fill threshold"
-msgstr ""
+msgstr "Prag zapolnitve območja"
 
 #: src/libslic3r/PrintConfig.cpp:4352
 msgid ""
@@ -6043,62 +6069,66 @@ msgstr ""
 #: src/libslic3r/PrintConfig.cpp:4361 src/libslic3r/PrintConfig.cpp:4362
 #: src/libslic3r/PrintConfig.cpp:4363
 msgid "Printer scaling correction"
-msgstr ""
+msgstr "Popravek merila tiskalnika"
 
 #: src/libslic3r/PrintConfig.cpp:4369 src/libslic3r/PrintConfig.cpp:4371
 msgid "Printer scaling correction in X axis"
-msgstr ""
+msgstr "Popravek merila tiskalnika v X osi"
 
 #: src/libslic3r/PrintConfig.cpp:4370
 msgid "Printer scaling X axis correction"
-msgstr ""
+msgstr "Popravek merila tiskalnika - X os"
 
 #: src/libslic3r/PrintConfig.cpp:4377 src/libslic3r/PrintConfig.cpp:4379
 msgid "Printer scaling correction in Y axis"
-msgstr ""
+msgstr "Popravek merila tiskalnika v Y osi"
 
 #: src/libslic3r/PrintConfig.cpp:4378
 msgid "Printer scaling Y axis correction"
-msgstr ""
+msgstr "Popravek merila tiskalnika - > os"
 
 #: src/libslic3r/PrintConfig.cpp:4385 src/libslic3r/PrintConfig.cpp:4387
 msgid "Printer scaling correction in Z axis"
-msgstr ""
+msgstr "Popravek merila tiskalnika v Z osi"
 
 #: src/libslic3r/PrintConfig.cpp:4386
 msgid "Printer scaling Z axis correction"
-msgstr ""
+msgstr "Popravek merila tiskalnika - Z os"
 
 #: src/libslic3r/PrintConfig.cpp:4393 src/libslic3r/PrintConfig.cpp:4394
 msgid "Printer absolute correction"
-msgstr ""
+msgstr "Absolutni popravek tiskalnika"
 
 #: src/libslic3r/PrintConfig.cpp:4395
 msgid ""
 "Will inflate or deflate the sliced 2D polygons according to the sign of the "
 "correction."
-msgstr ""
+msgstr "Poveča ali zmanjša razrezane 2D-poligone glede na predznak popravka."
 
 #: src/libslic3r/PrintConfig.cpp:4402
 msgid "Elephant foot minimum width"
-msgstr ""
+msgstr "Najmanjša širina slonove noge"
 
 #: src/libslic3r/PrintConfig.cpp:4404
 msgid ""
 "Minimum width of features to maintain when doing elephant foot compensation."
 msgstr ""
+"Najmanjša širina elementov, ki jo je treba ohraniti pri izvedbi kompenzacije "
+"»slonove noge«."
 
 #: src/libslic3r/PrintConfig.cpp:4411
 msgid "Z compensation"
-msgstr ""
+msgstr "Z kompenzacija"
 
 #: src/libslic3r/PrintConfig.cpp:4413
 msgid "Number of layers to Z correct to avoid cross layer bleed"
 msgstr ""
+"Število plasti, ki jih je treba popraviti v osi Z, da se prepreči prelivanje "
+"med plastmi"
 
 #: src/libslic3r/PrintConfig.cpp:4419 src/libslic3r/PrintConfig.cpp:4420
 msgid "Printer gamma correction"
-msgstr ""
+msgstr "Popravek gama pri tiskalniku"
 
 #: src/libslic3r/PrintConfig.cpp:4421
 msgid ""
@@ -6106,6 +6136,9 @@ msgid ""
 "value of zero means thresholding with the threshold in the middle. This "
 "behaviour eliminates antialiasing without losing holes in polygons."
 msgstr ""
+"S tem se bo na rasterizirane 2D-poligone uporabil gama popravek. Gama "
+"vrednost nič pomeni določitev praga s srednjo vrednostjo. Tako se odpravijo "
+"robovi brez izgube lukenj v poligonih."
 
 #: src/libslic3r/PrintConfig.cpp:4440 src/libslic3r/PrintConfig.cpp:4441
 msgid "SLA material type"
@@ -6113,7 +6146,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:4448 src/libslic3r/PrintConfig.cpp:4449
 msgid "Initial layer height"
-msgstr ""
+msgstr "Višina začetne plasti"
 
 #: src/libslic3r/PrintConfig.cpp:4455
 msgid "Idle temperature"
@@ -6154,53 +6187,55 @@ msgstr "denar/steklenico"
 
 #: src/libslic3r/PrintConfig.cpp:4492
 msgid "Faded layers"
-msgstr ""
+msgstr "Zbledele plasti"
 
 #: src/libslic3r/PrintConfig.cpp:4493
 msgid ""
 "Number of the layers needed for the exposure time fade from initial exposure "
 "time to the exposure time"
 msgstr ""
+"Število plasti, potrebnih za zmanjšanje časa osvetlitve od začetnega časa "
+"osvetlitve do časa osvetlitve"
 
 #: src/libslic3r/PrintConfig.cpp:4500 src/libslic3r/PrintConfig.cpp:4501
 msgid "Minimum exposure time"
-msgstr ""
+msgstr "Najmanjši čas osvetlitve"
 
 #: src/libslic3r/PrintConfig.cpp:4508 src/libslic3r/PrintConfig.cpp:4509
 msgid "Maximum exposure time"
-msgstr ""
+msgstr "Največji čas osvetlitve"
 
 #: src/libslic3r/PrintConfig.cpp:4516 src/libslic3r/PrintConfig.cpp:4517
 msgid "Exposure time"
-msgstr ""
+msgstr "Čas osvetlitve"
 
 #: src/libslic3r/PrintConfig.cpp:4523 src/libslic3r/PrintConfig.cpp:4524
 msgid "Minimum initial exposure time"
-msgstr ""
+msgstr "Najmanjši začetni čas osvetlitve"
 
 #: src/libslic3r/PrintConfig.cpp:4531 src/libslic3r/PrintConfig.cpp:4532
 msgid "Maximum initial exposure time"
-msgstr ""
+msgstr "Največji začetni čas osvetlitve"
 
 #: src/libslic3r/PrintConfig.cpp:4539 src/libslic3r/PrintConfig.cpp:4540
 msgid "Initial exposure time"
-msgstr ""
+msgstr "Začetni čas osvetlitve"
 
 #: src/libslic3r/PrintConfig.cpp:4546 src/libslic3r/PrintConfig.cpp:4547
 msgid "Correction for expansion"
-msgstr ""
+msgstr "Popravek zaradi raztezanja"
 
 #: src/libslic3r/PrintConfig.cpp:4553 src/libslic3r/PrintConfig.cpp:4554
 msgid "Correction for expansion in X axis"
-msgstr ""
+msgstr "Popravek zaradi raztezanja v X osi"
 
 #: src/libslic3r/PrintConfig.cpp:4560 src/libslic3r/PrintConfig.cpp:4561
 msgid "Correction for expansion in Y axis"
-msgstr ""
+msgstr "Popravek zaradi raztezanja v Y osi"
 
 #: src/libslic3r/PrintConfig.cpp:4567 src/libslic3r/PrintConfig.cpp:4568
 msgid "Correction for expansion in Z axis"
-msgstr ""
+msgstr "Popravek zaradi raztezanja v Z osi"
 
 #: src/libslic3r/PrintConfig.cpp:4574
 msgid "SLA print material notes"
@@ -6208,7 +6243,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:4575
 msgid "You can put your notes regarding the SLA print material here."
-msgstr ""
+msgstr "Tukaj lahko vnesete svoje opombe o SLA materialu."
 
 #: src/libslic3r/PrintConfig.cpp:4589 src/libslic3r/PrintConfig.cpp:4600
 msgid "Default SLA material profile"
@@ -6220,24 +6255,24 @@ msgstr "Ustvari podpore"
 
 #: src/libslic3r/PrintConfig.cpp:4613
 msgid "Generate supports for the models"
-msgstr ""
+msgstr "Ustvarite podpore za modele"
 
 #: src/libslic3r/PrintConfig.cpp:4618
 msgid "Support tree type"
-msgstr ""
+msgstr "Podporni tip drevesa"
 
 #: src/libslic3r/PrintConfig.cpp:4619
 msgid "Support tree building strategy"
-msgstr ""
+msgstr "Strategija grajenja podpornega drevesa"
 
 #. TRN One of the "Support tree type"s on SLAPrintSettings : Supports
 #: src/libslic3r/PrintConfig.cpp:4624
 msgid "Branching (experimental)"
-msgstr ""
+msgstr "Razvejanje (poskusno)"
 
 #: src/libslic3r/PrintConfig.cpp:4633
 msgid "Support only in enforced regions"
-msgstr ""
+msgstr "Podpora le v regijah, kjer je to obvezno"
 
 #: src/libslic3r/PrintConfig.cpp:4635
 msgid "Only create support if it lies in a support enforcer."
@@ -6246,15 +6281,15 @@ msgstr "Podporo ustvari le, če leži na izvršitelju podpor."
 #: src/libslic3r/PrintConfig.cpp:4640
 #: src/slic3r/GUI/Gizmos/GLGizmoSlaSupports.cpp:123
 msgid "Support points density"
-msgstr ""
+msgstr "Gostota podpornih točk"
 
 #: src/libslic3r/PrintConfig.cpp:4642
 msgid "This is a relative measure of support points density."
-msgstr ""
+msgstr "To je relativni pokazatelj gostote opornih točk."
 
 #: src/libslic3r/PrintConfig.cpp:4648
 msgid "Use pad"
-msgstr ""
+msgstr "Uporabi podlogo"
 
 #: src/libslic3r/PrintConfig.cpp:4649 src/libslic3r/PrintConfig.cpp:4656
 #: src/libslic3r/PrintConfig.cpp:4670 src/libslic3r/PrintConfig.cpp:4681
@@ -6266,23 +6301,23 @@ msgstr ""
 #: src/slic3r/GUI/GUI_Factories.cpp:174 src/slic3r/GUI/Tab.cpp:6005
 #: src/slic3r/GUI/Tab.cpp:6006 src/slic3r/GUI/Tab.cpp:6071
 msgid "Pad"
-msgstr ""
+msgstr "Podloga"
 
 #: src/libslic3r/PrintConfig.cpp:4650
 msgid "Add a pad underneath the supported model"
-msgstr ""
+msgstr "Vstavi podlogo pod podprt model"
 
 #: src/libslic3r/PrintConfig.cpp:4655
 msgid "Pad wall thickness"
-msgstr ""
+msgstr "Debelina stene podloge"
 
 #: src/libslic3r/PrintConfig.cpp:4657
 msgid "The thickness of the pad and its optional cavity walls."
-msgstr ""
+msgstr "Debelina podloge in njenih morebitnih sten vdolbin."
 
 #: src/libslic3r/PrintConfig.cpp:4665
 msgid "Pad wall height"
-msgstr ""
+msgstr "Višina stene podloge"
 
 #: src/libslic3r/PrintConfig.cpp:4666
 msgid ""
@@ -6291,18 +6326,22 @@ msgid ""
 "effect inside the cavity, which makes peeling the print off the vat foil "
 "difficult."
 msgstr ""
+"Določa globino vdolbine podlage. Nastavite vrednost na nič, če želite "
+"vdolbino onemogočiti. Pri vklopu te funkcije bodite previdni, saj lahko "
+"nekatere smole v vdolbini povzročijo izjemen sesalen učinek, zaradi česar je "
+"težko odstraniti tisk s folije v posodi."
 
 #: src/libslic3r/PrintConfig.cpp:4679
 msgid "Pad brim size"
-msgstr ""
+msgstr "Velikost obrobe podloge"
 
 #: src/libslic3r/PrintConfig.cpp:4680
 msgid "How far should the pad extend around the contained geometry"
-msgstr ""
+msgstr "Koliko naj se podloga razteza okoli obdane geometrije"
 
 #: src/libslic3r/PrintConfig.cpp:4690
 msgid "Max merge distance"
-msgstr ""
+msgstr "Največja razdalja združitve"
 
 #: src/libslic3r/PrintConfig.cpp:4692
 msgid ""
@@ -6310,69 +6349,74 @@ msgid ""
 "one. This parameter defines how far the center of two smaller pads should "
 "be. If theyare closer, they will get merged into one pad."
 msgstr ""
+"Za nekatere predmete je bolje uporabiti več manjših podlog namesto ene "
+"velike. Ta parameter določa, kako daleč naj bo središče dveh manjših podlog. "
+"Če sta si bližje, se združita v eno podlago."
 
 #: src/libslic3r/PrintConfig.cpp:4712
 msgid "Pad wall slope"
-msgstr ""
+msgstr "Naklon stene podloge"
 
 #: src/libslic3r/PrintConfig.cpp:4714
 msgid ""
 "The slope of the pad wall relative to the bed plane. 90 degrees means "
 "straight walls."
-msgstr ""
+msgstr "Naklon stene podstavka glede na mizo. 90 stopinj pomeni ravne stene."
 
 #: src/libslic3r/PrintConfig.cpp:4723 src/slic3r/GUI/Tab.cpp:6071
 msgid "Pad around object"
-msgstr ""
+msgstr "Podpora okoli objekta"
 
 #: src/libslic3r/PrintConfig.cpp:4725
 msgid "Create pad around object and ignore the support elevation"
-msgstr ""
+msgstr "Ustvari podlago okoli objekta in prezri višino podpore"
 
 #: src/libslic3r/PrintConfig.cpp:4730
 msgid "Pad around object everywhere"
-msgstr ""
+msgstr "Podloga okoli objekta povsod"
 
 #: src/libslic3r/PrintConfig.cpp:4732
 msgid "Force pad around object everywhere"
-msgstr ""
+msgstr "Prisili podlogo okrog predmeta povsod"
 
 #: src/libslic3r/PrintConfig.cpp:4737
 msgid "Pad object gap"
-msgstr ""
+msgstr "Špranja med podlogo"
 
 #: src/libslic3r/PrintConfig.cpp:4739
 msgid ""
 "The gap between the object bottom and the generated pad in zero elevation "
 "mode."
-msgstr ""
+msgstr "Razdalja med dnom objekta in ustvarjeno podlogo v načinu brez višine."
 
 #: src/libslic3r/PrintConfig.cpp:4748
 msgid "Pad object connector stride"
-msgstr ""
+msgstr "Korak priključka podloge"
 
 #: src/libslic3r/PrintConfig.cpp:4750
 msgid ""
 "Distance between two connector sticks which connect the object and the "
 "generated pad."
 msgstr ""
+"Razdalja med dvema povezovalnima palicama, ki povezujeta objekt in "
+"ustvarjeno podlogo."
 
 #: src/libslic3r/PrintConfig.cpp:4757
 msgid "Pad object connector width"
-msgstr ""
+msgstr "Širina priključka podloge"
 
 #: src/libslic3r/PrintConfig.cpp:4759
 msgid ""
 "Width of the connector sticks which connect the object and the generated pad."
-msgstr ""
+msgstr "Širina povezovalnih palic, ki povezujejo objekt in ustvarjeno podlogo."
 
 #: src/libslic3r/PrintConfig.cpp:4766
 msgid "Pad object connector penetration"
-msgstr ""
+msgstr "Prodor priključka podloge"
 
 #: src/libslic3r/PrintConfig.cpp:4769
 msgid "How much should the tiny connectors penetrate into the model body."
-msgstr ""
+msgstr "Nastavitev, koliko naj se majhni priključki vstavijo v ohišje modela."
 
 #: src/libslic3r/PrintConfig.cpp:4776
 msgid "Enable hollowing"
@@ -6389,7 +6433,7 @@ msgstr "Dolbenje"
 
 #: src/libslic3r/PrintConfig.cpp:4778
 msgid "Hollow out a model to have an empty interior"
-msgstr "Izdolbi model za prazno notranjost"
+msgstr "Izdolbi mode, da bo notranjost prazna"
 
 #: src/libslic3r/PrintConfig.cpp:4783
 msgid "Wall thickness"
@@ -6397,7 +6441,7 @@ msgstr "Debelina stene"
 
 #: src/libslic3r/PrintConfig.cpp:4785
 msgid "Minimum wall thickness of a hollowed model."
-msgstr ""
+msgstr "Najmanjša debelina stene izdolbenega modela."
 
 #: src/libslic3r/PrintConfig.cpp:4793
 msgid "Accuracy"
@@ -6408,11 +6452,13 @@ msgid ""
 "Performance vs accuracy of calculation. Lower values may produce unwanted "
 "artifacts."
 msgstr ""
+"Zmogljivost proti natančnosti izračuna. Nižje vrednosti lahko povzročijo "
+"neželene artefakte."
 
 #: src/libslic3r/PrintConfig.cpp:4802
 #: src/slic3r/GUI/Gizmos/GLGizmoHollow.cpp:38
 msgid "Closing distance"
-msgstr ""
+msgstr "Zapiralna razdalja"
 
 #: src/libslic3r/PrintConfig.cpp:4805
 msgid ""
@@ -6422,6 +6468,11 @@ msgid ""
 "interior more rounded. At zero, the interior will resemble the exterior the "
 "most."
 msgstr ""
+"Dolbenje poteka v dveh korakih: najprej se v objektu izračuna navidezno "
+"notranjost, ki sega globlje (odmik plus razdalja zapiranja), nato pa se ta "
+"ponovno razširi na določen odmik. Večja razdalja zapiranja povzroči, da je "
+"notranjost bolj zaobljena. Pri vrednosti nič bo notranjost najbolj podobna "
+"zunanjosti."
 
 #: src/libslic3r/PrintConfig.cpp:4817
 msgid "Print speed"
@@ -6433,6 +6484,9 @@ msgid ""
 "higher viscosity or with some hollowed parts. It slows down the tilt "
 "movement and adds a delay before exposure."
 msgstr ""
+"Pri uporabi materialov z višjo viskoznostjo ali z nekaterimi izdolbenimi "
+"deli, je morda potreben profil za počasnejše tiskanje. Ta upočasni nagibanje "
+"in vključi zamik pred osvetlitvijo."
 
 #: src/libslic3r/PrintConfig.cpp:4830
 msgid "Format of the output SLA archive"
@@ -6440,160 +6494,166 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:4835
 msgid "SLA output precision"
-msgstr ""
+msgstr "Natančnost izvoza SLA"
 
 #: src/libslic3r/PrintConfig.cpp:4836
 msgid "Minimum resolution in nanometers"
-msgstr ""
+msgstr "Najmanjša ločljivost v nanometrih"
 
 #: src/libslic3r/PrintConfig.cpp:4877
 msgid "Delay before exposure"
-msgstr ""
+msgstr "Zakasnitev pred osvetlitvijo"
 
 #: src/libslic3r/PrintConfig.cpp:4878
 msgid "Delay before exposure after previous layer separation."
-msgstr ""
+msgstr "Zakasnitev pred osvetlitvijo po ločitvi prejšnjega sloja."
 
 #: src/libslic3r/PrintConfig.cpp:4886
 msgid "Delay after exposure"
-msgstr ""
+msgstr "Zakasnitev po osvetlitvi"
 
 #: src/libslic3r/PrintConfig.cpp:4887
 msgid "Delay after exposure before layer separation."
-msgstr ""
+msgstr "Zakasnitev po osvetlitvi pred ločitvijo prejšnjega sloja."
 
 #: src/libslic3r/PrintConfig.cpp:4895
 msgid "Tower hop height"
-msgstr ""
+msgstr "Višina skoka stolpa"
 
 #: src/libslic3r/PrintConfig.cpp:4896
 msgid "The height of the tower raise."
-msgstr ""
+msgstr "Višina za dvig stolpa."
 
 #: src/libslic3r/PrintConfig.cpp:4904
 msgid "Tower speed"
-msgstr ""
+msgstr "Hitrost stolpa"
 
 #: src/libslic3r/PrintConfig.cpp:4905
 msgid "Tower speed used for tower raise."
-msgstr ""
+msgstr "Hitrost stolpa, ki se uporablja pri dvigovanju stolpa."
 
 #: src/libslic3r/PrintConfig.cpp:4941
 msgid "Tilt down initial speed"
-msgstr ""
+msgstr "Začetna hitrost pri nagibu navzdol"
 
 #: src/libslic3r/PrintConfig.cpp:4942
 msgid "Tilt speed used for an initial portion of tilt down move."
-msgstr ""
+msgstr "Hitrost nagiba, ki se uporablja v začetnem delu giba navzdol."
 
 #: src/libslic3r/PrintConfig.cpp:4944 src/libslic3r/PrintConfig.cpp:4952
 #: src/libslic3r/PrintConfig.cpp:4960 src/libslic3r/PrintConfig.cpp:4968
 msgid "μ-steps/s"
-msgstr ""
+msgstr "μ-korakov/s"
 
 #: src/libslic3r/PrintConfig.cpp:4949
 msgid "Tilt down finish speed"
-msgstr ""
+msgstr "Hitrost zaključka pri nagibu navzdol"
 
 #: src/libslic3r/PrintConfig.cpp:4950
 msgid "Tilt speed used for the rest of the tilt down move."
-msgstr ""
+msgstr "Hitrost nagiba, ki se uporablja za preostanek giba navzdol."
 
 #: src/libslic3r/PrintConfig.cpp:4957
 msgid "Tilt up initial speed"
-msgstr ""
+msgstr "Začetna hitrost pri nagibu navzgor"
 
 #: src/libslic3r/PrintConfig.cpp:4958
 msgid "Tilt speed used for an initial portion of tilt up move."
-msgstr ""
+msgstr "Hitrost nagiba, ki se uporablja v začetnem delu giba navzgor."
 
 #: src/libslic3r/PrintConfig.cpp:4965
 msgid "Tilt up finish speed"
-msgstr ""
+msgstr "Hitrost zaključka pri nagibu navzgor"
 
 #: src/libslic3r/PrintConfig.cpp:4966
 msgid "Tilt speed used for the rest of the tilt-up."
-msgstr ""
+msgstr "Hitrost nagiba, ki se uporablja za preostanek giba navzgor."
 
 #: src/libslic3r/PrintConfig.cpp:4973
 msgid "Use tilt"
-msgstr ""
+msgstr "Uporabi nagib"
 
 #: src/libslic3r/PrintConfig.cpp:4974
 msgid ""
 "If enabled, tilt is used for layer separation. Otherwise, all the parameters "
 "below are ignored."
 msgstr ""
+"Če je ta možnost omogočena, se za ločevanje plasti uporablja nagib. V "
+"nasprotnem primeru se vsi spodnji parametri prezrejo."
 
 #: src/libslic3r/PrintConfig.cpp:4979
 msgid "Tilt down offset steps"
-msgstr ""
+msgstr "Korak zamika pri nagibu navzdol"
 
 #: src/libslic3r/PrintConfig.cpp:4980
 msgid ""
 "Number of steps to move down from the calibrated (horizontal) position with "
 "'tilt_down_initial_speed'."
 msgstr ""
+"Število korakov za premik navzdol iz kalibriranega (vodoravnega) položaja s "
+"hitrostjo »tilt_down_initial_speed«."
 
 #: src/libslic3r/PrintConfig.cpp:4981 src/libslic3r/PrintConfig.cpp:5016
 msgid "μ-steps"
-msgstr ""
+msgstr "μ-koraki"
 
 #: src/libslic3r/PrintConfig.cpp:4988
 msgid "Tilt down offset delay"
-msgstr ""
+msgstr "Zakasnitev zamika pri nagibu navzdol"
 
 #: src/libslic3r/PrintConfig.cpp:4989
 msgid "Delay after the tilt reaches 'tilt_down_offset_steps' position."
-msgstr ""
+msgstr "Zamik, ko nagib doseže položaj »tilt_down_offset_steps«."
 
 #: src/libslic3r/PrintConfig.cpp:4997
 msgid "Tilt down cycles"
-msgstr ""
+msgstr "Cikli nagiba navzdol"
 
 #: src/libslic3r/PrintConfig.cpp:4998
 msgid "Number of cycles to split the rest of the tilt down move."
-msgstr ""
+msgstr "Število ciklov za razdelitev preostalega giba navzdol."
 
 #: src/libslic3r/PrintConfig.cpp:5005
 msgid "Tilt down delay"
-msgstr ""
+msgstr "Zakasnitev pri nagibu navzdol"
 
 #: src/libslic3r/PrintConfig.cpp:5006
 msgid "The delay between tilt-down cycles."
-msgstr ""
+msgstr "Zakasnitev med cikli nagiba zavzdol."
 
 #: src/libslic3r/PrintConfig.cpp:5014
 msgid "Tilt up offset steps"
-msgstr ""
+msgstr "Korak zamika pri nagibu navzgor"
 
 #: src/libslic3r/PrintConfig.cpp:5015
 msgid "Move tilt up to calibrated (horizontal) position minus this offset."
 msgstr ""
+"Premakni nagib navzgor v lego za kalibracijo (vodoravno), od katere odštej "
+"ta odmik."
 
 #: src/libslic3r/PrintConfig.cpp:5023
 msgid "Tilt up offset delay"
-msgstr ""
+msgstr "Zakasnitev zamika pri nagibu navzgor"
 
 #: src/libslic3r/PrintConfig.cpp:5024
 msgid "Delay after the tilt reaches 'tilt_up_offset_steps' position."
-msgstr ""
+msgstr "Zamik, ko nagib doseže položaj »tilt_up_offset_steps«."
 
 #: src/libslic3r/PrintConfig.cpp:5032
 msgid "Tilt up cycles"
-msgstr ""
+msgstr "Cikli nagiba navzgor"
 
 #: src/libslic3r/PrintConfig.cpp:5033
 msgid "Number of cycles to split the rest of the tilt-up."
-msgstr ""
+msgstr "Število ciklov za razdelitev preostalega giba navzgor."
 
 #: src/libslic3r/PrintConfig.cpp:5040
 msgid "Tilt up delay"
-msgstr ""
+msgstr "Zakasnitev pri nagibu navzgor"
 
 #: src/libslic3r/PrintConfig.cpp:5041
 msgid "The delay between tilt-up cycles."
-msgstr ""
+msgstr "Zakasnitev med cikli nagiba navzgor."
 
 #: src/libslic3r/PrintConfig.cpp:5761
 msgid "Load config file"
@@ -7015,7 +7075,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:6083
 msgid "Extra deretraction"
-msgstr ""
+msgstr "Dodatni umiki"
 
 #: src/libslic3r/PrintConfig.cpp:6084
 msgid "Currently planned extra extruder priming after deretraction."
@@ -7123,7 +7183,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:6142
 msgid "Number of printing extruders"
-msgstr ""
+msgstr "Število tiskalnih ekstruderjev"
 
 #: src/libslic3r/PrintConfig.cpp:6143
 msgid "Number of extruders used during the print."
@@ -7233,7 +7293,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:6203
 msgid "Number of objects"
-msgstr ""
+msgstr "Število objektov"
 
 #: src/libslic3r/PrintConfig.cpp:6204
 msgid "Total number of objects in the print."
@@ -7364,7 +7424,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:6298
 msgid "Filament preset name"
-msgstr ""
+msgstr "Prednastavljeno ime filamenta"
 
 #: src/libslic3r/PrintConfig.cpp:6299
 msgid ""
@@ -7467,7 +7527,7 @@ msgstr ""
 
 #: src/libslic3r/PrintObject.cpp:179
 msgid "Generating perimeters"
-msgstr "Ustvarjam obode"
+msgstr "Ustvarjanje obodov"
 
 #: src/libslic3r/PrintObject.cpp:286
 msgid "Preparing infill"
@@ -7484,7 +7544,7 @@ msgstr ""
 
 #: src/libslic3r/PrintObject.cpp:520
 msgid "Generating support material"
-msgstr ""
+msgstr "Ustvarjanje podpornega materiala"
 
 #: src/libslic3r/PrintObject.cpp:543
 msgid "Estimating curled extrusions"
@@ -7514,7 +7574,7 @@ msgstr ""
 
 #: src/libslic3r/SLA/Pad.cpp:535
 msgid "Pad brim size is too small for the current configuration."
-msgstr ""
+msgstr "Velikost obrobe podloge je premajhna za trenutno nastavitev."
 
 #: src/libslic3r/SLAPrint.cpp:635
 msgid ""
@@ -7527,6 +7587,8 @@ msgid ""
 "Elevation is too low for object. Use the \"Pad around object\" feature to "
 "print the object without elevation."
 msgstr ""
+"Višina je za objekt premajhna. Uporabite funkcijo »Podloga okoli objekta«, "
+"da objekt natisnete brez višine."
 
 #: src/libslic3r/SLAPrint.cpp:653
 msgid ""
@@ -7534,10 +7596,13 @@ msgid ""
 "object and the pad. 'Support base safety distance' has to be greater than "
 "the 'Pad object gap' parameter to avoid this."
 msgstr ""
+"Konci nosilnih stebrov bodo nameščeni v špranjo med objektom in podlago. Da "
+"bi se temu izognili, mora biti »varnostna razdalja nosilne podlage« večja od "
+"parametra »špranja med podlogo in objektom«."
 
 #: src/libslic3r/SLAPrint.cpp:668
 msgid "Exposition time is out of printer profile bounds."
-msgstr ""
+msgstr "Čas osvetlitve presega omejitve profila tiskalnika."
 
 #: src/libslic3r/SLAPrint.cpp:675
 msgid "Initial exposition time is out of printer profile bounds."
@@ -7558,6 +7623,10 @@ msgid ""
 "Please check value of Pinhead front diameter in Print Settings or Material "
 "Overrides."
 msgstr ""
+"Neveljaven premer igle\n"
+"Premer sprednjega dela igle mora biti manjši od premera stebra.\n"
+"Preverite vrednost Premera sprednjega dela igle v Nastavitvah tiskanja ali v "
+"Preglasitvi materiala."
 
 #: src/libslic3r/SLAPrint.cpp:700
 msgid ""
@@ -7566,6 +7635,9 @@ msgid ""
 "the 'Tower hop height' parameter to reasonable value. The recommended value "
 "is 5 mm."
 msgstr ""
+"Če onemogočite funkcijo »Uporabi nagib«, se bo objekt od filma oddaljil le v "
+"navpični smeri. Zato je treba parameter »Višina skoka stolpa« nastaviti na "
+"primerno vrednost. Priporočena vrednost je 5 mm."
 
 #: src/libslic3r/SLAPrint.cpp:712
 #, c-format, boost-format
@@ -7595,15 +7667,15 @@ msgstr ""
 
 #: src/libslic3r/SLAPrintSteps.cpp:84 src/libslic3r/SLAPrintSteps.cpp:836
 msgid "Generating support points"
-msgstr ""
+msgstr "Ustvarjanje podpornih točk"
 
 #: src/libslic3r/SLAPrintSteps.cpp:85
 msgid "Generating support tree"
-msgstr ""
+msgstr "Ustvarjanje podpornega drevesa"
 
 #: src/libslic3r/SLAPrintSteps.cpp:86
 msgid "Generating pad"
-msgstr ""
+msgstr "Ustvarjanje podloge"
 
 #: src/libslic3r/SLAPrintSteps.cpp:87
 msgid "Slicing supports"
@@ -7649,7 +7721,7 @@ msgstr ""
 
 #: src/libslic3r/SLAPrintSteps.cpp:926
 msgid "No pad can be generated for this model with the current configuration"
-msgstr ""
+msgstr "Za ta model ni mogoče ustvariti podloge s trenutno konfiguracijo"
 
 #: src/libslic3r/SLAPrintSteps.cpp:1055
 msgid ""
@@ -7877,7 +7949,7 @@ msgstr "Deljenje z nič"
 
 #: src/slic3r/GUI/BackgroundSlicingProcess.cpp:318
 msgid "Overflow"
-msgstr ""
+msgstr "Razlitje"
 
 #: src/slic3r/GUI/BackgroundSlicingProcess.cpp:320
 msgid "Underflow"
@@ -8422,7 +8494,7 @@ msgstr "Filamenti"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:987 src/slic3r/GUI/ConfigWizard.cpp:1001
 msgid "SLA materials"
-msgstr ""
+msgstr "SLA materiali"
 
 #. TRN PrusaSlicer-Medical ConfigWizard: Materials"
 #: src/slic3r/GUI/ConfigWizard.cpp:996
@@ -8570,7 +8642,7 @@ msgstr "Izberite mapo"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:1625
 msgid "Downloads from URL"
-msgstr ""
+msgstr "Prenosi z URL-ja"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:1625
 msgid "Downloads"
@@ -8732,17 +8804,17 @@ msgstr "Oblika in velikost postelje"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:2048
 msgid "Set the shape of your printer's bed."
-msgstr ""
+msgstr "Nastavite obliko mize tiskalnika."
 
 #. TRN ConfigWizard : Size of possible print, related on printer size
 #: src/slic3r/GUI/ConfigWizard.cpp:2069
 #: src/slic3r/GUI/Gizmos/GLGizmoCut.cpp:2382
 msgid "Build Volume"
-msgstr ""
+msgstr "Delovna prostornina"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:2072
 msgid "Set the printer height."
-msgstr ""
+msgstr "Nastavite višino tiskalnika."
 
 #: src/slic3r/GUI/ConfigWizard.cpp:2127
 msgid "Filament and Nozzle Diameters"
@@ -8750,11 +8822,11 @@ msgstr "Premer filamenta in šobe"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:2127
 msgid "Print Diameters"
-msgstr ""
+msgstr "Premer tiska"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:2142
 msgid "Enter the diameter of your printer's hot end nozzle."
-msgstr "Vnesite premer šobe grelca vašega tiskalnika."
+msgstr "Vnesite premer šobe tiskalnika."
 
 #: src/slic3r/GUI/ConfigWizard.cpp:2145
 msgid "Nozzle Diameter"
@@ -8762,13 +8834,15 @@ msgstr "Premer šobe"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:2155
 msgid "Enter the diameter of your filament."
-msgstr ""
+msgstr "Vnesite premer filamenta"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:2156
 msgid ""
 "Good precision is required, so use a caliper and do multiple measurements "
 "along the filament, then compute the average."
 msgstr ""
+"Potrebna je dobra natančnost, zato uporabite kljunasto merilo in opravite "
+"več meritev vzdolž žice, nato pa izračunajte povprečje."
 
 #: src/slic3r/GUI/ConfigWizard.cpp:2159
 msgid "Filament Diameter"
@@ -8776,7 +8850,7 @@ msgstr "Premer filamenta"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:2214
 msgid "Nozzle and Bed Temperatures"
-msgstr "Temp. šobe in mize"
+msgstr "Temperatura šobe in mize"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:2214
 msgid "Temperatures"
@@ -8784,7 +8858,7 @@ msgstr "Temperature"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:2230
 msgid "Enter the temperature needed for extruding your filament."
-msgstr ""
+msgstr "Vnesite temperaturo, potrebno za iztisk filamenta."
 
 #: src/slic3r/GUI/ConfigWizard.cpp:2231
 msgid "A rule of thumb is 160 to 230 °C for PLA, and 215 to 250 °C for ABS."
@@ -8799,6 +8873,7 @@ msgid ""
 "Enter the bed temperature needed for getting your filament to stick to your "
 "heated bed."
 msgstr ""
+"Vnesite temperaturo mize, ki je potrebna, da se filament prilepi nanjo."
 
 #: src/slic3r/GUI/ConfigWizard.cpp:2245
 msgid ""
@@ -8930,7 +9005,7 @@ msgstr ""
 
 #: src/slic3r/GUI/ConfigWizard.cpp:3911
 msgid "Filament Profiles Selection"
-msgstr ""
+msgstr "Izbira profilov filamentov"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:3911 src/slic3r/GUI/ConfigWizard.cpp:3914
 #: src/slic3r/GUI/GUI_ObjectList.cpp:4325
@@ -8939,7 +9014,7 @@ msgstr "Tip:"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:3914
 msgid "SLA Material Profiles Selection"
-msgstr ""
+msgstr "Izbira profilov SLA materialov"
 
 #: src/slic3r/GUI/ConfigWizard.cpp:3914
 msgid "SLA Materials"
@@ -9524,7 +9599,7 @@ msgstr "Nastavitve filamenta"
 
 #: src/slic3r/GUI/EditGCodeDialog.cpp:262
 msgid "SLA Materials settings"
-msgstr ""
+msgstr "Nastavitve SLA materiali"
 
 #: src/slic3r/GUI/EditGCodeDialog.cpp:267
 msgid "Printer settings"
@@ -9906,7 +9981,7 @@ msgstr "Obriši"
 
 #: src/slic3r/GUI/GCodeViewer.cpp:399
 msgid "Extrude"
-msgstr ""
+msgstr "Iztisk"
 
 #. TRN: Show/hide properties is a tooltip on a button which toggles an extra window in the G-code Viewer, showing properties of current G-code segment.
 #: src/slic3r/GUI/GCodeViewer.cpp:461
@@ -11141,7 +11216,7 @@ msgstr "Samodejno barvanje"
 #. TRN GizmoFdmSupports : message line during the waiting for autogenerated supports
 #: src/slic3r/GUI/Gizmos/GLGizmoFdmSupports.cpp:54
 msgid "painting"
-msgstr ""
+msgstr "barvanje"
 
 #: src/slic3r/GUI/Gizmos/GLGizmoFdmSupports.cpp:55
 #: src/slic3r/GUI/Gizmos/GLGizmoHollow.cpp:43
@@ -11348,7 +11423,7 @@ msgstr ""
 
 #: src/slic3r/GUI/Gizmos/GLGizmoFdmSupports.cpp:556
 msgid "Automatic painting support points"
-msgstr ""
+msgstr "Samodejno barvanje podpornih točk"
 
 #: src/slic3r/GUI/Gizmos/GLGizmoFdmSupports.cpp:587
 msgid "Add supports"
@@ -11759,7 +11834,7 @@ msgstr ""
 
 #: src/slic3r/GUI/Gizmos/GLGizmoSimplify.cpp:284
 msgid "Extra high"
-msgstr ""
+msgstr "Zelo visoko"
 
 #: src/slic3r/GUI/Gizmos/GLGizmoSimplify.cpp:285
 msgid "High"
@@ -11775,7 +11850,7 @@ msgstr ""
 
 #: src/slic3r/GUI/Gizmos/GLGizmoSimplify.cpp:288
 msgid "Extra low"
-msgstr ""
+msgstr "Zelo nizko"
 
 #: src/slic3r/GUI/Gizmos/GLGizmoSimplify.cpp:311
 msgid ""
@@ -11839,7 +11914,7 @@ msgstr ""
 
 #: src/slic3r/GUI/Gizmos/GLGizmoSlaSupports.cpp:97
 msgid "Click to show support structure with pad"
-msgstr ""
+msgstr "Kliknite za prikaz nosilne konstrukcije s podlogo"
 
 #: src/slic3r/GUI/Gizmos/GLGizmoSlaSupports.cpp:101
 msgid "Visible support points without support structure"
@@ -11847,7 +11922,7 @@ msgstr ""
 
 #: src/slic3r/GUI/Gizmos/GLGizmoSlaSupports.cpp:117
 msgid "Head diameter"
-msgstr ""
+msgstr "Premer glave"
 
 #: src/slic3r/GUI/Gizmos/GLGizmoSlaSupports.cpp:118
 msgid "Lock supports under new islands"
@@ -11923,7 +11998,7 @@ msgstr ""
 
 #: src/slic3r/GUI/Gizmos/GLGizmoSlaSupports.cpp:1365
 msgid "Autogenerate support points"
-msgstr ""
+msgstr "Samodejno ustvarjanje podpornih točk"
 
 #: src/slic3r/GUI/Gizmos/GLGizmoSlaSupports.cpp:1473
 msgid "SLA gizmo keyboard shortcuts"
@@ -11979,7 +12054,7 @@ msgstr "Preklopi v način urejanja"
 
 #: src/slic3r/GUI/Gizmos/GLGizmoSlaSupports.cpp:1529
 msgid "Generated support point"
-msgstr ""
+msgstr "Ustvarjene podporne točke"
 
 #: src/slic3r/GUI/Gizmos/GLGizmoSlaSupports.cpp:1530
 msgid "Selected support point"
@@ -12352,11 +12427,11 @@ msgstr ""
 
 #: src/slic3r/GUI/GLCanvas3D.cpp:1831 src/slic3r/GUI/GLCanvas3D.cpp:1983
 msgid "Filament (g)"
-msgstr ""
+msgstr "Filament (g)"
 
 #: src/slic3r/GUI/GLCanvas3D.cpp:1840 src/slic3r/GUI/GLCanvas3D.cpp:1991
 msgid "Filament (m)"
-msgstr ""
+msgstr "Filament (m)"
 
 #. TRN %1% is one "Stealth mode" or "Normal mode"
 #: src/slic3r/GUI/GLCanvas3D.cpp:1850 src/slic3r/GUI/GLCanvas3D.cpp:1859
@@ -12379,7 +12454,7 @@ msgstr ""
 
 #: src/slic3r/GUI/GLCanvas3D.cpp:2062
 msgid "Generating statistics"
-msgstr ""
+msgstr "Ustvarjanje statistike"
 
 #: src/slic3r/GUI/GLCanvas3D.cpp:2063
 msgid "Statistics will be available once all beds are sliced"
@@ -12566,7 +12641,7 @@ msgstr ""
 #: src/slic3r/GUI/GLCanvas3D.cpp:7001
 #, boost-format
 msgid "Time since start: %1%"
-msgstr ""
+msgstr "Čas od začetka: %1%"
 
 #: src/slic3r/GUI/GLCanvas3D.cpp:7396
 msgid "An object outside the print area was detected."
@@ -13206,7 +13281,7 @@ msgstr "Prenašam %1%"
 
 #: src/slic3r/GUI/GUI_App.cpp:3826
 msgid "Downloading of the new version is in progress. Do you want to continue?"
-msgstr ""
+msgstr "Prenos nove različice je v teku. Želite nadaljevati?"
 
 #: src/slic3r/GUI/GUI_App.cpp:3854 src/slic3r/GUI/GUI_App.cpp:4198
 #: src/slic3r/GUI/GUI_App.cpp:4213
@@ -13268,7 +13343,7 @@ msgstr ""
 
 #: src/slic3r/GUI/GUI_Factories.cpp:98
 msgid "Pad and Support"
-msgstr ""
+msgstr "Podloga in podpora"
 
 #: src/slic3r/GUI/GUI_Factories.cpp:192
 msgid "Add part"
@@ -14012,7 +14087,7 @@ msgstr ""
 
 #: src/slic3r/GUI/GUI_ObjectList.cpp:4315
 msgid "Support Enforcer"
-msgstr ""
+msgstr "Izvršitelj podpor"
 
 #: src/slic3r/GUI/GUI_ObjectList.cpp:4325
 msgid "Select type of part"
@@ -14696,7 +14771,7 @@ msgstr ""
 
 #: src/slic3r/GUI/KBShortcutsDialog.cpp:175
 msgid "Zoom to Bed"
-msgstr ""
+msgstr "Prilagodi mizi"
 
 #: src/slic3r/GUI/KBShortcutsDialog.cpp:176
 msgid ""
@@ -14706,11 +14781,11 @@ msgstr ""
 
 #: src/slic3r/GUI/KBShortcutsDialog.cpp:177
 msgid "Zoom in"
-msgstr ""
+msgstr "Približaj"
 
 #: src/slic3r/GUI/KBShortcutsDialog.cpp:178
 msgid "Zoom out"
-msgstr ""
+msgstr "Oddalji"
 
 #: src/slic3r/GUI/KBShortcutsDialog.cpp:179
 msgid "Switch between Editor/Preview"
@@ -15019,7 +15094,7 @@ msgstr ""
 #: src/slic3r/GUI/MainFrame.cpp:574 src/slic3r/GUI/Plater.cpp:348
 #: src/slic3r/GUI/Plater.cpp:1821
 msgid "Untitled"
-msgstr ""
+msgstr "Neimenovano"
 
 #: src/slic3r/GUI/MainFrame.cpp:599
 msgid "based on Slic3r"
@@ -15684,7 +15759,7 @@ msgstr ""
 
 #: src/slic3r/GUI/MainFrame.cpp:2002
 msgid "Exporting configuration bundle"
-msgstr ""
+msgstr "Izvažanje paketa konfiguracij"
 
 #: src/slic3r/GUI/MainFrame.cpp:2003
 msgid ""
@@ -15752,7 +15827,7 @@ msgstr "Premik"
 #: src/slic3r/GUI/Mouse3DController.cpp:489
 #: src/slic3r/GUI/Mouse3DController.cpp:498
 msgid "Zoom"
-msgstr ""
+msgstr "Povečava"
 
 #: src/slic3r/GUI/Mouse3DController.cpp:495
 msgid "Deadzone:"
@@ -15974,7 +16049,7 @@ msgstr "Izvozi g-kodo."
 
 #: src/slic3r/GUI/NotificationManager.cpp:1848
 msgid "Export."
-msgstr "Izvozi."
+msgstr "Izvoz."
 
 #: src/slic3r/GUI/NotificationManager.cpp:2196
 #: src/slic3r/GUI/NotificationManager.cpp:2223
@@ -15985,7 +16060,7 @@ msgstr "OPOZORILO:"
 
 #: src/slic3r/GUI/NotificationManager.cpp:2357
 msgid "Exporting finished."
-msgstr ""
+msgstr "Izvažanje končano."
 
 #: src/slic3r/GUI/NotificationManager.cpp:2365
 msgid "Bulk export finished."
@@ -16641,7 +16716,7 @@ msgstr ""
 
 #: src/slic3r/GUI/Plater.cpp:3413
 msgid "generated warnings"
-msgstr ""
+msgstr "ustvarjena opozorila"
 
 #: src/slic3r/GUI/Plater.cpp:3454
 msgid "Slicing Cancelled."
@@ -17722,7 +17797,7 @@ msgstr "vrhnjega polnega polnila"
 
 #: src/slic3r/GUI/PresetHints.cpp:186
 msgid "support"
-msgstr "podpor"
+msgstr "podpora"
 
 #: src/slic3r/GUI/PresetHints.cpp:188
 msgid "support interface"
@@ -18059,12 +18134,12 @@ msgstr "Običajno"
 #. TRN: This is a label of a column of parameters in settings to be used when the area is above certain threshold.
 #: src/slic3r/GUI/Search.cpp:106 src/slic3r/GUI/Tab.cpp:5573
 msgid "Above"
-msgstr ""
+msgstr "Nad"
 
 #. TRN: This is a label of a column of parameters in settings to be used when the area is below certain threshold.
 #: src/slic3r/GUI/Search.cpp:106 src/slic3r/GUI/Tab.cpp:5570
 msgid "Below"
-msgstr ""
+msgstr "Pod"
 
 #: src/slic3r/GUI/Search.cpp:316
 msgid "Enter a search term"
@@ -18287,7 +18362,7 @@ msgstr[3] "objektov"
 
 #: src/slic3r/GUI/Sidebar.cpp:972
 msgid "supports and pad"
-msgstr ""
+msgstr "podpore in podloga"
 
 #: src/slic3r/GUI/Sidebar.cpp:1018
 msgid "Used Filament (in)"
@@ -18782,7 +18857,7 @@ msgstr "Nagib"
 
 #: src/slic3r/GUI/Tab.cpp:3035
 msgid "Tilt time"
-msgstr ""
+msgstr "Čas nagiba"
 
 #: src/slic3r/GUI/Tab.cpp:3042 src/slic3r/GUI/Tab.cpp:5481
 msgid "Corrections"
@@ -18790,7 +18865,7 @@ msgstr "Popravki"
 
 #: src/slic3r/GUI/Tab.cpp:3055 src/slic3r/GUI/Tab.cpp:5477
 msgid "Exposure"
-msgstr ""
+msgstr "Osvetlitev"
 
 #: src/slic3r/GUI/Tab.cpp:3062
 msgid "Output"
@@ -19185,7 +19260,7 @@ msgstr "Material"
 #: src/slic3r/GUI/Tab.cpp:5531 src/slic3r/GUI/Tab.cpp:5534
 #: src/slic3r/GUI/Tab.cpp:5541
 msgid "Material printing profile"
-msgstr ""
+msgstr "Profil tiskanja materiala"
 
 #: src/slic3r/GUI/Tab.cpp:5571
 msgid ""
@@ -19201,7 +19276,7 @@ msgstr ""
 #. layer separation procedure for SLA printers.
 #: src/slic3r/GUI/Tab.cpp:5599
 msgid "Profile settings"
-msgstr ""
+msgstr "Nastavitve profila"
 
 #: src/slic3r/GUI/Tab.cpp:5617
 msgid "Set default values for fast print speed"
@@ -19218,32 +19293,32 @@ msgstr ""
 #: src/slic3r/GUI/Tab.cpp:5714
 #, boost-format
 msgid "The current Z-axis height correction is: %1% mm"
-msgstr ""
+msgstr "Trenutni popravek višine osi Z znaša: %1% mm"
 
 #: src/slic3r/GUI/Tab.cpp:5804
 msgid "Support head"
-msgstr ""
+msgstr "Podporna glava"
 
 #: src/slic3r/GUI/Tab.cpp:5809
 msgid "Support pillar"
-msgstr ""
+msgstr "Podporni steber"
 
 #: src/slic3r/GUI/Tab.cpp:5832
 msgid "Connection of the support sticks and junctions"
-msgstr ""
+msgstr "Povezovanje podpornih palic in spojev"
 
 #: src/slic3r/GUI/Tab.cpp:5858 src/slic3r/GUI/Tab.cpp:6000
 msgid "Branching"
-msgstr ""
+msgstr "Razvejanje"
 
 #. TRN: Page title in Material Settings in SLA mode.
 #: src/slic3r/GUI/Tab.cpp:5915
 msgid "Material Overrides"
-msgstr ""
+msgstr "Preglasitev materiala"
 
 #: src/slic3r/GUI/Tab.cpp:6002
 msgid "Automatic generation"
-msgstr ""
+msgstr "Samodejno ustvarjanje"
 
 #: src/slic3r/GUI/Tab.cpp:6069
 #, boost-format
@@ -19262,7 +19337,7 @@ msgstr "Tiskalniki"
 
 #: src/slic3r/GUI/Tab.hpp:581
 msgid "Materials"
-msgstr ""
+msgstr "Materiali"
 
 #: src/slic3r/GUI/TopBar.cpp:214 src/slic3r/GUI/TopBar.cpp:461
 #: src/slic3r/GUI/TopBarMenus.cpp:101
@@ -19531,7 +19606,7 @@ msgstr ""
 #: src/slic3r/GUI/UpdateDialogs.cpp:68 src/slic3r/GUI/UpdateDialogs.cpp:327
 #: src/slic3r/GUI/UpdateDialogs.cpp:399
 msgid "Open changelog page"
-msgstr ""
+msgstr "Odpri stran z dnevnikom sprememb"
 
 #: src/slic3r/GUI/UpdateDialogs.cpp:74
 msgid "Open download page"
@@ -19635,6 +19710,12 @@ msgid ""
 "\n"
 "Updated configuration bundles:"
 msgstr ""
+"Ali jih želite namestiti?\n"
+"\n"
+"Najprej bo ustvarjen celoten posnetek konfiguraci. Ta se lahko kadar koli "
+"obnovi, če bi pri novi različici prišlo do težav.\n"
+"\n"
+"Posodobljeni konfiguracijski paketi:"
 
 #: src/slic3r/GUI/UpdateDialogs.cpp:308 src/slic3r/GUI/UpdateDialogs.cpp:382
 msgid "Comment:"
@@ -20065,7 +20146,7 @@ msgstr ""
 msgid ""
 "Downloading new %1% has failed:\n"
 "%2%"
-msgstr ""
+msgstr "Prenos %1% ni uspel: %2%"
 
 #: src/slic3r/Utils/AstroBox.cpp:76 src/slic3r/Utils/OctoPrint.cpp:219
 #: src/slic3r/Utils/OctoPrint.cpp:268 src/slic3r/Utils/OctoPrint.cpp:673
@@ -20116,7 +20197,7 @@ msgstr ""
 #: src/slic3r/Utils/FixModelByWin10.cpp:226
 #: src/slic3r/Utils/FixModelByWin10.cpp:366
 msgid "Exporting source model"
-msgstr ""
+msgstr "Izvažanje izvornega modela"
 
 #: src/slic3r/Utils/FixModelByWin10.cpp:249
 msgid "Repairing model by Windows repair algorithm"
@@ -20268,7 +20349,7 @@ msgstr ""
 #: src/slic3r/Utils/PresetUpdater.cpp:1023
 #, boost-format
 msgid "Downloading resources for %1%."
-msgstr ""
+msgstr "Prenos virov za %1%."
 
 #: src/slic3r/Utils/PresetUpdater.cpp:1086
 msgid ""
@@ -20421,13 +20502,13 @@ msgstr[3] ""
 #: src/slic3r/Utils/PresetUpdaterWrapper.cpp:322
 #, boost-format
 msgid "Downloading Resources: %1%"
-msgstr ""
+msgstr "Prenos virov: %1%"
 
 #. TRN: Text of progress dialog. %1% is a name of file. %2% is a number of attept.
 #: src/slic3r/Utils/PresetUpdaterWrapper.cpp:325
 #, boost-format
 msgid "Downloading Resources: %1%. Attempt %2%."
-msgstr ""
+msgstr "Prenos virov: %1%. Poskus %2%."
 
 #. TRN: Text of progress dialog.
 #: src/slic3r/Utils/PresetUpdaterWrapper.cpp:348
@@ -29245,19 +29326,19 @@ msgstr ""
 
 #: ../src/common/stockitem.cpp:209
 msgid "Zoom &In"
-msgstr "Pove&čaj"
+msgstr "Pr&ibližaj"
 
 #: ../src/common/stockitem.cpp:210
 msgid "Zoom &Out"
-msgstr "Po&manjšaj"
+msgstr "&Oddalji"
 
 #: ../src/common/stockitem.cpp:209 ../src/common/prntbase.cpp:1594
 msgid "Zoom In"
-msgstr "Povečaj"
+msgstr "Približaj"
 
 #: ../src/common/stockitem.cpp:210 ../src/common/prntbase.cpp:1580
 msgid "Zoom Out"
-msgstr "Pomanjšaj"
+msgstr "Oddalji"
 
 #: ../src/common/stockitem.cpp:208
 msgid "Zoom to &Fit"

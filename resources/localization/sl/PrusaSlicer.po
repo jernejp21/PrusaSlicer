@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PrusaSlicer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-26 08:02+0200\n"
-"PO-Revision-Date: 2026-04-14 10:52+0200\n"
+"PO-Revision-Date: 2026-04-21 10:15+0200\n"
 "Last-Translator: Jernej Pangerc <jernejp21@tuta.com>\n"
 "Language-Team: Jernej Pangerc <jernejp21@tuta.com>\n"
 "Language: sl\n"
@@ -6022,11 +6022,11 @@ msgstr "Hitro"
 
 #: src/libslic3r/PrintConfig.cpp:4325
 msgid "Fast tilt"
-msgstr ""
+msgstr "Hiter nagib"
 
 #: src/libslic3r/PrintConfig.cpp:4326
 msgid "Time of the fast tilt"
-msgstr ""
+msgstr "Čas hitrega nagiba"
 
 #: src/libslic3r/PrintConfig.cpp:4333 src/libslic3r/PrintConfig.cpp:4822
 #: src/slic3r/GUI/Tab.cpp:5618
@@ -6035,11 +6035,11 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:4334
 msgid "Slow tilt"
-msgstr ""
+msgstr "Počasen nagib"
 
 #: src/libslic3r/PrintConfig.cpp:4335
 msgid "Time of the slow tilt"
-msgstr ""
+msgstr "Čas počasnega nagiba"
 
 #: src/libslic3r/PrintConfig.cpp:4342 src/libslic3r/PrintConfig.cpp:4824
 #: src/slic3r/GUI/Tab.cpp:5619
@@ -6048,11 +6048,11 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:4343
 msgid "Tilt for high viscosity resin"
-msgstr ""
+msgstr "Nagib za smolo z visoko viskoznostjo"
 
 #: src/libslic3r/PrintConfig.cpp:4344
 msgid "Time of the super slow tilt"
-msgstr ""
+msgstr "Čas zelo počasnega nagiba"
 
 #: src/libslic3r/PrintConfig.cpp:4351
 msgid "Area fill threshold"
@@ -6484,6 +6484,9 @@ msgid ""
 "higher viscosity or with some hollowed parts. It slows down the tilt "
 "movement and adds a delay before exposure."
 msgstr ""
+"Pri uporabi materialov z višjo viskoznostjo ali z nekaterimi izdolbenimi "
+"deli, je morda potreben profil za počasnejše tiskanje. Ta upočasni nagibanje "
+"in vključi zamik pred osvetlitvijo."
 
 #: src/libslic3r/PrintConfig.cpp:4830
 msgid "Format of the output SLA archive"
@@ -6519,7 +6522,7 @@ msgstr "Višina skoka stolpa"
 
 #: src/libslic3r/PrintConfig.cpp:4896
 msgid "The height of the tower raise."
-msgstr ""
+msgstr "Višina za dvig stolpa."
 
 #: src/libslic3r/PrintConfig.cpp:4904
 msgid "Tower speed"
@@ -6531,11 +6534,11 @@ msgstr "Hitrost stolpa, ki se uporablja pri dvigovanju stolpa."
 
 #: src/libslic3r/PrintConfig.cpp:4941
 msgid "Tilt down initial speed"
-msgstr ""
+msgstr "Začetna hitrost pri nagibu navzdol"
 
 #: src/libslic3r/PrintConfig.cpp:4942
 msgid "Tilt speed used for an initial portion of tilt down move."
-msgstr ""
+msgstr "Hitrost nagiba, ki se uporablja v začetnem delu giba navzdol."
 
 #: src/libslic3r/PrintConfig.cpp:4944 src/libslic3r/PrintConfig.cpp:4952
 #: src/libslic3r/PrintConfig.cpp:4960 src/libslic3r/PrintConfig.cpp:4968
@@ -6544,47 +6547,51 @@ msgstr "μ-korakov/s"
 
 #: src/libslic3r/PrintConfig.cpp:4949
 msgid "Tilt down finish speed"
-msgstr ""
+msgstr "Hitrost zaključka pri nagibu navzdol"
 
 #: src/libslic3r/PrintConfig.cpp:4950
 msgid "Tilt speed used for the rest of the tilt down move."
-msgstr ""
+msgstr "Hitrost nagiba, ki se uporablja za preostanek giba navzdol."
 
 #: src/libslic3r/PrintConfig.cpp:4957
 msgid "Tilt up initial speed"
-msgstr ""
+msgstr "Začetna hitrost pri nagibu navzgor"
 
 #: src/libslic3r/PrintConfig.cpp:4958
 msgid "Tilt speed used for an initial portion of tilt up move."
-msgstr ""
+msgstr "Hitrost nagiba, ki se uporablja v začetnem delu giba navzgor."
 
 #: src/libslic3r/PrintConfig.cpp:4965
 msgid "Tilt up finish speed"
-msgstr ""
+msgstr "Hitrost zaključka pri nagibu navzgor"
 
 #: src/libslic3r/PrintConfig.cpp:4966
 msgid "Tilt speed used for the rest of the tilt-up."
-msgstr ""
+msgstr "Hitrost nagiba, ki se uporablja za preostanek giba navzgor."
 
 #: src/libslic3r/PrintConfig.cpp:4973
 msgid "Use tilt"
-msgstr ""
+msgstr "Uporabi nagib"
 
 #: src/libslic3r/PrintConfig.cpp:4974
 msgid ""
 "If enabled, tilt is used for layer separation. Otherwise, all the parameters "
 "below are ignored."
 msgstr ""
+"Če je ta možnost omogočena, se za ločevanje plasti uporablja nagib. V "
+"nasprotnem primeru se vsi spodnji parametri prezrejo."
 
 #: src/libslic3r/PrintConfig.cpp:4979
 msgid "Tilt down offset steps"
-msgstr ""
+msgstr "Korak zamika pri nagibu navzdol"
 
 #: src/libslic3r/PrintConfig.cpp:4980
 msgid ""
 "Number of steps to move down from the calibrated (horizontal) position with "
 "'tilt_down_initial_speed'."
 msgstr ""
+"Število korakov za premik navzdol iz kalibriranega (vodoravnega) položaja s "
+"hitrostjo »tilt_down_initial_speed«."
 
 #: src/libslic3r/PrintConfig.cpp:4981 src/libslic3r/PrintConfig.cpp:5016
 msgid "μ-steps"
@@ -6592,59 +6599,61 @@ msgstr "μ-koraki"
 
 #: src/libslic3r/PrintConfig.cpp:4988
 msgid "Tilt down offset delay"
-msgstr ""
+msgstr "Zakasnitev zamika pri nagibu navzdol"
 
 #: src/libslic3r/PrintConfig.cpp:4989
 msgid "Delay after the tilt reaches 'tilt_down_offset_steps' position."
-msgstr ""
+msgstr "Zamik, ko nagib doseže položaj »tilt_down_offset_steps«."
 
 #: src/libslic3r/PrintConfig.cpp:4997
 msgid "Tilt down cycles"
-msgstr ""
+msgstr "Cikli nagiba navzdol"
 
 #: src/libslic3r/PrintConfig.cpp:4998
 msgid "Number of cycles to split the rest of the tilt down move."
-msgstr ""
+msgstr "Število ciklov za razdelitev preostalega giba navzdol."
 
 #: src/libslic3r/PrintConfig.cpp:5005
 msgid "Tilt down delay"
-msgstr ""
+msgstr "Zakasnitev pri nagibu navzdol"
 
 #: src/libslic3r/PrintConfig.cpp:5006
 msgid "The delay between tilt-down cycles."
-msgstr ""
+msgstr "Zakasnitev med cikli nagiba zavzdol."
 
 #: src/libslic3r/PrintConfig.cpp:5014
 msgid "Tilt up offset steps"
-msgstr ""
+msgstr "Korak zamika pri nagibu navzgor"
 
 #: src/libslic3r/PrintConfig.cpp:5015
 msgid "Move tilt up to calibrated (horizontal) position minus this offset."
 msgstr ""
+"Premakni nagib navzgor v lego za kalibracijo (vodoravno), od katere odštej "
+"ta odmik."
 
 #: src/libslic3r/PrintConfig.cpp:5023
 msgid "Tilt up offset delay"
-msgstr ""
+msgstr "Zakasnitev zamika pri nagibu navzgor"
 
 #: src/libslic3r/PrintConfig.cpp:5024
 msgid "Delay after the tilt reaches 'tilt_up_offset_steps' position."
-msgstr ""
+msgstr "Zamik, ko nagib doseže položaj »tilt_up_offset_steps«."
 
 #: src/libslic3r/PrintConfig.cpp:5032
 msgid "Tilt up cycles"
-msgstr ""
+msgstr "Cikli nagiba navzgor"
 
 #: src/libslic3r/PrintConfig.cpp:5033
 msgid "Number of cycles to split the rest of the tilt-up."
-msgstr ""
+msgstr "Število ciklov za razdelitev preostalega giba navzgor."
 
 #: src/libslic3r/PrintConfig.cpp:5040
 msgid "Tilt up delay"
-msgstr ""
+msgstr "Zakasnitev pri nagibu navzgor"
 
 #: src/libslic3r/PrintConfig.cpp:5041
 msgid "The delay between tilt-up cycles."
-msgstr ""
+msgstr "Zakasnitev med cikli nagiba navzgor."
 
 #: src/libslic3r/PrintConfig.cpp:5761
 msgid "Load config file"
@@ -7626,6 +7635,9 @@ msgid ""
 "the 'Tower hop height' parameter to reasonable value. The recommended value "
 "is 5 mm."
 msgstr ""
+"Če onemogočite funkcijo »Uporabi nagib«, se bo objekt od filma oddaljil le v "
+"navpični smeri. Zato je treba parameter »Višina skoka stolpa« nastaviti na "
+"primerno vrednost. Priporočena vrednost je 5 mm."
 
 #: src/libslic3r/SLAPrint.cpp:712
 #, c-format, boost-format
@@ -12629,7 +12641,7 @@ msgstr ""
 #: src/slic3r/GUI/GLCanvas3D.cpp:7001
 #, boost-format
 msgid "Time since start: %1%"
-msgstr ""
+msgstr "Čas od začetka: %1%"
 
 #: src/slic3r/GUI/GLCanvas3D.cpp:7396
 msgid "An object outside the print area was detected."
@@ -14759,7 +14771,7 @@ msgstr ""
 
 #: src/slic3r/GUI/KBShortcutsDialog.cpp:175
 msgid "Zoom to Bed"
-msgstr ""
+msgstr "Prilagodi mizi"
 
 #: src/slic3r/GUI/KBShortcutsDialog.cpp:176
 msgid ""
@@ -14769,11 +14781,11 @@ msgstr ""
 
 #: src/slic3r/GUI/KBShortcutsDialog.cpp:177
 msgid "Zoom in"
-msgstr "Povečaj"
+msgstr "Približaj"
 
 #: src/slic3r/GUI/KBShortcutsDialog.cpp:178
 msgid "Zoom out"
-msgstr "Pomanjšaj"
+msgstr "Oddalji"
 
 #: src/slic3r/GUI/KBShortcutsDialog.cpp:179
 msgid "Switch between Editor/Preview"
@@ -18845,7 +18857,7 @@ msgstr "Nagib"
 
 #: src/slic3r/GUI/Tab.cpp:3035
 msgid "Tilt time"
-msgstr ""
+msgstr "Čas nagiba"
 
 #: src/slic3r/GUI/Tab.cpp:3042 src/slic3r/GUI/Tab.cpp:5481
 msgid "Corrections"
@@ -29314,19 +29326,19 @@ msgstr ""
 
 #: ../src/common/stockitem.cpp:209
 msgid "Zoom &In"
-msgstr "Pove&čaj"
+msgstr "Pr&ibližaj"
 
 #: ../src/common/stockitem.cpp:210
 msgid "Zoom &Out"
-msgstr "Po&manjšaj"
+msgstr "&Oddalji"
 
 #: ../src/common/stockitem.cpp:209 ../src/common/prntbase.cpp:1594
 msgid "Zoom In"
-msgstr "Povečaj"
+msgstr "Približaj"
 
 #: ../src/common/stockitem.cpp:210 ../src/common/prntbase.cpp:1580
 msgid "Zoom Out"
-msgstr "Pomanjšaj"
+msgstr "Oddalji"
 
 #: ../src/common/stockitem.cpp:208
 msgid "Zoom to &Fit"
